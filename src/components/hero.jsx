@@ -3,14 +3,17 @@ import "../styles/hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero" style={{ backgroundImage: "url(/images/mountains.jpg)" }}>
+    <div className="hero">
 
-      <img src="./svgs/flat-mountains.svg" alt="flat mountains" className="hero-smooth-mountains" />
-      
-      <div className="hero-trees">
-        <img src="./images/forest-trees.png" alt="" className="tree hero-tree-1" /> 
+      <div className="hero-bg" style={{ backgroundImage: "url(/images/mountains.jpg)" }}></div>
 
-        <img src="./images/forest-trees.png" alt="" className="tree hero-tree-2"/> 
+      <div className="hero-side">
+          <h1 className="hero-title">Hello, I'm Christian McIlvenny</h1>
+        <div className="hero-side-content">
+          <p className="hero-sub-title">Software Developer</p>
+          <p className="hero-text">Check out some of my projects!</p>
+            <a href="#projects">View Projects</a>
+          </div>
       </div>
       
     </div>

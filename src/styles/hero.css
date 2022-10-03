@@ -1,70 +1,41 @@
 /* Hero Styles  */
 
 .hero {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	filter: saturate(1.6);
-	transform: scaleX(-1);
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	animation: glow-bg-in 700ms ease-out;
-}
-
-.hero-smooth-mountains {
-	left: 100px;
-	height: 100%;
-	bottom: 80px;
-	filter: saturate(1.1);
-}
-
-.hero-trees {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-end;
-	bottom: 0;
-	width: auto;
-	height: 60%;
-	overflow-x: hidden;
-	animation: trees-in 700ms ease-out;
 }
 
-.hero-smooth-mountains,
-.hero-trees {
+.hero-bg {
 	position: absolute;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: saturate(1.1);
+	transform: scaleX(-1);
+	width: 100%;
+	height: 100%;
 }
 
-.tree {
-	height: 85%;
-	filter: brightness(10%) blur(4px);
+.hero-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10%;
+	padding: 0 1rem;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.561);
+	z-index: 1;
+	width: 60%;
+	height: 100%;
 }
 
-.hero-tree-2 {
-	transform: translateX(-50px);
+.hero-title {
+	font-size: 3em;
+	font-weight: bolder;
 }
 
-/* animations  */
-
-/* Glow Background in  */
-
-@keyframes glow-bg-in {
-	0% {
-		filter: saturate(0.7);
-	}
-	100% {
-		filter: saturate(1.6);
-	}
-}
-
-/* trees  */
-
-@keyframes trees-in {
-	0% {
-		transform: translateY(130px);
-	}
-	100% {
-		transform: translateY(0);
-	}
+.hero-side-content {
+	padding: 1rem;
 }
