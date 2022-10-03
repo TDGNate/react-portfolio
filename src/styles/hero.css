@@ -5,6 +5,7 @@
 	height: 100vh;
 	position: relative;
 	display: flex;
+	z-index: 1;
 }
 
 .hero-bg {
@@ -16,6 +17,31 @@
 	transform: scaleX(-1);
 	width: 100%;
 	height: 100%;
+	z-index: 2;
+}
+
+/* stars  */
+
+.star {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: transparent;
+	z-index: 3;
+	border: 6px solid transparent;
+	border-bottom-color: rgb(255, 255, 255);
+	/* position: relative;  */
+	top: -6px;
+}
+.star::after {
+	content: "";
+	position: absolute;
+	left: -6px;
+	top: 6px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-top-color: rgb(255, 255, 255);
 }
 
 /* Hero left side  */
@@ -28,7 +54,7 @@
 	padding: 0 2rem;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.561);
-	z-index: 1;
+	z-index: 5;
 	width: 60%;
 	height: 100%;
 }
@@ -77,4 +103,47 @@
 	color: white;
 
 	background-color: var(--purp-clr-hover);
+}
+
+/* Each stars  */
+
+.star-1 {
+	top: 15%;
+	left: 38%;
+}
+.star-2 {
+	top: 46%;
+	left: 30%;
+}
+.star-3 {
+	top: 60%;
+	left: 66%;
+}
+.star-4 {
+	top: 26%;
+	left: 90%;
+}
+.star-5 {
+	top: 4%;
+	left: 67%;
+}
+.star-6 {
+	top: 29%;
+	left: 63%;
+}
+.star-7 {
+	top: 20%;
+	left: 9%;
+}
+.star-8 {
+	top: 74%;
+	left: 44%;
+}
+.star-9 {
+	top: 58%;
+	left: 14%;
+}
+.star-10 {
+	top: 57%;
+	left: 96%;
 }
