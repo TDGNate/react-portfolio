@@ -18,6 +18,8 @@
 	height: 100%;
 }
 
+/* Hero left side  */
+
 .hero-side {
 	display: flex;
 	flex-direction: column;
@@ -43,5 +45,15 @@
 }
 
 .hero-side-content {
+	line-height: 2rem;
+	font-size: 1.1rem;
 	padding: 1rem;
+}
+
+.hero-view-projects {
+	border: 1px solid var(--blue-clr);
+	padding: 6px;
+	border-radius: 5px;
+	margin: 0 5px;
+	font-weight: bold;
 }

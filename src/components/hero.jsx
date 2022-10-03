@@ -7,12 +7,21 @@ const Hero = () => {
 
       <div className="hero-bg" style={{ backgroundImage: "url(/images/mountains.jpg)" }}></div>
 
+      {/* Hero Side  */}
       <div className="hero-side">
-          <h1 className="hero-title">Hello, I'm Christian McIlvenny</h1>
+
+        {/* Hero Side Titles  */}
+        <div className="hero-top-titles">
+            <h1 className="hero-title">Hello, I'm Christian McIlvenny</h1>
+            <p className="hero-sub-title">Software Developer</p>
+        </div>
+
+        {/* Hero Side Content  */}
         <div className="hero-side-content">
-          <p className="hero-sub-title">Software Developer</p>
-          <p className="hero-text">Check out some of my projects!</p>
-            <a href="#projects">View Projects</a>
+          <p className="hero-text">Thanks for visiting! <br />
+          Check out some of my work!  <a href="#projects" className="hero-view-projects">Projects</a>
+          </p>
+            <a href="#contact">Hire Me</a>
           </div>
       </div>
       
