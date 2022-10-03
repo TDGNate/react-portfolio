@@ -1,13 +1,17 @@
 /* Navbar Styles  */
 
 .navbar-container {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	background-color: rgba(46, 46, 46, 0.637);
+	z-index: 10;
 }
 
 .navbar-container .container {
 	display: flex;
 	flex-direction: row;
-	padding: 1rem;
+	padding: 1rem 0;
 	justify-content: space-between;
 	align-items: center;
 }
