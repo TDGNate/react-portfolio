@@ -11,6 +11,11 @@
 	/* Secondary Colors  */
 	--purp-clr: rgb(159, 50, 255);
 	--purp-clr-hover: rgb(96, 0, 180);
+	/* Contrast Colors  */
+	--dark-clr: #040010;
+	--light-clr: #fff;
+	/* sub colors  */
+	--light-sub-clr: rgb(194, 194, 194);
 }
 
 /* Universal Resetter  */
@@ -35,4 +40,17 @@ li {
 
 a {
 	text-decoration: none !important;
+}
+
+p {
+	color: var(--light-sub-clr);
+	font-size: 1.1rem;
+}
+
+h2 {
+	padding: 0.2rem 0.5em;
+	color: var(--light-clr);
+	font-weight: bold;
+	border-bottom: 2px solid var(--blue-clr);
+	width: fit-content;
 }

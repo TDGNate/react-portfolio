@@ -1,6 +1,7 @@
 /* About Section Styles  */
 
 .about-section {
+	background-color: var(--dark-clr);
 	padding: 1rem;
 	height: 40vh;
 }
