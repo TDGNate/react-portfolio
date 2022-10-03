@@ -41,6 +41,10 @@
 	font-weight: bolder;
 }
 
+.hero-name {
+	color: var(--blue-clr);
+}
+
 .hero-sub-title {
 	color: var(--purp-clr);
 	font-size: 2rem;
