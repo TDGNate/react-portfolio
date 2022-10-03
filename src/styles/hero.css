@@ -45,6 +45,9 @@
 }
 
 .hero-side-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 	line-height: 2rem;
 	font-size: 1.1rem;
 	padding: 1rem;
@@ -52,8 +55,26 @@
 
 .hero-view-projects {
 	border: 1px solid var(--blue-clr);
-	padding: 6px;
+	padding: 2px 5px;
 	border-radius: 5px;
-	margin: 0 5px;
+	margin: 0 4px;
+	text-align: center;
 	font-weight: bold;
+}
+
+.hero-hire-me {
+	background-color: var(--purp-clr);
+	color: white;
+	padding: 0.6rem 1rem;
+	margin: 0.8rem 0;
+	border-radius: 5px;
+	width: 125px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.hero-hire-me:hover {
+	color: white;
+
+	background-color: var(--purp-clr-hover);
 }

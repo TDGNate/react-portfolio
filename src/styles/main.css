@@ -9,7 +9,8 @@
 	--blue-clr: rgb(33, 110, 255);
 	--blue-clr-hover: rgb(115, 164, 255);
 	/* Secondary Colors  */
-	--purp-clr: rgb(175, 83, 255);
+	--purp-clr: rgb(159, 50, 255);
+	--purp-clr-hover: rgb(96, 0, 180);
 }
 
 /* Universal Resetter  */
