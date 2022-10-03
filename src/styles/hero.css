@@ -21,30 +21,6 @@
 	z-index: 2;
 }
 
-/* stars  */
-
-.star {
-	position: absolute;
-	width: 6px;
-	height: 6px;
-	background-color: transparent;
-	z-index: 3;
-	border: 6px solid transparent;
-	border-bottom-color: rgb(255, 255, 255);
-	/* position: relative;  */
-	top: -6px;
-}
-.star::after {
-	content: "";
-	position: absolute;
-	left: -6px;
-	top: 6px;
-	width: 0;
-	height: 0;
-	border: 6px solid transparent;
-	border-top-color: rgb(255, 255, 255);
-}
-
 /* Hero left side  */
 
 .hero-side {
@@ -104,6 +80,30 @@
 	color: white;
 
 	background-color: var(--purp-clr-hover);
+}
+
+/* stars  */
+
+.star {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: transparent;
+	z-index: 3;
+	border: 6px solid transparent;
+	border-bottom-color: rgb(255, 255, 255);
+	top: -6px;
+}
+
+.star::after {
+	content: "";
+	position: absolute;
+	left: -6px;
+	top: 6px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-top-color: rgb(255, 255, 255);
 }
 
 /* Each stars  */

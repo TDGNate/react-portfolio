@@ -2,9 +2,6 @@ import React from 'react'
 import "../styles/hero.css";
 
 const Hero = () => {
-
-  
-
   return (
     <div className="hero">
 
@@ -45,8 +42,10 @@ const Hero = () => {
   )
 }
 
+// Listen for mouse movements 
 document.addEventListener("mousemove", parallax);
 
+// Parallax Function 
 function parallax(e) {
   document.querySelectorAll(".star").forEach((star) => {
     const starValue = star.getAttribute("data-value");
