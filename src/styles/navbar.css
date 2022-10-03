@@ -21,10 +21,11 @@
 	width: 25%;
 	font-size: 1.5rem;
 	font-weight: bolder;
+	color: var(--blue-clr);
 }
 
 .logo:hover {
-	color: rgb(68, 155, 255);
+	color: var(--blue-clr-hover);
 }
 
 .navbar-ul {
@@ -42,5 +43,6 @@
 }
 
 .navbar-item a:hover {
-	color: rgb(94, 204, 255);
+	color: var(--blue-clr-hover);
+	cursor: pointer;
 }
