@@ -1,6 +1,8 @@
 
-import Navbar from './components/navbar';
-import Hero from './components/hero';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About'
+
 import "./styles/main.css";
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <h2>this will be the body</h2>
+      <About />
     </>
   );
 }
