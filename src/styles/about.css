@@ -2,11 +2,82 @@
 
 .about-section {
 	background-color: var(--dark-clr);
-	padding: 1rem;
-	height: 40vh;
+}
+
+.about-section .container {
+	padding: 3rem 2rem;
+}
+
+.about-section h2 {
+	margin: auto;
 }
 
 .about-content {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.about-text {
+	width: 50%;
+}
+
+/* About Me Picture  */
+
+.about-img-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	border: 1px solid var(--lght-clr);
+	position: relative;
+	transition: all 300ms ease-in-out;
+	z-index: 2;
+	margin-top: 1rem;
+}
+
+.about-img-box::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px dashed var(--light-clr);
+	transform: translate(21px, 21px);
+	z-index: -1;
+	transition: all 300ms ease-in-out;
+}
+
+.about-img-box::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px dashed var(--light-clr);
+	transform: translate(-21px, -21px);
+	z-index: -1;
+	transition: all 300ms ease-in-out;
+}
+
+.about-pic {
+	width: 100%;
+	height: 100%;
+}
+
+.about-img-box:hover::before,
+.about-img-box:hover::after {
+	box-shadow: inset 0px 0px 10px rgb(61, 129, 255),
+		0px 0px 14px rgb(121, 106, 255);
+}
+
+.about-img-box:hover::before {
+	transform: translate(-16px, -16px);
+}
+
+.about-img-box:hover::after {
+	transform: translate(16px, 16px);
 }

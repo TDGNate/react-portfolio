@@ -53,4 +53,5 @@ h2 {
 	font-weight: bold;
 	border-bottom: 2px solid var(--blue-clr);
 	width: fit-content;
+	margin-bottom: 2rem !important;
 }
