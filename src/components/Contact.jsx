@@ -1,11 +1,11 @@
 import React from 'react'
 import "../styles/project.css"
 
-const Projects = () => {
+const Contact = () => {
   return (
     <section className="project-section" style={{ backgroundImage: "url(/svgs/wave-projects.svg)" }}>
       <div className="container">
-        <h2>Projects</h2>
+        <h2>Contact</h2>
         <div className="project-content">
           <div className="card">
             Hello
@@ -17,4 +17,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Contact

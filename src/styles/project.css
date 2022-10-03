@@ -1,5 +1,8 @@
 /* Project Section Styles  */
 
 .project-section {
-	background-color: var(--sub-purp-clr);
+	transform: translateY(-150px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 20%;
 }

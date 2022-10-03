@@ -1,10 +1,6 @@
 /* About Section Styles  */
 
 .about-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	min-height: 60vh;
 	background-color: var(--dark-clr);
 }
 
