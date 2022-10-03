@@ -1,7 +1,12 @@
 
+import Navbar from './components/navbar'
+
 function App() {
   return (
-    <h1>hello</h1>
+    <>
+      <Navbar />
+      <h2>this will be the body</h2>
+    </>
   );
 }
 
