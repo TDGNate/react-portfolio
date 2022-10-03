@@ -2,6 +2,9 @@ import React from 'react'
 import "../styles/hero.css";
 
 const Hero = () => {
+
+  
+
   return (
     <div className="hero">
 
@@ -10,14 +13,14 @@ const Hero = () => {
 
       {/* Stars  */}
       <div className="star star-1" data-value="-2"></div>
-      <div className="star star-2" data-value="6"></div>
-      <div className="star star-3" data-value="4"></div>
+      <div className="star star-2" data-value="5"></div>
+      <div className="star star-3" data-value="3"></div>
       <div className="star star-4" data-value="-5"></div>
-      <div className="star star-5" data-value="8"></div>
+      <div className="star star-5" data-value="7"></div>
       <div className="star star-6" data-value="-4"></div>
       <div className="star star-7" data-value="5"></div>
-      <div className="star star-8" data-value="-9"></div>
-      <div className="star star-9" data-value="-5"></div>
+      <div className="star star-8" data-value="-7"></div>
+      <div className="star star-9" data-value="-4"></div>
       <div className="star star-10" data-value="2"></div>
 
       {/* Hero Side  */}
@@ -40,6 +43,21 @@ const Hero = () => {
       
     </div>
   )
+}
+
+document.addEventListener("mousemove", parallax);
+
+function parallax(e) {
+  document.querySelectorAll(".star").forEach((star) => {
+    const starValue = star.getAttribute("data-value");
+
+    // get x and y values 
+    let x = (e.clientX * starValue) / 400;
+    let y = (e.clientY * starValue) / 400;
+
+    star.style.transform = `translateX(${x}px) translateY(${y}px)`
+    
+  })
 }
 
 export default Hero;
