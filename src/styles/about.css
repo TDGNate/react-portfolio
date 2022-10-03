@@ -5,3 +5,8 @@
 	padding: 1rem;
 	height: 40vh;
 }
+
+.about-content {
+	display: flex;
+	flex-direction: row;
+}
