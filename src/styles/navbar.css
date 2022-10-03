@@ -4,7 +4,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: rgba(46, 46, 46, 0.637);
+	background: linear-gradient(to bottom, #010101, transparent);
 	z-index: 10;
 }
 
@@ -14,6 +14,7 @@
 	padding: 1rem 0;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .logo {
@@ -34,7 +35,12 @@
 	padding: 0;
 }
 
-.navbar-item {
+.navbar-item a {
+	color: white;
 	margin: 0 1rem;
 	font-size: 1.2rem;
+}
+
+.navbar-item a:hover {
+	color: rgb(94, 204, 255);
 }
