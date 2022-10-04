@@ -7,9 +7,17 @@ const Projects = () => {
       <div className="container">
         <h2>Projects</h2>
         <div className="project-content">
-          <div className="card">
-            Hello
-            <p>hefasdfsdfsdfd fsdkfjasdlf sdjfk </p>
+          <h3>Prime</h3>
+          <div className="project-primary">
+          <div className="project-prime-card">
+
+          </div>
+          </div>
+          <h3>More...</h3>
+          <div className="project-more">
+            <div className="project-card">
+              
+            </div>
           </div>
         </div>
       </div>
