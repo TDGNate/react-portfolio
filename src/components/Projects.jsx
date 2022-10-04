@@ -78,4 +78,4 @@ const Projects = () => {
 
 window.addEventListener("scroll", Reveal);
 
-  export default Projects;
+export default Projects;

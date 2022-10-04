@@ -1,4 +1,4 @@
-
+// Animations Fade in and out 
 
 export default function reveal() {
   let revealCards = document.querySelectorAll(".reveal");
