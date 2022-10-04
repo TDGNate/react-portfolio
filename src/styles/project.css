@@ -53,6 +53,8 @@
 	font-size: 1.5rem;
 	margin-bottom: 1.5rem;
 	color: var(--purp-clr);
+	border-bottom: 1px solid var(--light-sub-clr);
+	width: fit-content;
 }
 
 .project-prime-card p {
