@@ -1,11 +1,8 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 
-// Components 
+// Component Pages
 import Navbar from "./Navbar"
-import Hero from "./Hero"
-import About from "./about"
-import Projects from "./Projects"
-import Contact from "./Contact"
+import Home from "./pages/Home";
 
 const PortfolioContainer = () => {
 
@@ -14,21 +11,24 @@ const PortfolioContainer = () => {
   // check which page the user is currently on 
   const renderPage = () => {
     if (currentPage === 'Home') {
-      return <Home />;
+      return <Home />; 
     }
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'Blog') {
-      return <Blog />;
-    }
-    return <Contact />;
+    // if (currentPage === 'About') {
+    //   return <About />;
+    // }
+    // if (currentPage === 'Blog') {
+    //   return <Blog />;
+    // }
+    // return <Contact />;
   };
+
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <>
-      <Navbar />
-      {}
+      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+
+      {renderPage()}
     </>
   )
 }

@@ -1,18 +1,14 @@
+import React from 'react';
 
-import Navbar from './components/Navbar';
-import Home from 
+import PortfolioContainer from "./components/PortfolioContainer";
 
 import "./styles/main.css";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </>
+
+    <PortfolioContainer />
+    
   );
 }
 
