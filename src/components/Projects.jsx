@@ -66,14 +66,20 @@ const Projects = ({ currentPage, handlePageChange }) => {
             </div>
 
           </div>
-          <a href="#moreProjects"
-            onClick={() => handlePageChange('MoreProjects')}
-            
-            className="view-all-projects">View All Projects</a>
-          <div className="project-more">
-            <div className="project-demo-card">
 
+          <div className="project-more">
+
+            <div className="project-more-left">
+              <a href="#moreProjects"
+                onClick={() => handlePageChange('MoreProjects')}
+                  className="view-all-projects">View All Projects</a>
             </div>
+
+            <div className="project-more-right">
+              <p className="check-out-my-projects-message revealRight">Hey, I have more projects you can check out, click the button next to me!</p>
+              <img src="./svgs/working-with-laptop.svg" alt="Nate working on a laptop" className="man-laptop" />
+            </div>
+
           </div>
         </div>
       </div>
