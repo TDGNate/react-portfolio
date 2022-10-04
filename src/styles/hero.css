@@ -34,6 +34,7 @@
 	z-index: 5;
 	width: 60%;
 	height: 100%;
+	animation: slide-hero-in 1.35s ease-out;
 }
 
 .hero-title {
@@ -151,4 +152,15 @@
 .star-10 {
 	top: 57%;
 	left: 96%;
+}
+
+/* Animations  */
+
+@keyframes slide-hero-in {
+	0% {
+		transform: translateX(-1150px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
 }
