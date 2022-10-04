@@ -7,7 +7,7 @@ import { RevealY } from "../utils/animation.js"
 
 const Projects = ({ currentPage, handlePageChange }) => {
   return (
-    <section id="projects" className="project-section">
+    <section id="projects" className="project-section" style={{ backgroundImage: "url(/svgs/stacked-waves.svg)" }}>
       <div className="container">
         <h2>Projects</h2>
         <div className="project-content reveal">
