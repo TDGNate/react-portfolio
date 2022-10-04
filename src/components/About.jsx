@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/about.css'
+
+// Animations 
 import { RevealLeft } from "../utils/animation"
 import { RevealRight } from "../utils/animation"
 

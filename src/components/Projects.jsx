@@ -1,6 +1,8 @@
 import React from 'react'
 import "../styles/project.css"
 import "../styles/animations.css"
+
+// Animations 
 import { RevealY } from "../utils/animation.js" 
 
 const Projects = () => {

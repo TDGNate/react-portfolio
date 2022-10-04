@@ -79,6 +79,7 @@
 	width: 125px;
 	text-align: center;
 	font-weight: bold;
+	transition: all 400ms ease-out;
 }
 
 .hero-hire-me:hover {
