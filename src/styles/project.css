@@ -28,31 +28,37 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	border: 1px solid var(--blue-clr-hover);
+	/* border: 1px solid var(--blue-clr-hover);  */
 }
 
 .project-prime-card {
-	border: 1px solid pink;
-	width: 600px;
+	max-width: auto;
 	min-height: 300px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin: 1rem;
+	align-items: center;
+	margin: 3.5rem 0;
 	padding: 0.8rem;
 	align-items: center;
-	gap: 2%;
+	gap: 5%;
 	transition: all ease;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+	text-align: end;
 }
 
 .project-prime-title {
 	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
 	color: var(--purp-clr);
 }
 
 .project-prime-card p {
 	color: var(--light-sub-clr);
-	margin: 0;
+	margin-bottom: 1rem;
 	font-size: 1rem;
 }
 
@@ -62,6 +68,7 @@
 }
 
 .project-prime-card-right {
+	padding: 1rem;
 	width: 50%;
 	height: 100%;
 }
@@ -69,6 +76,10 @@
 .project-prime-thumbnail {
 	width: 100%;
 	height: 100%;
+}
+
+.project-prime-tech {
+	margin: 1rem 0;
 }
 
 .project-prime-tech-title {

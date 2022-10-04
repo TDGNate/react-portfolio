@@ -31,7 +31,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="project-prime-card">
+            <div className="project-prime-card reverse">
               <div className="project-prime-card-left">
                 <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project image" className="project-prime-thumbnail"/>
               </div>
