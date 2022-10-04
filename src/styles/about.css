@@ -84,3 +84,16 @@
 .about-img-box:hover::after {
 	transform: translate(16px, 16px);
 }
+
+.middle {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 90px;
+}
+
+/* .middle img {
+	width: 100%;
+	height: 100%;
+} */

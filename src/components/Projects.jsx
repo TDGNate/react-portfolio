@@ -3,7 +3,7 @@ import "../styles/project.css"
 
 const Projects = () => {
   return (
-    <section id="projects" className="project-section" style={{ backgroundImage: "url(/svgs/wave-projects.svg)" }}>
+    <section id="projects" className="project-section">
       <div className="container">
         <h2>Projects</h2>
         <div className="project-content">
@@ -23,6 +23,7 @@ const Projects = () => {
                 </div>
                 <div className="project-prime-tech">
                   <img className="tech-icon" src="./images/react.png" alt="" />
+                  <img className="tech-icon" src="./images/css-3.png" alt="" />
                 </div>
                 <div className="project-prime-btns">
 

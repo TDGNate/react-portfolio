@@ -3,6 +3,7 @@ import '../styles/about.css'
 
 const About = () => {
   return (
+    <>
     <section id="about-me" className="about-section">
       <div className="container">
         <h2>About Me</h2>
@@ -15,10 +16,11 @@ const About = () => {
           </div>
 
         </div>
-
-        
       </div>
-    </section>
+      </section>
+      <div className="middle" style={{ backgroundImage: "url(/svgs/wave-middle.svg)" }}>
+        </div>
+      </>
   )
 }
 
