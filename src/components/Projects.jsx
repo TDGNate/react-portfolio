@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import "../styles/project.css"
 import "../styles/animations.css"
 
@@ -6,8 +6,18 @@ import "../styles/animations.css"
 import { RevealY } from "../utils/animation.js" 
 
 const Projects = ({ currentPage, handlePageChange }) => {
+
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section id="projects" className="project-section" style={{ backgroundImage: "url(/svgs/stacked-waves.svg)" }}>
+    <section id="projects" className="project-section" style={{ backgroundImage: "url(/svgs/stacked-waves.svg)"}}>
       <div className="container">
         <h2>Projects</h2>
         <div className="project-content reveal">
@@ -83,6 +93,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
           </div>
         </div>
       </div>
+
     </section>
   )
 }

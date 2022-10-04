@@ -68,6 +68,12 @@
 	margin: 0 4px;
 	text-align: center;
 	font-weight: bold;
+	transition: all 100ms ease;
+}
+
+.hero-view-projects:hover {
+	color: var(--blue-clr-hover);
+	border: 1px solid var(--blue-clr-hover);
 }
 
 .hero-hire-me {

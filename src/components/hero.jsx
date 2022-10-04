@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 import "../styles/hero.css";
 import Parallax from "../utils/parallax" 
 
 const Hero = () => {
+
   return (
     <div className="hero">
 
       {/* Hero Background  */}
-      <div className="hero-bg" style={{ backgroundImage: "url(/images/mountains.jpg)" }}></div>
+      <div className="hero-bg" style={{ backgroundImage: "url(/images/mountains.jpg)"}}></div>
 
       {/* Stars  */}
       <div className="star star-1" data-value="-2"></div>
