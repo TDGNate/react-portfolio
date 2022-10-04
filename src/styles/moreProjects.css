@@ -1,0 +1,20 @@
+/* More Projects Page Styles  */
+
+.more-projects-page {
+	background-color: black;
+}
+
+.more-projects-empty-space {
+	height: 20vh;
+}
+
+.more-projects-page h1 {
+	font-size: 3.2rem;
+	font-weight: bold;
+	color: var(--blue-clr);
+	margin-bottom: 1.5rem;
+}
+
+.more-projects-project-container {
+	background-color: pink;
+}

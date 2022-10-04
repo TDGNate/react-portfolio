@@ -1,7 +1,6 @@
 /* Project Section Styles  */
 
 .project-section {
-	background-color: #070421;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: 20%;
@@ -53,6 +52,8 @@
 	font-size: 1.5rem;
 	margin-bottom: 1.5rem;
 	color: var(--purp-clr);
+	border-bottom: 1px solid var(--light-sub-clr);
+	width: fit-content;
 }
 
 .project-prime-card p {
@@ -78,6 +79,8 @@
 	height: 100%;
 }
 
+/* Project Card Technologies  */
+
 .project-prime-tech {
 	margin: 1rem 0;
 }
@@ -98,4 +101,70 @@
 .tech-icon:hover {
 	cursor: pointer;
 	filter: grayscale(0);
+}
+
+/* View More Projects Styles  */
+
+.project-more {
+	margin: 3rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	min-height: 30vh;
+}
+
+.project-more-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+}
+
+.project-more-right {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	height: 100%;
+}
+
+.project-more-right .check-out-my-projects-message {
+	position: absolute;
+	top: 0;
+	left: -30%;
+	width: 60%;
+	color: var(--light-clr);
+	border: 1px solid var(--purp-clr-hover);
+	padding: 0.8rem;
+	border-radius: 8px;
+	z-index: 4;
+	background-color: rgba(192, 0, 192, 0.095);
+}
+
+.view-all-projects {
+	font-size: 1.5rem;
+	background-color: transparent;
+	color: var(--blue-clr-hover);
+	padding: 0.9rem 1.3rem;
+	margin: 1rem auto;
+	border-radius: 8px;
+	border: 2px solid var(--blue-clr);
+	transition: all 200ms ease-in;
+	text-align: center;
+}
+
+.view-all-projects:hover,
+.view-all-projects:hover a {
+	color: white;
+	border: 2px solid var(--blue-clr-hover);
+	box-shadow: inset 0px 0px 10px rgb(61, 129, 255),
+		0px 0px 14px rgb(121, 106, 255);
+}
+
+.man-laptop {
+	width: 100%;
 }

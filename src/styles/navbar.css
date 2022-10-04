@@ -40,9 +40,14 @@
 	color: white;
 	margin: 0 1rem;
 	font-size: 1.2rem;
+	border-bottom: 1px solid transparent;
 }
 
 .navbar-item a:hover {
 	color: var(--blue-clr-hover);
 	cursor: pointer;
+}
+
+.nav-active-link {
+	border-bottom: 1px solid var(--blue-clr);
 }

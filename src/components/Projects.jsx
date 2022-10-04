@@ -5,9 +5,9 @@ import "../styles/animations.css"
 // Animations 
 import { RevealY } from "../utils/animation.js" 
 
-const Projects = () => {
+const Projects = ({ currentPage, handlePageChange }) => {
   return (
-    <section id="projects" className="project-section">
+    <section id="projects" className="project-section" style={{ backgroundImage: "url(/svgs/stacked-waves.svg)" }}>
       <div className="container">
         <h2>Projects</h2>
         <div className="project-content reveal">
@@ -66,11 +66,20 @@ const Projects = () => {
             </div>
 
           </div>
-          <h3>More...</h3>
-          <div className="project-more">
-            <div className="project-card">
 
+          <div className="project-more">
+
+            <div className="project-more-left">
+              <a href="#moreProjects"
+                onClick={() => handlePageChange('MoreProjects')}
+                  className="view-all-projects">View All Projects</a>
             </div>
+
+            <div className="project-more-right">
+              <p className="check-out-my-projects-message revealRight">Hey, I have more projects you can check out, click the button next to me!</p>
+              <img src="./svgs/working-with-laptop.svg" alt="Nate working on a laptop" className="man-laptop" />
+            </div>
+
           </div>
         </div>
       </div>

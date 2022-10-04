@@ -22,8 +22,10 @@ const About = () => {
         </div>
       </div>
       </section>
+
       <div className="middle" style={{ backgroundImage: "url(/svgs/wave-middle.svg)" }}>
-        </div>
+      </div>
+      
       </>
   )
 }
