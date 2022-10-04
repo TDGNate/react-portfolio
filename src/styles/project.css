@@ -28,7 +28,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	/* border: 1px solid var(--blue-clr-hover);  */
 }
 
 .project-prime-card {

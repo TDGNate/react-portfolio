@@ -8,7 +8,7 @@ const Projects = () => {
     <section id="projects" className="project-section">
       <div className="container">
         <h2>Projects</h2>
-        <div className="project-content">
+        <div className="project-content reveal">
           <h3>Prime</h3>
           <div className="project-primary">
             
