@@ -50,6 +50,22 @@ module.exports = {
         revealLeftCards[i].classList.remove("activeLeft");
       }
     }
-  }
+  },
 
+  // Reveal from the right 
+  RevealRight: () => {
+    let revealRightCards = document.querySelectorAll(".revealRight");
+
+    for (let i = 0; i < revealRightCards.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = revealRightCards[i].getBoundingClientRect().top;
+      let elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        revealRightCards[i].classList.add("activeRight");
+      } else {
+        revealRightCards[i].classList.remove("activeRight");
+      }
+    }
+  }
 }
