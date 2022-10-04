@@ -4,8 +4,14 @@
 	background-color: var(--dark-clr);
 }
 
+.about-section .container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
 .about-section h2 {
-	margin: auto;
+	/* margin: auto;  */
 }
 
 .about-content {
@@ -16,7 +22,7 @@
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	margin-top: 2rem;
+	/* margin-top: 2rem;  */
 }
 
 .about-text {

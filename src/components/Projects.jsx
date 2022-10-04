@@ -1,5 +1,7 @@
 import React from 'react'
 import "../styles/project.css"
+import "../styles/animations.css"
+import Reveal from "../utils/animation.js" 
 
 const Projects = () => {
   return (
@@ -10,7 +12,7 @@ const Projects = () => {
           <h3>Prime</h3>
           <div className="project-primary">
             
-            <div className="project-prime-card">
+            <div className="project-prime-card reveal">
               <div className="project-prime-card-left">
                 <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project image" className="project-prime-thumbnail"/>
               </div>
@@ -31,7 +33,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="project-prime-card reverse">
+            <div className="project-prime-card reverse reveal">
               <div className="project-prime-card-left">
                 <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project image" className="project-prime-thumbnail"/>
               </div>
@@ -46,7 +48,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="project-prime-card">
+            <div className="project-prime-card reveal">
               <div className="project-prime-card-left">
                 <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project image" className="project-prime-thumbnail"/>
               </div>
@@ -61,7 +63,6 @@ const Projects = () => {
               </div>
             </div>
 
-            
           </div>
           <h3>More...</h3>
           <div className="project-more">
@@ -75,4 +76,6 @@ const Projects = () => {
   )
 }
 
-export default Projects
+window.addEventListener("scroll", Reveal);
+
+  export default Projects;

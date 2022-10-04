@@ -49,7 +49,7 @@ p {
 }
 
 h2 {
-	font-size: 2.5rem !important;
+	font-size: 2.8rem !important;
 	padding: 0.2rem 0.5em;
 	color: var(--light-clr);
 	font-weight: bold;
@@ -59,12 +59,12 @@ h2 {
 }
 
 h3 {
-	font-size: 2rem !important;
+	font-size: 2.2rem !important;
 	padding: 0.1rem 0.3em;
 	color: var(--blue-clr);
 	font-weight: bold;
-	margin-bottom: 2rem !important;
-	margin-top: 2rem !important;
+	margin-bottom: 0.8rem !important;
+	margin-top: 0.8rem !important;
 }
 
 section {
