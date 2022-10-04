@@ -2,6 +2,7 @@
 
 .about-section {
 	background-color: var(--dark-clr);
+	overflow-x: hidden;
 }
 
 .about-section .container {

@@ -6,12 +6,12 @@ import About from "../About";
 import Projects from "../Projects";
 import Contact from "../Contact";
 
-const Home = () => {
+const Home = ({ currentPage, handlePageChange }) => {
   return (
     <>
       <Hero />
       <About />
-      <Projects />
+      <Projects currentPage={currentPage} handlePageChange={handlePageChange} />
       <Contact />
     </>
   )

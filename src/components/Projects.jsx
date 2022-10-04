@@ -5,7 +5,7 @@ import "../styles/animations.css"
 // Animations 
 import { RevealY } from "../utils/animation.js" 
 
-const Projects = () => {
+const Projects = ({ currentPage, handlePageChange }) => {
   return (
     <section id="projects" className="project-section">
       <div className="container">
@@ -66,9 +66,12 @@ const Projects = () => {
             </div>
 
           </div>
-          <h3>More...</h3>
+          <a href="#moreProjects"
+            onClick={() => handlePageChange('MoreProjects')}
+            
+            className="view-all-projects">View All Projects</a>
           <div className="project-more">
-            <div className="project-card">
+            <div className="project-demo-card">
 
             </div>
           </div>
