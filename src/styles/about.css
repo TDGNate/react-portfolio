@@ -30,8 +30,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 200px;
-	height: 200px;
+	width: 280px;
+	height: 280px;
 	border: 1px solid var(--lght-clr);
 	position: relative;
 	transition: all 300ms ease-in-out;

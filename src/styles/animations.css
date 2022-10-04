@@ -1,3 +1,7 @@
+/* Animations  */
+
+/* Reveal From the bottom  */
+
 .reveal {
 	position: relative;
 	transform: translateY(150px);
@@ -7,5 +11,19 @@
 
 .reveal.active {
 	transform: translateY(0);
+	opacity: 1;
+}
+
+/* Reveal from the left  */
+
+.revealLeft {
+	position: relative;
+	transform: translateX(-150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.revealLeft.activeLeft {
+	transform: translateX(0);
 	opacity: 1;
 }

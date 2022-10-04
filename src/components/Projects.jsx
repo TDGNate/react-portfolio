@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/project.css"
 import "../styles/animations.css"
-import Reveal from "../utils/animation.js" 
+import { RevealY } from "../utils/animation.js" 
 
 const Projects = () => {
   return (
@@ -76,6 +76,6 @@ const Projects = () => {
   )
 }
 
-window.addEventListener("scroll", Reveal);
+window.addEventListener("scroll", RevealY);
 
 export default Projects;
