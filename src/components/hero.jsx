@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/hero.css";
+import Parallax from "../utils/parallax" 
 
 const Hero = () => {
   return (
@@ -43,20 +44,6 @@ const Hero = () => {
 }
 
 // Listen for mouse movements 
-document.addEventListener("mousemove", parallax);
-
-// Parallax Function 
-function parallax(e) {
-  document.querySelectorAll(".star").forEach((star) => {
-    const starValue = star.getAttribute("data-value");
-
-    // get x and y values 
-    let x = (e.clientX * starValue) / 400;
-    let y = (e.clientY * starValue) / 400;
-
-    star.style.transform = `translateX(${x}px) translateY(${y}px)`
-    
-  })
-}
+document.addEventListener("mousemove", Parallax);
 
 export default Hero;
