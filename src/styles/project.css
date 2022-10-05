@@ -169,3 +169,49 @@
 .man-laptop {
 	width: 100%;
 }
+
+/* Media Query (Mobile Size)  */
+
+@media screen and (max-width: 830px) {
+	/* cards  */
+	.project-prime-card {
+		max-width: 80%;
+		min-height: 200px;
+		flex-direction: column;
+		margin: 1rem 0;
+		padding: 0.8rem;
+		gap: 0;
+	}
+
+	.project-prime-title {
+		font-size: 1.5rem;
+		margin: 1rem auto;
+		color: var(--purp-clr);
+		border-bottom: 1px solid var(--light-sub-clr);
+		width: fit-content;
+	}
+
+	.project-prime-card p {
+		color: var(--light-sub-clr);
+		margin-bottom: 1rem;
+		font-size: 1rem;
+	}
+
+	.project-prime-card-left {
+		width: 100%;
+		height: 100%;
+	}
+
+	.project-prime-card-right {
+		text-align: center;
+		padding: 1rem;
+		width: 100%;
+		height: 80%;
+	}
+
+	.project-prime-thumbnail {
+		border-radius: 10px;
+		width: 100%;
+		height: 100%;
+	}
+}
