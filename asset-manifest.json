@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.0732fe65.css",
-    "main.js": "/react-portfolio/static/js/main.d863b4c7.js",
+    "main.css": "/react-portfolio/static/css/main.91827a72.css",
+    "main.js": "/react-portfolio/static/js/main.2ffa6e38.js",
+    "static/media/mountains.jpg": "/react-portfolio/static/media/mountains.772019fb4fb92776d0b5.jpg",
+    "static/media/Nate-six-flags.jpg": "/react-portfolio/static/media/Nate-six-flags.698d7f1a85ec5c136266.jpg",
+    "static/media/working-with-laptop.svg": "/react-portfolio/static/media/working-with-laptop.1e11b79e6a83b0b28e9b7c4ed238d381.svg",
+    "static/media/stacked-waves.svg": "/react-portfolio/static/media/stacked-waves.772e26e415b656e2c6f8.svg",
     "index.html": "/react-portfolio/index.html",
-    "main.0732fe65.css.map": "/react-portfolio/static/css/main.0732fe65.css.map",
-    "main.d863b4c7.js.map": "/react-portfolio/static/js/main.d863b4c7.js.map"
+    "static/media/wave-haikei.svg": "/react-portfolio/static/media/wave-haikei.a6602a2389959b77be91ac836f100bf9.svg",
+    "static/media/wave-middle.svg": "/react-portfolio/static/media/wave-middle.caf89d6fa9f0a88039e5.svg",
+    "main.91827a72.css.map": "/react-portfolio/static/css/main.91827a72.css.map",
+    "main.2ffa6e38.js.map": "/react-portfolio/static/js/main.2ffa6e38.js.map"
   },
   "entrypoints": [
-    "static/css/main.0732fe65.css",
-    "static/js/main.d863b4c7.js"
+    "static/css/main.91827a72.css",
+    "static/js/main.2ffa6e38.js"
   ]
 }
