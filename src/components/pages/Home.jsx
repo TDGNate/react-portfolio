@@ -4,6 +4,7 @@ import React from 'react';
 import Hero from "../Hero";
 import About from "../About";
 import Projects from "../Projects";
+import Skills from "../Skills";
 import Contact from "../Contact";
 
 const Home = ({ currentPage, handlePageChange }) => {
@@ -12,6 +13,7 @@ const Home = ({ currentPage, handlePageChange }) => {
       <Hero />
       <About />
       <Projects currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Skills />
       <Contact />
     </>
   )

@@ -1,0 +1,41 @@
+/* Skills Section Styles  */
+
+.skills-section {
+	overflow-x: hidden;
+	position: relative;
+}
+
+.skills-section-bg {
+	background-image: url("../imgs/ailenbg.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	filter: saturate(80%);
+}
+
+.skills-slide-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.607);
+	z-index: -1;
+}
+
+.skills-slide-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.607);
+
+	z-index: -1;
+}

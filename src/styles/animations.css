@@ -6,7 +6,7 @@
 	position: relative;
 	transform: translateY(150px);
 	opacity: 0;
-	transition: 1s all ease;
+	transition: 1.2s all ease;
 }
 
 .reveal.active {
@@ -20,7 +20,7 @@
 	position: relative;
 	transform: translateX(-150px);
 	opacity: 0;
-	transition: 1s all ease;
+	transition: 1.2s all ease;
 }
 
 .revealLeft.activeLeft {
@@ -34,7 +34,7 @@
 	position: relative;
 	transform: translateX(150px);
 	opacity: 0;
-	transition: 1s all ease;
+	transition: 1.2s all ease;
 }
 
 .revealRight.activeRight {
