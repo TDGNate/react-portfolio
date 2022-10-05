@@ -1,6 +1,7 @@
 /* Project Section Styles  */
 
 .project-section {
+	background-image: url("../svgs/stacked-waves.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: 20%;
@@ -168,4 +169,3 @@
 .man-laptop {
 	width: 100%;
 }
-

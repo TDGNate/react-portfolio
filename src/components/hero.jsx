@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero">
 
       {/* Hero Background  */}
-      <div className="hero-bg" style={{ backgroundImage: "url(/images/mountains.jpg)"}}></div>
+      <div className="hero-bg"></div>
 
       {/* Stars  */}
       <div className="star star-1" data-value="-2"></div>

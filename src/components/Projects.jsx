@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+
+import manOnPc from "../svgs/working-with-laptop.svg";
 import "../styles/project.css"
 import "../styles/animations.css"
 
@@ -17,7 +19,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
   }, []);
 
   return (
-    <section id="projects" className="project-section" style={{ backgroundImage: "url(/svgs/stacked-waves.svg)"}}>
+    <section id="projects" className="project-section" >
       <div className="container">
         <h2>Projects</h2>
         <div className="project-content reveal">
@@ -87,7 +89,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
             <div className="project-more-right">
               <p className="check-out-my-projects-message revealRight">Hey, I have more projects you can check out, click the button next to me!</p>
-              <img src="./svgs/working-with-laptop.svg" alt="Nate working on a laptop" className="man-laptop" />
+              <img src={manOnPc} alt="Nate working on a laptop" className="man-laptop" />
             </div>
 
           </div>
