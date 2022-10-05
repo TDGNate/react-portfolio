@@ -65,8 +65,10 @@
 	font-size: 1.4rem;
 }
 
+/* View Projects Button Styles  */
+
 .hero-view-projects {
-	border: 1px solid var(--blue-clr);
+	border: 2px solid var(--blue-clr);
 	padding: 2px 5px;
 	border-radius: 5px;
 	margin: 0 4px;
@@ -77,8 +79,10 @@
 
 .hero-view-projects:hover {
 	color: var(--blue-clr-hover);
-	border: 1px solid var(--blue-clr-hover);
+	border: 2px solid var(--blue-clr-hover);
 }
+
+/* Hire Me Button Styles  */
 
 .hero-hire-me {
 	background-color: var(--purp-clr);

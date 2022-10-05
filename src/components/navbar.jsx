@@ -2,6 +2,7 @@ import React from 'react';
 import "../styles/navbar.css";
 
 const Navbar = ({ currentPage, handlePageChange }) => {
+  
   return (
     <nav className="navbar-container">
       <div className="container">

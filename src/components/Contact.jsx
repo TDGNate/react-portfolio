@@ -2,6 +2,7 @@ import React from 'react'
 import "../styles/project.css"
 
 const Contact = () => {
+  
   return (
     <section id="contact" className="project-section" style={{ backgroundImage: "url(/svgs/wave-projects.svg)" }}>
       <div className="container">

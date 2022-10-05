@@ -87,6 +87,8 @@
 	transform: translate(16px, 16px);
 }
 
+/* The Middle Styles between the about and the projects section  */
+
 .middle {
 	background-image: url("../svgs/wave-middle.svg");
 	background-position: 50% 50%;

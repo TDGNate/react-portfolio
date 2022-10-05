@@ -17,10 +17,6 @@ const PortfolioContainer = () => {
     if (currentPage === 'MoreProjects') {
       return <MoreProjects />;
     }
-    // if (currentPage === 'Blog') {
-    //   return <Blog />;
-    // }
-    // return <Contact />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);

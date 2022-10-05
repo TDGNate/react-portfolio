@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/about.css'
 
-import waveMiddle from "../svgs/wave-haikei.svg"
 import NateSixFlags from '../imgs/Nate-six-flags.jpg'
 
 // Animations 
@@ -9,6 +8,7 @@ import { RevealLeft } from "../utils/animation"
 import { RevealRight } from "../utils/animation"
 
 const About = () => {
+  
   return (
     <>
     <section id="about-me" className="about-section">

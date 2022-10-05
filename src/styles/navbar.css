@@ -28,6 +28,8 @@
 	color: var(--blue-clr-hover);
 }
 
+/* The List */
+
 .navbar-ul {
 	margin: auto 0;
 	display: flex;
