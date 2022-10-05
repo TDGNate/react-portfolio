@@ -20,7 +20,7 @@ const Skills = () => {
           <h3>Languages and Frameworks</h3>
         <div className="langs-frames-container">
 
-          
+        <i class="fa-sharp fa-solid fa-house"></i>
 
         </div>
         

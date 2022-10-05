@@ -39,3 +39,8 @@
 
 	z-index: -1;
 }
+
+.langs-frames-container {
+	z-index: 2;
+	background-color: pink;
+}

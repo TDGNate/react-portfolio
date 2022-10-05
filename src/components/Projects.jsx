@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import manOnPc from "../svgs/working-with-laptop.svg";
 import "../styles/project.css"
@@ -8,15 +8,6 @@ import "../styles/animations.css"
 import { RevealY } from "../utils/animation.js" 
 
 const Projects = ({ currentPage, handlePageChange }) => {
-
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <section id="projects" className="project-section" >
@@ -28,7 +19,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
             
             <div className="project-prime-card reveal">
               <div className="project-prime-card-left">
-                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project image" className="project-prime-thumbnail"/>
+                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project" className="project-prime-thumbnail"/>
               </div>
 
               <div className="project-prime-card-right">
@@ -49,7 +40,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
             <div className="project-prime-card reverse reveal">
               <div className="project-prime-card-left">
-                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project image" className="project-prime-thumbnail"/>
+                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project" className="project-prime-thumbnail"/>
               </div>
 
               <div className="project-prime-card-right">
@@ -64,7 +55,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
             <div className="project-prime-card reveal">
               <div className="project-prime-card-left">
-                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project image" className="project-prime-thumbnail"/>
+                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project" className="project-prime-thumbnail"/>
               </div>
 
               <div className="project-prime-card-right">
