@@ -68,7 +68,7 @@
 /* View Projects Button Styles  */
 
 .hero-view-projects {
-	border: 2px solid var(--blue-clr);
+	border: 2px solid var(--blue-clr) !important;
 	padding: 2px 5px;
 	border-radius: 5px;
 	margin: 0 4px;
@@ -79,7 +79,7 @@
 
 .hero-view-projects:hover {
 	color: var(--blue-clr-hover);
-	border: 2px solid var(--blue-clr-hover);
+	border: 2px solid var(--blue-clr-hover) !important;
 }
 
 /* Hire Me Button Styles  */

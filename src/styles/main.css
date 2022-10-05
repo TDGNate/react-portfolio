@@ -79,3 +79,28 @@ section {
 	padding: 3.5rem 2rem;
 	min-height: 75vh;
 }
+
+/* Media Query (Mobile Size)  */
+
+@media screen and (max-width: 830px) {
+	h2 {
+		margin: 1rem auto;
+		text-align: center;
+		font-size: 2.5rem !important;
+		padding: 0.1rem 0.3em;
+	}
+
+	h3 {
+		margin: 1rem auto;
+		text-align: center;
+		font-size: 2.1rem !important;
+		padding: 0 0.2em;
+		color: var(--blue-clr);
+		font-weight: bold;
+		margin-bottom: 0.8rem !important;
+	}
+
+	section {
+		padding: 2.8rem 1.4rem;
+	}
+}

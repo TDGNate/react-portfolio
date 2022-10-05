@@ -7,6 +7,7 @@
 	background-position-y: 20%;
 	width: 100%;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 .project-section .container {
@@ -28,6 +29,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 2.5rem;
 }
 
 .project-prime-card {
@@ -135,22 +137,22 @@
 
 .project-more-right .check-out-my-projects-message {
 	position: absolute;
-	top: 0;
-	left: -30%;
+	top: -15%;
+	left: -20%;
 	width: 60%;
 	color: var(--light-clr);
 	border: 1px solid var(--purp-clr-hover);
 	padding: 0.8rem;
 	border-radius: 8px;
-	z-index: 4;
+	z-index: 2;
 	background-color: rgba(192, 0, 192, 0.095);
 }
 
 .view-all-projects {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	background-color: transparent;
 	color: var(--blue-clr-hover);
-	padding: 0.9rem 1.3rem;
+	padding: 0.8rem 1.2rem;
 	margin: 1rem auto;
 	border-radius: 8px;
 	border: 2px solid var(--blue-clr);
@@ -167,5 +169,78 @@
 }
 
 .man-laptop {
+	z-index: 3;
 	width: 100%;
+}
+
+/* Media Query (Mobile Size)  */
+
+@media screen and (max-width: 830px) {
+	/* cards  */
+	.project-prime-card {
+		max-width: 80%;
+		min-height: 200px;
+		flex-direction: column;
+		margin: 1rem 0;
+		padding: 0.3rem;
+		gap: 0;
+	}
+
+	.project-prime-title {
+		font-size: 1.5rem;
+		margin: 1rem auto;
+		color: var(--purp-clr);
+		border-bottom: 1px solid var(--light-sub-clr);
+		width: fit-content;
+	}
+
+	.project-prime-card p {
+		color: var(--light-sub-clr);
+		margin-bottom: 1rem;
+		font-size: 1rem;
+	}
+
+	.project-prime-card-left {
+		width: 100%;
+		height: 100%;
+	}
+
+	.project-prime-card-right {
+		text-align: center;
+		padding: 0.3rem 0;
+		width: 100%;
+		height: 80%;
+	}
+
+	.project-prime-thumbnail {
+		border-radius: 10px;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* View More Projects  */
+
+	.project-more {
+		height: auto;
+	}
+
+	.project-more-right .check-out-my-projects-message {
+		top: -95px;
+		width: 100%;
+		border: 1px solid var(--purp-clr-hover);
+		padding: 0.4rem;
+		font-size: 0.9rem;
+	}
+
+	.view-all-projects {
+		font-size: 1rem;
+		background-color: transparent;
+		color: var(--blue-clr-hover);
+		padding: 0.4rem 0.8rem;
+		margin: 1rem auto;
+	}
+
+	.man-laptop {
+		width: 100%;
+	}
 }
