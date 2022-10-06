@@ -8,9 +8,16 @@
 	min-height: 100vh;
 }
 
+.contact-section .container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .contact-info {
 	font-size: 1rem;
-	padding: 1rem 0rem !important;
+	margin: 1rem 0;
 }
 
 .contact-wrapper {
@@ -47,10 +54,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: pink;
+	background-color: var(--sub-blue-clr);
 	width: 100%;
 	padding: 1.5rem;
 	border-radius: 8px;
+	color: var(--light-clr);
+	border: 1px solid var(--blue-clr);
+	box-shadow: 4px 11px 30px black;
 }
 
 .cform-label {
@@ -63,8 +73,28 @@
 .cform-name,
 .cform-email,
 .cform-message {
-	width: 85%;
+	width: 90%;
+	outline: none;
 	margin-bottom: 0.8rem;
+	border-radius: 2px;
+	border: none;
+	padding: 0.5rem;
+	font-size: 1rem;
+	background-color: rgba(0, 0, 0, 0.421);
+	color: var(--light-clr);
+	border: 1px solid var(--sub-blue-clr);
+}
+
+.cform-name:focus,
+.cform-email:focus,
+.cform-message:focus {
+	border: 1px solid var(--blue-clr-hover);
+}
+
+.cform-message {
+	resize: none;
+	min-height: 5rem;
+	max-height: 8rem;
 }
 
 .cform-send {

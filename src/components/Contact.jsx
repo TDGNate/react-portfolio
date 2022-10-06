@@ -33,7 +33,7 @@ const Contact = () => {
               <input className="cform-email" type="email" id="formEmail" required />
               {/* Message */}
               <label className="cform-label" htmlFor="message">Message</label>
-              <textarea className="cform-message" type="email" id="formMessage" required />
+              <textarea className="cform-message" type="email" id="formMessage" maxLength="380" required />
               {/* Button  */}
               <button className="cform-send" type="submit">Send</button>
               </form>
