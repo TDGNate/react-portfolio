@@ -38,14 +38,14 @@ const Projects = ({ currentPage, handlePageChange }) => {
                 </div>
 
                 <div className="project-prime-tech">
-                  <img className="tech-icon" src={Node} alt="" />
-                  <img className="tech-icon" src={Javascript} alt="" />
-                  <img className="tech-icon" src={MySQL} alt="" />
-                  <img className="tech-icon" src={Heroku} alt="" />
-                  <img className="tech-icon" src={Bootstrap} alt="" />
-                  <img className="tech-icon invert" src={Express} alt="" />
-                  <img className="tech-icon invert" src={Handlebars} alt="" />
-                  <img className="tech-icon" src={Sequelize} alt="" />
+                  <img className="tech-icon" src={Node} alt="node icon" />
+                  <img className="tech-icon" src={Javascript} alt="javascript icon" />
+                  <img className="tech-icon" src={MySQL} alt="mysql database icon" />
+                  <img className="tech-icon" src={Heroku} alt="heroku icon" />
+                  <img className="tech-icon" src={Bootstrap} alt="bootstrap icon" />
+                  <img className="tech-icon invert" src={Express} alt="express icon" />
+                  <img className="tech-icon invert" src={Handlebars} alt="handlebars icon" />
+                  <img className="tech-icon" src={Sequelize} alt="sequelize icon" />
                 </div>
 
                 <div className="project-prime-btns">
@@ -64,7 +64,11 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
               <div className="project-prime-card-right">
                 <div className="project-prime-title">N8 Tech Blog</div>
-                <p className="project-prime-middle-text">Full-stack CMS-style blog site where developers can publish their blogs and add comments on others. Users can also view all their posts and comments they've made along with having access of updating/deleting their posts/comments from their dashboard.</p>
+                <p className="project-prime-middle">Full-stack CMS-style blog site where developers can publish their blogs and add comments on others. Users can also view all their posts and comments they've made along with having access of updating/deleting their posts/comments from their dashboard.</p>
+                <div className="project-prime-tech-title project-prime-middle">
+                  Technologies and Tools
+                </div>
+
                 <div className="project-prime-tech"></div>
 
                 <div className="project-prime-btns">
@@ -83,13 +87,19 @@ const Projects = ({ currentPage, handlePageChange }) => {
               </div>
 
               <div className="project-prime-card-right">
-                <div className="project-prime-title">Project Title</div>
-                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sit totam incidunt ipsam, iusto, aperiam facilis officiis pariatur fugiat eligendi enim architecto aliquid vitae accusamus dolor voluptatibus. Reprehenderit, error eius.</p>
-                <div className="project-prime-tech"></div>
+                <div className="project-prime-title">Platello</div>
+                <p>Cheers to a new dish! Website that recommends users foods and drinks based on their preferences. Powered by the Spoonacular and the CocktailDB APIs.</p>
+                <div className="project-prime-tech-title">
+                  Technologies and Tools
+                </div>
+
+                <div className="project-prime-tech">
+
+                </div>
 
                 <div className="project-prime-btns">
-                  <a href="" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                  <a href="" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                  <a href="https://predevz.github.io/Platello/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                  <a href="https://github.com/PreDevz/Platello" target="blank" className="project-prime-btn github-btn">GITHUB</a>
                 </div>
 
               </div>
