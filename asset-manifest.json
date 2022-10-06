@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.1e743cee.css",
-    "main.js": "/react-portfolio/static/js/main.43cf54ae.js",
+    "main.css": "/react-portfolio/static/css/main.a4a53f7c.css",
+    "main.js": "/react-portfolio/static/js/main.ef60d0e8.js",
     "static/media/ailenbg.jpg": "/react-portfolio/static/media/ailenbg.d1a5f54a14d5b340c5ca.jpg",
     "static/media/Nate-six-flags.jpg": "/react-portfolio/static/media/Nate-six-flags.ac2607f7aeedb694490f.jpg",
     "static/media/mountains.jpg": "/react-portfolio/static/media/mountains.9c25a85fe1f12f5b8d38.jpg",
@@ -11,11 +11,11 @@
     "static/media/stacked-waves.svg": "/react-portfolio/static/media/stacked-waves.772e26e415b656e2c6f8.svg",
     "index.html": "/react-portfolio/index.html",
     "static/media/wave-middle.svg": "/react-portfolio/static/media/wave-middle.caf89d6fa9f0a88039e5.svg",
-    "main.1e743cee.css.map": "/react-portfolio/static/css/main.1e743cee.css.map",
-    "main.43cf54ae.js.map": "/react-portfolio/static/js/main.43cf54ae.js.map"
+    "main.a4a53f7c.css.map": "/react-portfolio/static/css/main.a4a53f7c.css.map",
+    "main.ef60d0e8.js.map": "/react-portfolio/static/js/main.ef60d0e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e743cee.css",
-    "static/js/main.43cf54ae.js"
+    "static/css/main.a4a53f7c.css",
+    "static/js/main.ef60d0e8.js"
   ]
 }
