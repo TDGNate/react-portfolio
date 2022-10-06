@@ -71,7 +71,7 @@
 .project-prime-card p {
 	color: var(--light-sub-clr);
 	margin-bottom: 1rem;
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 
 .project-prime-card-left {
@@ -89,6 +89,7 @@
 	border-radius: 10px;
 	width: 100%;
 	height: 100%;
+	box-shadow: 4px 11px 30px black;
 }
 
 /* Project Card Technologies  */
@@ -222,11 +223,16 @@
 
 @media screen and (max-width: 830px) {
 	/* cards  */
+
+	.project-primary {
+		margin: 1rem 0 3rem 0;
+	}
+
 	.project-prime-card {
 		max-width: 80%;
 		min-height: 200px;
 		flex-direction: column;
-		margin: 1rem 0;
+		margin: 2.5rem 0;
 		padding: 0.3rem;
 		gap: 0;
 	}
@@ -239,10 +245,15 @@
 		width: fit-content;
 	}
 
+	.project-prime-tech-title {
+		font-size: 1.35rem;
+	}
+
 	.project-prime-card p {
 		color: var(--light-sub-clr);
 		margin-bottom: 1rem;
-		font-size: 1rem;
+		font-size: 1.1rem;
+		text-align: center;
 	}
 
 	.project-prime-card-left {
@@ -263,6 +274,12 @@
 		height: 100%;
 	}
 
+	/* Project Buttons  */
+
+	.project-prime-btns {
+		justify-content: center;
+	}
+
 	/* View More Projects  */
 
 	.project-more {
@@ -279,10 +296,11 @@
 
 	.view-all-projects {
 		font-size: 1rem;
-		background-color: transparent;
+		background-color: var(--blue-clr);
 		color: var(--blue-clr-hover);
 		padding: 0.4rem 0.8rem;
 		margin: 1rem auto;
+		color: var(--light-clr);
 	}
 
 	.man-laptop {

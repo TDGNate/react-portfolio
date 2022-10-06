@@ -111,24 +111,32 @@ section {
 /* Media Query (Mobile Size)  */
 
 @media screen and (max-width: 830px) {
+	h1 {
+		font-size: 2.3rem !important;
+	}
+
 	h2 {
 		margin: 1rem auto;
 		text-align: center;
-		font-size: 2.5rem !important;
+		font-size: 2rem !important;
 		padding: 0.1rem 0.3em;
 	}
 
 	h3 {
 		margin: 1rem auto;
 		text-align: center;
-		font-size: 2.1rem !important;
+		font-size: 1.75rem !important;
 		padding: 0 0.2em;
 		color: var(--blue-clr);
 		font-weight: bold;
 		margin-bottom: 0.8rem !important;
 	}
 
+	p {
+		text-align: center;
+	}
+
 	section {
-		padding: 2.8rem 1.4rem;
+		padding: 2.8rem 1.1rem !important;
 	}
 }
