@@ -1,8 +1,13 @@
 /* Skills Section Styles  */
 
 .skills-section {
+	padding: 5rem 0;
 	overflow: hidden;
 	position: relative;
+}
+
+.skills-section .container {
+	padding: 3em 0;
 }
 
 .skills-section-bg {

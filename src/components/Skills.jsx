@@ -1,6 +1,8 @@
 import React from 'react'
 
 import "../styles/skills.css"
+
+// All Image icons for Skills 
 import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi, Insomnia, VsCode, Node, Handlebars, MySQL, Sequelize, WorkBench, Mongo, Compass, Mongoose } from "../imgs/skills"
 
 const Skills = () => {
@@ -13,9 +15,9 @@ const Skills = () => {
 
       <div className="container">
 
-        <h2>Skills</h2>
+        <h2>Technical Skills</h2>
         <p>
-          Here is a list of my knowledge and abilities!
+          Here are my abilities and the tools i'm experienced with!
         </p>
 
         <div className="skills-wrapper">
@@ -25,35 +27,35 @@ const Skills = () => {
           <div className="skills-box-container revealRight">
 
             <div className="skill">
-              <img src={Javascript} alt="" className="skill-img" />
+              <img src={Javascript} alt="javascript icon" className="skill-img" />
               <p className="skill-title ">Javascript</p>
             </div>
             <div className="skill">
-              <img src={Express} alt="" className="skill-img invert" />
+              <img src={Express} alt="express icon" className="skill-img invert" />
               <p className="skill-title ">Express</p>
             </div>
             <div className="skill">
-              <img src={Reactt} alt="" className="skill-img" />
+              <img src={Reactt} alt="react icon" className="skill-img" />
               <p className="skill-title ">React</p>
             </div>
             <div className="skill">
-              <img src={Html} alt="" className="skill-img" />
+              <img src={Html} alt="html icon" className="skill-img" />
               <p className="skill-title">HTML5</p>
             </div>
             <div className="skill">
-              <img src={Sass} alt="" className="skill-img" />
+              <img src={Sass} alt="sass icon" className="skill-img" />
               <p className="skill-title">SASS</p>
             </div>
             <div className="skill">
-              <img src={Bootstrap} alt="" className="skill-img" />
+              <img src={Bootstrap} alt="bootstrap icon" className="skill-img" />
               <p className="skill-title">Bootstrap</p>
             </div>
             <div className="skill">
-              <img src={Matcss} alt="" className="skill-img" />
+              <img src={Matcss} alt="Materialize icon" className="skill-img" />
               <p className="skill-title">Materialize</p>
             </div>
             <div className="skill">
-              <img src={Css3} alt="" className="skill-img" />
+              <img src={Css3} alt="css icon" className="skill-img" />
               <p className="skill-title">CSS3</p>
             </div>
 
@@ -61,42 +63,42 @@ const Skills = () => {
 
           <h3>Tools and Technologies</h3>
 
-          <div className="skills-box-container revealRight">
+          <div className="skills-box-container revealLeft">
 
             <div className="skill">
-                <img src={Git} alt="" className="skill-img" />
-                <p className="skill-title ">Git</p>
+                <img src={Git} alt="git icon" className="skill-img" />
+                <p className="skill-title">Git</p>
             </div>
             <div className="skill">
-                <img src={NPM} alt="" className="skill-img" />
-                <p className="skill-title ">NPM</p>
+                <img src={NPM} alt="npm icon" className="skill-img" />
+                <p className="skill-title">NPM</p>
             </div>
             <div className="skill">
-                <img src={Heroku} alt="" className="skill-img" />
-                <p className="skill-title ">Heroku</p>
+                <img src={Heroku} alt="heroku icon" className="skill-img" />
+                <p className="skill-title">Heroku</p>
             </div>
             <div className="skill">
-                <img src={Github} alt="" className="skill-img invert" />
-                <p className="skill-title ">Github</p>
+                <img src={Github} alt="github icon" className="skill-img invert" />
+                <p className="skill-title">Github</p>
             </div>
             <div className="skill">
-                <img src={RestApi} alt="" className="skill-img skill-api" />
+                <img src={RestApi} alt="rest api icon" className="skill-img skill-api" />
                 <p className="skill-title">Rest API</p>
             </div>
             <div className="skill">
-                <img src={Insomnia} alt="" className="skill-img" />
+                <img src={Insomnia} alt="insomnia icon" className="skill-img" />
                 <p className="skill-title">Insomnia</p>
             </div>
             <div className="skill">
-                <img src={VsCode} alt="" className="skill-img" />
+                <img src={VsCode} alt="Visual Studio code icon" className="skill-img" />
                 <p className="skill-title">VS Code</p>
             </div>
             <div className="skill">
-                <img src={Node} alt="" className="skill-img" />
+                <img src={Node} alt="Node js icon" className="skill-img" />
                 <p className="skill-title">Node</p>
             </div>
             <div className="skill">
-                <img src={Handlebars} alt="" className="skill-img invert" />
+                <img src={Handlebars} alt="handlebars icon" className="skill-img invert" />
                 <p className="skill-title">Handlebars</p>
             </div>
 
@@ -107,27 +109,27 @@ const Skills = () => {
           <div className="skills-box-container revealRight">
 
             <div className="skill">
-              <img src={MySQL} alt="" className="skill-img" />
+              <img src={MySQL} alt="MySQL icon" className="skill-img" />
               <p className="skill-title">MySQL</p>
             </div>
             <div className="skill">
-              <img src={Sequelize} alt="" className="skill-img" />
+              <img src={Sequelize} alt="Sequelize icon" className="skill-img" />
               <p className="skill-title">Sequelize</p>
             </div>
             <div className="skill">
-              <img src={WorkBench} alt="" className="skill-img" />
+              <img src={WorkBench} alt="workbench icon" className="skill-img" />
               <p className="skill-title">Workbench</p>
             </div>
             <div className="skill">
-              <img src={Mongo} alt="" className="skill-img" />
+              <img src={Mongo} alt="Mongo Database icon" className="skill-img" />
               <p className="skill-title">Mongo</p>
             </div>
             <div className="skill">
-              <img src={Compass} alt="" className="skill-img" />
+              <img src={Compass} alt="Compass icon" className="skill-img" />
               <p className="skill-title">Compass</p>
             </div>
             <div className="skill">
-              <img src={Mongoose} alt="" className="skill-img" />
+              <img src={Mongoose} alt="Mongoose icon" className="skill-img" />
               <p className="skill-title">Mongoose</p>
             </div>
 
