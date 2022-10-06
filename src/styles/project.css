@@ -95,6 +95,7 @@
 /* Project Card Technologies  */
 
 .project-prime-tech {
+	user-select: none;
 	margin: 1rem 0;
 }
 

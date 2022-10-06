@@ -72,6 +72,10 @@
 	text-align: center;
 }
 
+.skill-anchor {
+	width: 100%;
+}
+
 .skill:hover,
 .skill:hover .skill-title {
 	filter: saturate(300%);
