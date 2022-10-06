@@ -54,7 +54,7 @@ p {
 
 h2 {
 	font-size: 2.8rem !important;
-	padding: 0.2rem 0.5em;
+	padding: 0.2rem 0;
 	color: var(--light-clr);
 	font-weight: bold;
 	border-bottom: 2px solid var(--blue-clr);

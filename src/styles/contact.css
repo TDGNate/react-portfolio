@@ -7,3 +7,69 @@
 	background-repeat: no-repeat;
 	min-height: 100vh;
 }
+
+.contact-info {
+	font-size: 1rem;
+	padding: 1rem 0rem !important;
+}
+
+.contact-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5%;
+	margin: 3.5rem 0;
+}
+
+.contact-wrapper-left {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-wrapper-right {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cform {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: pink;
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: 8px;
+}
+
+.cform-label {
+	width: 85%;
+
+	padding-bottom: 0.5rem;
+	font-size: 1.1rem;
+}
+
+.cform-name,
+.cform-email,
+.cform-message {
+	width: 85%;
+	margin-bottom: 0.8rem;
+}
+
+.cform-send {
+	width: 30%;
+	outline: none;
+	border-radius: 8px;
+	padding: 0.2rem 0.5rem;
+}
