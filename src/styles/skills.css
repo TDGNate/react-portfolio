@@ -82,10 +82,6 @@
 	width: 85%;
 }
 
-.invert {
-	filter: invert(1);
-}
-
 .skill-api {
 	filter: saturate(900%);
 }

@@ -1,5 +1,9 @@
 import React from "react";
 
+// Icons for projects 
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize } from "../imgs/skills"
+
+// Thumb Nails for projects 
 import { POPUmai, Platello } from "../gifs/projects"
 
 import manOnPc from "../svgs/working-with-laptop.svg";
@@ -32,10 +36,18 @@ const Projects = ({ currentPage, handlePageChange }) => {
                 <div className="project-prime-tech-title">
                   Technologies and Tools
                 </div>
+
                 <div className="project-prime-tech">
-                  <img className="tech-icon" src="./images/react.png" alt="" />
-                  <img className="tech-icon" src="./images/css-3.png" alt="" />
+                  <img className="tech-icon" src={Node} alt="" />
+                  <img className="tech-icon" src={Javascript} alt="" />
+                  <img className="tech-icon" src={MySQL} alt="" />
+                  <img className="tech-icon" src={Heroku} alt="" />
+                  <img className="tech-icon" src={Bootstrap} alt="" />
+                  <img className="tech-icon invert" src={Express} alt="" />
+                  <img className="tech-icon invert" src={Handlebars} alt="" />
+                  <img className="tech-icon" src={Sequelize} alt="" />
                 </div>
+
                 <div className="project-prime-btns">
                   <a href="https://pop-umai.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
                   <a href="https://github.com/PreDevz/POP-Umai" target="blank" className="project-prime-btn github-btn">GITHUB</a>

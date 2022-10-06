@@ -80,6 +80,12 @@ section {
 	overflow: hidden;
 }
 
+/* Global classes  */
+
+.invert {
+	filter: invert(1);
+}
+
 /* scroll bar  */
 
 /* width */
