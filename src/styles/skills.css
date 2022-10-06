@@ -41,13 +41,15 @@
 
 /* Languages and Frameworks Wrapper  */
 
-.langs-frames-wrapper {
+.skills-box-container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	z-index: 2;
 	border: 2px solid var(--blue-clr);
 	background-color: rgba(0, 0, 0, 0.607);
 	padding: 1rem;
+	margin: 1.5rem 0 3.5rem 0;
 	border-radius: 8px;
 }
 
@@ -56,16 +58,15 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 75px;
-	margin: 1rem;
-	padding: 0.7rem;
+	width: 70px;
+	margin: 1rem 1.3rem;
 }
 
 .skill-img {
-	width: 100%;
+	width: 85%;
 }
 
-.github-skill {
+.invert {
 	filter: invert(1);
 }
 
@@ -73,5 +74,5 @@
 	text-align: center;
 	width: 100%;
 	color: white;
-	margin: 0;
+	margin: 0.5rem 0;
 }

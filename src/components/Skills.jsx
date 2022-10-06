@@ -1,7 +1,7 @@
 import React from 'react'
 
 import "../styles/skills.css"
-import { Github, Html, Css3, Bootstrap, Reactt, Javascript } from "../imgs/skills"
+import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass } from "../imgs/skills"
 
 const Skills = () => {
   return (
@@ -21,15 +21,20 @@ const Skills = () => {
         <div className="skills-wrapper ">
 
           <h3 className="revealLeft">Languages and Frameworks</h3>
-          <div className="langs-frames-wrapper revealRight">
+
+          <div className="skills-box-container revealRight">
 
             <div className="skill">
-              <img src={Github} alt="" className="skill-img github-skill" />
+              <img src={Github} alt="" className="skill-img invert" />
               <p className="skill-title ">Github</p>
             </div>
             <div className="skill">
               <img src={Javascript} alt="" className="skill-img" />
               <p className="skill-title ">Javascript</p>
+            </div>
+            <div className="skill">
+              <img src={Express} alt="" className="skill-img invert" />
+              <p className="skill-title ">Express</p>
             </div>
             <div className="skill">
               <img src={Reactt} alt="" className="skill-img" />
@@ -40,14 +45,31 @@ const Skills = () => {
               <p className="skill-title">HTML5</p>
             </div>
             <div className="skill">
+              <img src={Sass} alt="" className="skill-img" />
+              <p className="skill-title">SASS</p>
+            </div>
+            <div className="skill">
               <img src={Bootstrap} alt="" className="skill-img" />
               <p className="skill-title">Bootstrap</p>
+            </div>
+            <div className="skill">
+              <img src={Matcss} alt="" className="skill-img" />
+              <p className="skill-title">Materialize</p>
             </div>
             <div className="skill">
               <img src={Css3} alt="" className="skill-img" />
               <p className="skill-title">CSS3</p>
             </div>
 
+          </div>
+
+          <h3 className="revealLeft">Languages and Frameworks</h3>
+
+          <div className="skills-box-container revealRight">
+            <div className="skill">
+              <img src={Css3} alt="" className="skill-img" />
+              <p className="skill-title">CSS3</p>
+            </div>
           </div>
       </div>
         
