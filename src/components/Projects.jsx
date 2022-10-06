@@ -1,7 +1,7 @@
 import React from "react";
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize } from "../imgs/skills"
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API } from "../imgs/skills"
 
 // Thumb Nails for projects 
 import { POPUmai, Platello, TechBlog } from "../gifs/projects"
@@ -69,7 +69,18 @@ const Projects = ({ currentPage, handlePageChange }) => {
                   Technologies and Tools
                 </div>
 
-                <div className="project-prime-tech"></div>
+                <div className="project-prime-tech project-prime-middle">
+                  <img className="tech-icon" src={Heroku} alt="heroku icon" />
+                  <img className="tech-icon invert" src={Handlebars} alt="heroku icon" />
+                  <img className="tech-icon" src={Sequelize} alt="heroku icon" />
+                  <img className="tech-icon" src={Javascript} alt="heroku icon" />
+                  <img className="tech-icon invert" src={Express} alt="heroku icon" />
+                  <img className="tech-icon" src={Bootstrap} alt="heroku icon" />
+                  <img className="tech-icon" src={MySQL} alt="heroku icon" />
+                  <img className="tech-icon" src={Node} alt="heroku icon" />
+                  <img className="tech-icon" src={SweetAlert} alt="heroku icon" />
+                  <img className="tech-icon" src={FontAwesome} alt="heroku icon" />
+                </div>
 
                 <div className="project-prime-btns">
                   <a href="https://techer-blogger.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
@@ -94,7 +105,12 @@ const Projects = ({ currentPage, handlePageChange }) => {
                 </div>
 
                 <div className="project-prime-tech">
-
+                  <img className="tech-icon" src={Html} alt="heroku icon" />
+                  <img className="tech-icon" src={Css3} alt="heroku icon" />
+                  <img className="tech-icon" src={Javascript} alt="heroku icon" />
+                  <img className="tech-icon" src={Matcss} alt="heroku icon" />
+                  <img className="tech-icon" src={jQuery} alt="heroku icon" />
+                  <img className="tech-icon" src={API} alt="heroku icon" />
                 </div>
 
                 <div className="project-prime-btns">

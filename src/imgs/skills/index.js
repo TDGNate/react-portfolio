@@ -30,3 +30,9 @@ export const WorkBench = require("./MySQLWorkbench.png");
 export const Mongo = require("./mongo.png");
 export const Compass = require("./compass.png");
 export const Mongoose = require("./mongoose.png");
+
+// Extra
+
+export const SweetAlert = require("./sweetalert.png");
+export const FontAwesome = require("./fontawesome.png");
+export const API = require("./api.png");
