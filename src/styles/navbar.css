@@ -4,7 +4,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: linear-gradient(to bottom, #010101 10%, transparent);
+	background: linear-gradient(to bottom, #010101 15%, transparent);
 	z-index: 10;
 }
 
@@ -31,6 +31,7 @@
 /* The List */
 
 .navbar-ul {
+	font-weight: bold;
 	margin: auto 0;
 	display: flex;
 	justify-content: space-evenly;
