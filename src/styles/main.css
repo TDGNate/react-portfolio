@@ -77,6 +77,29 @@ section {
 	justify-content: space-evenly;
 	padding: 3.5rem 2rem;
 	min-height: 75vh;
+	overflow: hidden;
+}
+
+/* scroll bar  */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--blue-clr-hover);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--blue-clr);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(0, 71, 194);
 }
 
 /* Media Query (Mobile Size)  */

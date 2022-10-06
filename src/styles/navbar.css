@@ -4,7 +4,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: linear-gradient(to bottom, #010101, transparent);
+	background: linear-gradient(to bottom, #010101 10%, transparent);
 	z-index: 10;
 }
 
@@ -21,7 +21,7 @@
 	width: 25%;
 	font-size: 1.5rem;
 	font-weight: bolder;
-	color: var(--light-sub-clr);
+	color: var(--blue-clr);
 }
 
 .logo:hover {

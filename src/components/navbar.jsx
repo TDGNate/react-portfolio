@@ -6,7 +6,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
   return (
     <nav className="navbar-container">
       <div className="container">
-        <a href="#about-me" className="logo">Nate</a>
+        <a href="#hero" className="logo" onClick={() => handlePageChange('Home')}>Nate</a>
         <ul className="navbar-ul">
 
           <li className={currentPage === "MoreProjects" ? "navbar-item nav-active-link" : "navbar-item"}>

@@ -5,7 +5,7 @@ import Parallax from "../utils/parallax"
 const Hero = () => {
 
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
 
       {/* Hero Background  */}
       <div className="hero-bg"></div>
