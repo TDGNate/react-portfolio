@@ -8,8 +8,8 @@
 
 :root {
 	/* Primary Colors  */
-	--blue-clr: rgb(33, 110, 255);
-	--blue-clr-hover: rgb(115, 164, 255);
+	--blue-clr: rgb(30, 112, 255);
+	--blue-clr-hover: rgb(100, 154, 255);
 	/* Secondary Colors  */
 	--purp-clr: rgb(159, 50, 255);
 	--purp-clr-hover: rgb(96, 0, 180);
@@ -64,7 +64,6 @@ h2 {
 
 h3 {
 	font-size: 2.2rem !important;
-	padding: 0.1rem 0.3em;
 	color: var(--blue-clr);
 	font-weight: bold;
 	margin-bottom: 0.8rem !important;

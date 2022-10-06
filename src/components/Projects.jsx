@@ -45,7 +45,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
               <div className="project-prime-card-right">
                 <div className="project-prime-title">Project Title</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sit totam incidunt ipsam, iusto, aperiam facilis officiis pariatur fugiat eligendi enim architecto aliquid vitae accusamus dolor voluptatibus. Reprehenderit, error eius.</p>
+                <p className="project-prime-middle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sit totam incidunt ipsam, iusto, aperiam facilis officiis pariatur fugiat eligendi enim architecto aliquid vitae accusamus dolor voluptatibus. Reprehenderit, error eius.</p>
                 <div className="project-prime-tech"></div>
                 <div className="project-prime-btns">
 
@@ -60,7 +60,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
               <div className="project-prime-card-right">
                 <div className="project-prime-title">Project Title</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sit totam incidunt ipsam, iusto, aperiam facilis officiis pariatur fugiat eligendi enim architecto aliquid vitae accusamus dolor voluptatibus. Reprehenderit, error eius.</p>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sit totam incidunt ipsam, iusto, aperiam facilis officiis pariatur fugiat eligendi enim architecto aliquid vitae accusamus dolor voluptatibus. Reprehenderit, error eius.</p>
                 <div className="project-prime-tech"></div>
                 <div className="project-prime-btns">
 

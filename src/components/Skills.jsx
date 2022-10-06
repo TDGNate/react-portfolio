@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "../styles/skills.css"
+import { Github, Html, Css3, Bootstrap, Reactt, Javascript } from "../imgs/skills"
 
 const Skills = () => {
   return (
@@ -17,12 +18,38 @@ const Skills = () => {
           Here is a list of my knowledge and abilities!
         </p>
 
-          <h3>Languages and Frameworks</h3>
-        <div className="langs-frames-container">
+        <div className="skills-wrapper ">
 
-        <i class="fa-sharp fa-solid fa-house"></i>
+          <h3 className="revealLeft">Languages and Frameworks</h3>
+          <div className="langs-frames-wrapper revealRight">
 
-        </div>
+            <div className="skill">
+              <img src={Github} alt="" className="skill-img github-skill" />
+              <p className="skill-title ">Github</p>
+            </div>
+            <div className="skill">
+              <img src={Javascript} alt="" className="skill-img" />
+              <p className="skill-title ">Javascript</p>
+            </div>
+            <div className="skill">
+              <img src={Reactt} alt="" className="skill-img" />
+              <p className="skill-title ">React</p>
+            </div>
+            <div className="skill">
+              <img src={Html} alt="" className="skill-img" />
+              <p className="skill-title">HTML5</p>
+            </div>
+            <div className="skill">
+              <img src={Bootstrap} alt="" className="skill-img" />
+              <p className="skill-title">Bootstrap</p>
+            </div>
+            <div className="skill">
+              <img src={Css3} alt="" className="skill-img" />
+              <p className="skill-title">CSS3</p>
+            </div>
+
+          </div>
+      </div>
         
       </div>
     </section>
