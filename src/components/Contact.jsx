@@ -1,4 +1,7 @@
 import React from 'react'
+
+import swal from 'sweetalert';
+import "../styles/sweetAlert.css"
 import "../styles/contact.css"
 
 const Contact = () => {
@@ -6,15 +9,21 @@ const Contact = () => {
   const [formStatus, setFormStatus] = React.useState('SEND')
   const onSubmit = (e) => {
     e.preventDefault()
-    setFormStatus('Submitting...')
+    setFormStatus('Sent!')
     const { formName, formEmail, formMessage } = e.target.elements
+
+    if (formName.value === "") {
+
+      swal("Hello world!");
+    }
+
 
     let conFom = {
       name: formName.value,
       email: formEmail.value,
       message: formMessage.value,
     }
-    
+
     console.log(conFom)
   }
 
@@ -42,10 +51,10 @@ const Contact = () => {
             <form onSubmit={onSubmit} className="cform">
               {/* Name */}
               <label className="cform-label" htmlFor="name">Name</label>
-              <input className="cform-name" type="text" id="formName" required />
+              <input className="cform-name" type="text" id="formName" />
               {/* Email */}
               <label className="cform-label" htmlFor="email">Email</label>
-              <input className="cform-email" type="email" id="formEmail" required />
+              <input className="cform-email" type="email" id="formEmail" />
               {/* Message */}
               <label className="cform-label" htmlFor="message">Message</label>
               <textarea className="cform-message" type="email" id="formMessage" maxLength="380" required />
