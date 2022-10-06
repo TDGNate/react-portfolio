@@ -1,7 +1,7 @@
 import React from 'react'
 
 import "../styles/skills.css"
-import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass } from "../imgs/skills"
+import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi } from "../imgs/skills"
 
 const Skills = () => {
   return (
@@ -18,16 +18,12 @@ const Skills = () => {
           Here is a list of my knowledge and abilities!
         </p>
 
-        <div className="skills-wrapper ">
+        <div className="skills-wrapper">
 
-          <h3 className="revealLeft">Languages and Frameworks</h3>
+          <h3>Languages and Frameworks</h3>
 
           <div className="skills-box-container revealRight">
 
-            <div className="skill">
-              <img src={Github} alt="" className="skill-img invert" />
-              <p className="skill-title ">Github</p>
-            </div>
             <div className="skill">
               <img src={Javascript} alt="" className="skill-img" />
               <p className="skill-title ">Javascript</p>
@@ -63,13 +59,31 @@ const Skills = () => {
 
           </div>
 
-          <h3 className="revealLeft">Languages and Frameworks</h3>
+          <h3>Tools and Technologies</h3>
 
           <div className="skills-box-container revealRight">
+
             <div className="skill">
-              <img src={Css3} alt="" className="skill-img" />
-              <p className="skill-title">CSS3</p>
+                <img src={Git} alt="" className="skill-img" />
+                <p className="skill-title ">Git</p>
             </div>
+            <div className="skill">
+                <img src={NPM} alt="" className="skill-img" />
+                <p className="skill-title ">NPM</p>
+            </div>
+            <div className="skill">
+                <img src={Heroku} alt="" className="skill-img" />
+                <p className="skill-title ">Heroku</p>
+            </div>
+            <div className="skill">
+                <img src={Github} alt="" className="skill-img invert" />
+                <p className="skill-title ">Github</p>
+            </div>
+            <div className="skill">
+                <img src={RestApi} alt="" className="skill-img skill-api" />
+                <p className="skill-title">Rest API</p>
+            </div>
+
           </div>
       </div>
         

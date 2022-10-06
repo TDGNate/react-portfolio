@@ -60,6 +60,14 @@
 	align-items: center;
 	width: 70px;
 	margin: 1rem 1.3rem;
+	transition: all 400ms ease;
+	cursor: pointer;
+}
+
+.skill:hover,
+.skill:hover .skill-title {
+	filter: saturate(400%);
+	color: var(--purp-clr);
 }
 
 .skill-img {
@@ -70,9 +78,14 @@
 	filter: invert(1);
 }
 
+.skill-api {
+	filter: saturate(900%);
+}
+
 .skill-title {
 	text-align: center;
 	width: 100%;
 	color: white;
 	margin: 0.5rem 0;
+	transition: all 400ms ease;
 }
