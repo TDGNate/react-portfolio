@@ -1,7 +1,7 @@
 import React from 'react'
 
 import "../styles/skills.css"
-import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi } from "../imgs/skills"
+import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi, Insomnia, VsCode, Node, Handlebars, MySQL, Sequelize, WorkBench, Mongo, Compass, Mongoose } from "../imgs/skills"
 
 const Skills = () => {
   return (
@@ -82,6 +82,53 @@ const Skills = () => {
             <div className="skill">
                 <img src={RestApi} alt="" className="skill-img skill-api" />
                 <p className="skill-title">Rest API</p>
+            </div>
+            <div className="skill">
+                <img src={Insomnia} alt="" className="skill-img" />
+                <p className="skill-title">Insomnia</p>
+            </div>
+            <div className="skill">
+                <img src={VsCode} alt="" className="skill-img" />
+                <p className="skill-title">VS Code</p>
+            </div>
+            <div className="skill">
+                <img src={Node} alt="" className="skill-img" />
+                <p className="skill-title">Node</p>
+            </div>
+            <div className="skill">
+                <img src={Handlebars} alt="" className="skill-img invert" />
+                <p className="skill-title">Handlebars</p>
+            </div>
+
+          </div>
+
+          <h3>Databases</h3>
+
+          <div className="skills-box-container revealRight">
+
+            <div className="skill">
+              <img src={MySQL} alt="" className="skill-img" />
+              <p className="skill-title">MySQL</p>
+            </div>
+            <div className="skill">
+              <img src={Sequelize} alt="" className="skill-img" />
+              <p className="skill-title">Sequelize</p>
+            </div>
+            <div className="skill">
+              <img src={WorkBench} alt="" className="skill-img" />
+              <p className="skill-title">Workbench</p>
+            </div>
+            <div className="skill">
+              <img src={Mongo} alt="" className="skill-img" />
+              <p className="skill-title">Mongo</p>
+            </div>
+            <div className="skill">
+              <img src={Compass} alt="" className="skill-img" />
+              <p className="skill-title">Compass</p>
+            </div>
+            <div className="skill">
+              <img src={Mongoose} alt="" className="skill-img" />
+              <p className="skill-title">Mongoose</p>
             </div>
 
           </div>
