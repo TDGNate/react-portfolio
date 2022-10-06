@@ -3,7 +3,7 @@ import React from 'react'
 import "../styles/skills.css"
 
 // All Image icons for Skills 
-import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi, Insomnia, VsCode, Node, Handlebars, MySQL, Sequelize, WorkBench, Mongo, Compass, Mongoose } from "../imgs/skills"
+import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi, Insomnia, VsCode, Node, Handlebars, MySQL, Sequelize, WorkBench, Mongo, Compass, Mongoose, jQuery } from "../imgs/skills"
 
 const Skills = () => {
   return (
@@ -29,6 +29,10 @@ const Skills = () => {
             <div className="skill">
               <img src={Javascript} alt="javascript icon" className="skill-img" />
               <p className="skill-title ">Javascript</p>
+            </div>
+            <div className="skill">
+              <img src={jQuery} alt="javascript icon" className="skill-img" />
+              <p className="skill-title ">jQuery</p>
             </div>
             <div className="skill">
               <img src={Express} alt="express icon" className="skill-img invert" />

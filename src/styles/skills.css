@@ -93,3 +93,27 @@
 	margin: 0.5rem 0;
 	transition: all 400ms ease;
 }
+
+@media screen and (max-width: 830px) {
+	.skills-box-container {
+		justify-content: space-evenly;
+	}
+
+	.skills-section .container h3 {
+		color: var(--blue-clr-hover);
+		margin-top: 2.8rem;
+		background-color: rgba(0, 0, 0, 0.709);
+		padding: 0.8rem;
+		width: 100%;
+		border-radius: 8px;
+		font-size: 1.2rem;
+	}
+
+	.skill {
+		width: 62px;
+	}
+
+	.skill-title {
+		font-size: 1rem;
+	}
+}
