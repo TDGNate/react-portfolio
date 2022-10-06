@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/hero.css";
+
+import { mountainBg } from "../imgs"
 import Parallax from "../utils/parallax" 
 
 const Hero = () => {
@@ -8,7 +10,7 @@ const Hero = () => {
     <div className="hero" id="hero">
 
       {/* Hero Background  */}
-      <div className="hero-bg"></div>
+      <div className="hero-bg" style={{ backgroundImage: `url(${mountainBg})` }}></div>
 
       {/* Stars  */}
       <div className="star star-1" data-value="-2"></div>

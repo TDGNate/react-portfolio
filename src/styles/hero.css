@@ -10,7 +10,7 @@
 }
 
 .hero-bg {
-	background-image: url("../imgs/mountains.jpg");
+	/* background-image: url("../imgs/mountains.jpg"); */
 	position: absolute;
 	background-position: center;
 	background-size: cover;
