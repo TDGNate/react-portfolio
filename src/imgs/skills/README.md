@@ -2,6 +2,33 @@
 
 There's too much to keep track of, most image icon has the same styling and parents, but a few are different due to visibility.
 
+## Table of Contents
+
+- [JavaScript](#javascript)
+- [jQuery](#jquery)
+- [Express](#express)
+- [React](#react)
+- [HTML](#html)
+- [SASS](#sass)
+- [Bootstrap](#bootstrap)
+- [Materialize CSS](#materialize-css)
+- [CSS](#css)
+- [Git](#git)
+- [NPM](#npm)
+- [Heroku](#heroku)
+- [Github](#github)
+- [Restful APIs](#restful-apis)
+- [Insomnia](#insomnia)
+- [VS Code](#vs-code)
+- [Node](#node)
+- [Handlebars](#handlebars)
+- [MySQL](#mysql)
+- [Sequelize](#sequelize)
+- [Workbench](#workbench)
+- [Mongo](#mongo)
+- [Compass](#compass)
+- [Mongoose](#mongoose)
+
 ## Demo Code For Icons
 
 ```html
