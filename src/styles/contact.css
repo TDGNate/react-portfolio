@@ -59,6 +59,7 @@
 	align-items: center;
 	background-color: #00132f41;
 	width: 100%;
+	min-height: 400px;
 	padding: 1.5rem;
 	border-radius: 8px;
 	color: var(--light-clr);
@@ -69,7 +70,6 @@
 
 .cform-label {
 	width: 85%;
-
 	padding-bottom: 0.5rem;
 	font-size: 1.1rem;
 }
@@ -110,6 +110,7 @@
 	color: var(--light-clr);
 	font-size: 1.2rem;
 }
+
 .cform-send:hover {
 	background-color: var(--blue-clr-hover);
 }
@@ -129,7 +130,7 @@
 	align-items: center;
 	background-color: #0704215b;
 	width: 100%;
-	padding: 2rem;
+	padding: 1.5rem 2.15rem;
 	border-radius: 8px;
 	color: var(--light-clr);
 	border: 1px solid var(--purp-clr);
@@ -149,6 +150,57 @@
 
 .contact-icons i:hover {
 	color: var(--purp-clr-hover);
+}
+
+@media screen and (max-width: 830px) {
+	.contact-section {
+		padding: 3.5rem 1.1rem !important;
+	}
+
+	.contact-wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		gap: 5rem;
+	}
+
+	.contact-info {
+		font-size: 1.1rem;
+		margin: 0.5rem 0;
+	}
+
+	.contact-wrapper-left,
+	.contact-wrapper-right {
+		width: 100%;
+	}
+
+	.cform-label {
+		width: 100%;
+		text-align: center;
+		padding-bottom: 0.75rem;
+		font-size: 1.2rem;
+	}
+
+	.cform-send {
+		border-radius: 6px;
+		border: none;
+		font-size: 1.1rem;
+		text-align: center;
+	}
+
+	.contact-icons {
+		justify-content: space-evenly;
+		align-items: center;
+		height: auto;
+	}
+
+	.contact-icons i {
+		font-size: 2.75rem;
+		margin: 0.8rem;
+	}
 }
 
 /* border Glow  */
