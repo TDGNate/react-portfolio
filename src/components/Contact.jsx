@@ -3,6 +3,21 @@ import "../styles/contact.css"
 
 const Contact = () => {
   
+  const [formStatus, setFormStatus] = React.useState('SEND')
+  const onSubmit = (e) => {
+    e.preventDefault()
+    setFormStatus('Submitting...')
+    const { formName, formEmail, formMessage } = e.target.elements
+
+    let conFom = {
+      name: formName.value,
+      email: formEmail.value,
+      message: formMessage.value,
+    }
+    
+    console.log(conFom)
+  }
+
   return (
     <section id="contact" className="contact-section">
       <div className="container">
@@ -24,7 +39,7 @@ const Contact = () => {
 
             <h3>Send me a message!</h3>
 
-            <form action="" className="cform">
+            <form onSubmit={onSubmit} className="cform">
               {/* Name */}
               <label className="cform-label" htmlFor="name">Name</label>
               <input className="cform-name" type="text" id="formName" required />
@@ -35,7 +50,7 @@ const Contact = () => {
               <label className="cform-label" htmlFor="message">Message</label>
               <textarea className="cform-message" type="email" id="formMessage" maxLength="380" required />
               {/* Button  */}
-              <button className="cform-send" type="submit">Send</button>
+              <button className="cform-send" type="submit">{formStatus}</button>
               </form>
             
           </div>
@@ -46,15 +61,15 @@ const Contact = () => {
 
             <div className="contact-icons">
 
-              <a href="https://github.com/TDGNate" target="blank"><i class="bi bi-github"></i></a>
+              <a href="https://github.com/TDGNate" target="blank"><i className="bi bi-github"></i></a>
 
-              <a href="https://www.linkedin.com/in/christian-mcilvenny/" target="blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/christian-mcilvenny/" target="blank"><i className="bi bi-linkedin"></i></a>
 
-              <a href="https://www.instagram.com/imnzte" target="blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.instagram.com/imnzte" target="blank"><i className="bi bi-instagram"></i></a>
 
-              <a href="mailto:email@example.com"><i class="bi bi-envelope-fill"></i></a>
+              <a href="mailto:email@example.com"><i className="bi bi-envelope-fill"></i></a>
 
-              <a href="https://discordapp.com/users/276568445796220928" target="blank"><i class="bi bi-discord"></i></a>
+              <a href="https://discordapp.com/users/276568445796220928" target="blank"><i className="bi bi-discord"></i></a>
               
             </div>
 
