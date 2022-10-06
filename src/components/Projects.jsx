@@ -1,5 +1,7 @@
 import React from "react";
 
+import { POPUmai, Platello } from "../gifs/projects"
+
 import manOnPc from "../svgs/working-with-laptop.svg";
 import "../styles/project.css"
 import "../styles/animations.css"
@@ -17,13 +19,15 @@ const Projects = ({ currentPage, handlePageChange }) => {
           <h3>Prime</h3>
           <div className="project-primary">
             
+            {/* POP Umai Project  */}
+
             <div className="project-prime-card reveal">
               <div className="project-prime-card-left">
-                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project" className="project-prime-thumbnail"/>
+                <img src={POPUmai} alt="project" className="project-prime-thumbnail"/>
               </div>
 
               <div className="project-prime-card-right">
-                <div className="project-prime-title">Project Title</div>
+                <div className="project-prime-title">POP Umai - <span className="project-prime-title-sub">Freelance</span></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sit totam incidunt ipsam, iusto, aperiam facilis officiis pariatur fugiat eligendi enim architecto aliquid vitae accusamus dolor voluptatibus. Reprehenderit, error eius.</p>
                 <div className="project-prime-tech-title">
                   Technologies and Tools
@@ -33,10 +37,13 @@ const Projects = ({ currentPage, handlePageChange }) => {
                   <img className="tech-icon" src="./images/css-3.png" alt="" />
                 </div>
                 <div className="project-prime-btns">
-
+                  <a href="https://pop-umai.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                  <a href="https://github.com/PreDevz/POP-Umai" target="blank" className="project-prime-btn github-btn">GITHUB</a>
                 </div>
               </div>
             </div>
+
+            {/* Tech Blog Project  */}
 
             <div className="project-prime-card reverse reveal">
               <div className="project-prime-card-left">
@@ -53,9 +60,11 @@ const Projects = ({ currentPage, handlePageChange }) => {
               </div>
             </div>
 
+            {/* Platello Project  */}
+
             <div className="project-prime-card reveal">
               <div className="project-prime-card-left">
-                <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="project" className="project-prime-thumbnail"/>
+                <img src={ Platello } alt="project" className="project-prime-thumbnail"/>
               </div>
 
               <div className="project-prime-card-right">
