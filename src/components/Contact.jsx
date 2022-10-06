@@ -9,15 +9,27 @@ const Contact = () => {
   const [formStatus, setFormStatus] = React.useState('SEND')
   const onSubmit = (e) => {
     e.preventDefault()
-    setFormStatus('Sent!')
+
     const { formName, formEmail, formMessage } = e.target.elements
-
+    
+    // Check if name is empty 
     if (formName.value === "") {
-
-      swal("Hello world!");
+      swal("Please add your name!");
+      return;
     }
-
-
+    
+    // check if it's only one character 
+    if (formName.value.length <= 1) {
+      swal("Name isn't valid!");
+      return;
+    }
+    
+    // Check if email is empty 
+    if (formEmail.value === "") {
+      swal("Please add your email!");
+      return;
+    }
+    
     let conFom = {
       name: formName.value,
       email: formEmail.value,
@@ -25,6 +37,41 @@ const Contact = () => {
     }
 
     console.log(conFom)
+
+    setFormStatus('Sending...')
+
+    swal({
+      title: "Thank You!",
+      text: "I will get back to you asap!",
+      icon: "success",
+      button: false
+    });
+
+    borderGlow()
+
+    setTimeout(() => {
+
+      // send confirmation 
+      setFormStatus('SEND')
+      swal.close()
+      
+      // reset form 
+      formName.value = ""
+      formEmail.value = ""
+      formMessage.value = ""
+
+    }, 2000)
+
+  }
+
+  function borderGlow() {
+
+    document.querySelector(".cform").classList.add("border-glow") 
+    
+    setTimeout(() => {
+      document.querySelector(".cform").classList.remove("border-glow") 
+    }, 7800)
+
   }
 
   return (
