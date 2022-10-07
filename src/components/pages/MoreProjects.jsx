@@ -1,7 +1,7 @@
 import React from 'react'
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog } from "../../gifs/projects"
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
@@ -211,6 +211,90 @@ const MoreProjects = () => {
               <div className="one-project-btns">
                 <a href="https://tdgnate.github.io/Quiz-Code/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
                 <a href="https://github.com/TDGNate/Quiz-Code" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              </div>
+            </div>
+          </div>
+
+          {/* N8 Tech Blog */}
+
+          <div className="one-project">
+            <img src={TechBlog} alt="Tech blog" className="one-project-img" />
+            <div className="one-project-bottom">
+              <h3 className="one-project-title">N8 Tech Blog</h3>
+              <p className="one-project-text">
+              Full-stack CMS-style blog site where developers can create posts and add comments on others. They can also view all their posts and comments and have access to update/delete their posts/comments from their dashboard.
+              </p>
+                <h4>Stack</h4>
+              <div className="one-project-techs">
+
+                {/* Node */}
+                <div className="one-project-tech">
+                  <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
+                    <img src={Node} alt="Node icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* Express */}
+                <div className="one-project-tech">
+                  <a href="https://expressjs.com/" target="blank" className="skill-anchor">
+                    <img src={Express} alt="Express icon" className="skill-img invert" />
+                    </a>
+                </div>
+
+                {/* Handlebars */}
+                <div className="one-project-tech">
+                  <a href="https://handlebarsjs.com/" target="blank" className="skill-anchor">
+                    <img src={Handlebars} alt="Handlebars icon" className="skill-img invert" />
+                    </a>
+                </div>
+                
+                {/* MySQL */}
+                <div className="one-project-tech">
+                  <a href="https://www.mysql.com/" target="blank" className="skill-anchor">
+                    <img src={MySQL} alt="MySQL icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* Sequelize */}
+                <div className="one-project-tech">
+                  <a href="https://sequelize.org/" target="blank" className="skill-anchor">
+                    <img src={Sequelize} alt="Sequelize icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* Bootstrap */}
+                <div className="one-project-tech">
+                  <a href="https://getbootstrap.com/" target="blank" className="skill-anchor">
+                    <img src={Bootstrap} alt="Bootstrap icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* SweetAlert */}
+                <div className="one-project-tech">
+                  <a href="https://sweetalert.js.org/guides/" target="blank" className="skill-anchor">
+                    <img src={SweetAlert} alt="SweetAlert icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* FontAwesome */}
+                <div className="one-project-tech">
+                  <a href="https://fontawesome.com/" target="blank" className="skill-anchor">
+                    <img src={FontAwesome} alt="FontAwesome icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* Heroku */}
+                <div className="one-project-tech">
+                  <a href="https://www.heroku.com/" target="blank" className="skill-anchor">
+                    <img src={Heroku} alt="Heroku icon" className="skill-img" />
+                    </a>
+                </div>
+
+              </div>
+              <hr className="one-project-hr"/>
+              <div className="one-project-btns">
+                <a href="https://tdgnate.github.io/Weather-site/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Weather-site" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
