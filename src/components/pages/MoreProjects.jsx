@@ -1,7 +1,7 @@
 import React from 'react'
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos } from "../../gifs/projects"
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
@@ -386,6 +386,55 @@ const MoreProjects = () => {
               <div className="one-project-btns">
                 <a href="https://tdgnate.github.io/Nates-password-generation/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
                 <a href="https://github.com/TDGNate/Nates-password-generation" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              </div>
+            </div>
+          </div>
+
+          {/* My Todos */}
+
+          <div className="one-project">
+            <img src={MyTodos} alt="My Todos" className="one-project-img" />
+            <div className="one-project-bottom">
+              <h3 className="one-project-title">My Todos</h3>
+              <p className="one-project-text">
+              A website that stores your todos in local storage for your next visit! The user can remove certain Todos by clicking the trash bin, or clear all their todos at once by clicking the clear button on the bottom.
+              </p>
+                <h4>Stack</h4>
+              <div className="one-project-techs">
+
+                {/* HTML */}
+                <div className="one-project-tech">
+                  <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
+                    <img src={Html} alt="Html icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* CSS */}
+                <div className="one-project-tech">
+                  <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
+                    <img src={Css3} alt="Css3 icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* javascript */}
+                <div className="one-project-tech">
+                  <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
+                    <img src={Javascript} alt="javascript icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* FontAwesome */}
+                <div className="one-project-tech">
+                  <a href="https://fontawesome.com/" target="blank" className="skill-anchor">
+                    <img src={FontAwesome} alt="FontAwesome icon" className="skill-img" />
+                    </a>
+                </div>
+
+              </div>
+              <hr className="one-project-hr"/>
+              <div className="one-project-btns">
+                <a href="https://tdgnate.github.io/My-Todos/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/My-Todos" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>

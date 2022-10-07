@@ -15,3 +15,4 @@ export const NoteTaker = require('./note-taker.png');
 export const EComBackend = require('./e-commerce-backend.png');
 export const ReadMeGen = require('./readme-gen.png');
 export const WeatherApp = require('./weather-site.png');
+export const MyTodos = require('./my-todos.png');
