@@ -2,7 +2,7 @@ import React from 'react'
 
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp } from "../../gifs/projects"
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
@@ -212,6 +212,48 @@ const MoreProjects = () => {
               <div className="one-project-btns">
                 <a href="https://tdgnate.github.io/Quiz-Code/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
                 <a href="https://github.com/TDGNate/Quiz-Code" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              </div>
+            </div>
+          </div>
+
+          {/* Weather App */}
+
+          <div className="one-project">
+            <img src={WeatherApp} alt="Weather App Generator" className="one-project-img" />
+            <div className="one-project-bottom">
+              <h3 className="one-project-title">Weather App</h3>
+              <p className="one-project-text">
+              Website that lets you search up cities and returns their temperature, wind speed, humidity, and UV index today. And it also displays 5 more cards below showing the 5 day forecast. Their last 8 searches will be saved in their history, and are abled to be clicked to research their saved cities again.
+              </p>
+                <h4>Stack</h4>
+              <div className="one-project-techs">
+
+                {/* javascript */}
+                <div className="one-project-tech">
+                  <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
+                    <img src={Javascript} alt="javascript icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* NPM */}
+                <div className="one-project-tech">
+                  <a href="https://www.npmjs.com/package/inquirer" target="blank" className="skill-anchor">
+                    <img src={NPM} alt="NPM icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* Node */}
+                <div className="one-project-tech">
+                  <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
+                    <img src={Node} alt="Node icon" className="skill-img" />
+                    </a>
+                </div>
+
+              </div>
+              <hr className="one-project-hr"/>
+              <div className="one-project-btns">
+                <a href="https://tdgnate.github.io/Weather-site/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Weather-site" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
