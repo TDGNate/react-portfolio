@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from "react";
+
+import "../styles/hamburger.css";
 import "../styles/navbar.css";
 
 const Navbar = ({ currentPage, handlePageChange }) => {
   
+  const [isActive, setActive] = useState("false");
+
+    const handleToggle = () => {
+    setActive(!isActive);
+  };
+
   return (
     <nav className="navbar-container">
       <div className="container">
         <a href="#hero" className="logo" onClick={() => handlePageChange('Home')}>Nate</a>
-        <ul className="navbar-ul">
+        <ul className={`navbar-ul ${isActive ? "" : "active"}`}>
 
           <li className={currentPage === "MoreProjects" ? "navbar-item nav-active-link" : "navbar-item"}>
             <a href="#projects"
@@ -25,6 +33,14 @@ const Navbar = ({ currentPage, handlePageChange }) => {
           </li>
           
         </ul>
+
+        {/* Hamburger  */}
+        <div className={`hamburger ${isActive ? "" : "active"}`} onClick={handleToggle}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+
       </div>
     </nav>
   )

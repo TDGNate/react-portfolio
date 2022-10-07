@@ -1,0 +1,80 @@
+/* Navbar CSS */
+
+li {
+	list-style: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--light-clr);
+}
+
+@media (max-width: 768px) {
+	.hamburger {
+		display: block;
+	}
+
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.navbar-ul {
+		position: fixed;
+		right: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.849);
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.navbar-item {
+		margin: 1rem 0;
+	}
+
+	.navbar-ul.active {
+		right: 0;
+		padding-bottom: 5000vh;
+		margin-top: -1px;
+	}
+
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #010101 15%, transparent);
+    z-index: 10;
+  }
+}
