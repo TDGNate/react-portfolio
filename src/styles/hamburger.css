@@ -31,7 +31,7 @@ a {
 	background-color: var(--light-clr);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 830px) {
 	.hamburger {
 		display: block;
 	}
@@ -70,11 +70,11 @@ a {
 		margin-top: -1px;
 	}
 
-  .navbar-container {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(to bottom, #010101 15%, transparent);
-    z-index: 10;
-  }
+	.navbar-container {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background: linear-gradient(to bottom, #010101 15%, transparent);
+		z-index: 10;
+	}
 }

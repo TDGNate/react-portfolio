@@ -34,14 +34,14 @@
 	font-weight: bold;
 	margin: auto 0;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	padding: 0;
 }
 
 .navbar-item a {
 	color: white;
-	margin: 0 1rem;
+	margin: 0;
 	font-size: 1.2rem;
 	border-bottom: 1px solid transparent;
 }
