@@ -78,6 +78,26 @@
 	margin: 0 auto;
 }
 
+/* Project Stack  */
+
+.one-project-techs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.one-project-tech {
+	filter: grayscale(1);
+	transition: all 250ms ease;
+}
+
+.one-project-tech:hover {
+	filter: grayscale(0);
+	cursor: pointer;
+}
+
 /* Project Buttons  */
 
 .one-project-btns {
