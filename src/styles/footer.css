@@ -5,7 +5,12 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 30vh;
+	min-height: 35vh;
+	position: relative;
+}
+
+.footer-section .container {
+	z-index: 2;
 }
 
 .footer-links-container {
@@ -50,4 +55,16 @@
 
 .footer-ul li a:hover {
 	color: var(--light-clr);
+}
+
+/* Reveal the background for the footer  */
+
+.footer-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-color: rgba(0, 25, 124, 0.205);
 }

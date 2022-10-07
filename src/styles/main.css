@@ -91,17 +91,17 @@ section {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 9.5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: rgb(149, 186, 255);
+	background: rgb(70, 119, 255);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: rgb(0, 94, 255);
+	background: rgb(0, 61, 184);
 }
 
 /* Handle on hover */

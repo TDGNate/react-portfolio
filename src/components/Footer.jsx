@@ -4,6 +4,9 @@ import "../styles/footer.css"
 const Footer = () => {
   return (
     <section className="footer-section">
+
+      <div className="footer-layer reveal"></div>
+
       <div className="container">
 
         <div className="footer-links-container">
@@ -76,16 +79,16 @@ const Footer = () => {
             </h3>
           <ul className="footer-ul">
             <li>
-              <a href="#about-me" className="logo" target="blank">React</a>
+              <a href="https://reactjs.org/" target="blank">React</a>
             </li>
             <li>
-              <a href="#about-me" className="logo" target="blank">Bootstrap</a>
+              <a href="https://getbootstrap.com/" target="blank">Bootstrap</a>
             </li>
             <li>
-              <a href="#about-me" className="logo" target="blank">SweetAlert</a>
+              <a href="https://sweetalert.js.org/" target="blank">SweetAlert</a>
             </li>
             <li>
-              <a href="#about-me" className="logo" target="blank">Git/Github</a>
+              <a href="https://github.com/" target="blank">Git/Github</a>
             </li>
           </ul>
         </div>
