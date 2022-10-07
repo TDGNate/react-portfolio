@@ -2,7 +2,7 @@ import React from 'react'
 
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend } from "../../gifs/projects"
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API } from "../../imgs/skills"
@@ -112,8 +112,6 @@ const MoreProjects = () => {
             </div>
           </div>
 
-
-        
           {/* Note Taker */}
 
           <div className="one-project">
@@ -158,6 +156,62 @@ const MoreProjects = () => {
                   <div className="one-project-tech">
                     <a href="https://expressjs.com/" target="blank" className="skill-anchor">
                       <img src={Express} alt="Express icon" className="skill-img invert" />
+                      </a>
+                 </div>
+
+                  </div>
+              <hr className="one-project-hr"/>
+              <div className="one-project-btns">
+                <a href="https://mighty-ridge-88200.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Note-Taker" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              </div>
+            </div>
+          </div>
+
+          {/* E-Commerce Backend */}
+
+          <div className="one-project">
+            <img src={EComBackend} alt="E-Commerce Backend Taker" className="one-project-img" />
+            <div className="one-project-bottom">
+              <h3 className="one-project-title">E-Commerce Backend</h3>
+              <p className="one-project-text">
+                A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database.
+              </p>
+                <h4>Stack</h4>
+                <div className="one-project-techs">
+
+                  {/* Node */}
+                  <div className="one-project-tech">
+                    <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
+                      <img src={Node} alt="Node icon" className="skill-img" />
+                      </a>
+                 </div>
+
+                  {/* Express */}
+                  <div className="one-project-tech">
+                    <a href="https://expressjs.com/" target="blank" className="skill-anchor">
+                      <img src={Express} alt="Express icon" className="skill-img invert" />
+                      </a>
+                 </div>
+
+                  {/* API */}
+                  <div className="one-project-tech">
+                    <a href="https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm" target="blank" className="skill-anchor">
+                      <img src={API} alt="API icon" className="skill-img" />
+                      </a>
+                 </div>
+
+                  {/* MySQL */}
+                  <div className="one-project-tech">
+                    <a href="https://www.mysql.com/" target="blank" className="skill-anchor">
+                      <img src={MySQL} alt="MySQL icon" className="skill-img" />
+                      </a>
+                 </div>
+
+                  {/* Sequelize */}
+                  <div className="one-project-tech">
+                    <a href="https://sequelize.org/" target="blank" className="skill-anchor">
+                      <img src={Sequelize} alt="Sequelize icon" className="skill-img" />
                       </a>
                  </div>
 
