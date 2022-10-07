@@ -133,3 +133,53 @@
 	justify-content: center;
 	align-items: center;
 }
+
+@media screen and (max-width: 830px) {
+	.more-projects-page h1 {
+		text-align: center;
+	}
+
+	.more-projects-project-container {
+		flex-direction: column;
+		padding: 1.1rem;
+	}
+
+	.one-project {
+		width: 100%;
+		min-width: auto;
+		max-width: auto;
+		min-height: auto;
+		max-height: none;
+		height: auto;
+		margin: 0.8rem auto;
+	}
+
+	.one-project-img {
+		width: 100%;
+	}
+
+	.one-project-bottom {
+		padding: 0.5rem;
+		width: 100%;
+	}
+
+	.one-project-title {
+		padding-bottom: 0.3rem;
+		font-size: 1.2rem !important;
+	}
+
+	.one-project-text {
+		text-align: center;
+		font-size: 0.95rem !important;
+		margin-bottom: 0.2rem;
+	}
+
+	.one-project h4 {
+		font-size: 1.15rem;
+	}
+
+	.one-project-tech .skill-anchor img {
+		width: 27.5px;
+		margin: 0.3rem;
+	}
+}

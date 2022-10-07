@@ -209,8 +209,7 @@ const MoreProjects = () => {
               </div>
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
-                <a href="https://tdgnate.github.io/Quiz-Code/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Quiz-Code" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                <a href="https://github.com/TDGNate/Readme-Generator" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
@@ -580,8 +579,8 @@ const MoreProjects = () => {
                   </div>
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
-                <a href="https://tdgnate.github.io/Calender-App/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Calender-App" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                <a href="https://tdgnate.github.io/Rock-Paper-Scissors/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Rock-Paper-Scissors" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
