@@ -1,6 +1,7 @@
 /* More Projects Page Styles  */
 
 .more-projects-page {
+	padding: 1rem;
 	background-color: black;
 	min-height: 100vh;
 }
@@ -24,6 +25,7 @@
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 1rem;
+	margin: 2rem 0;
 }
 
 .one-project {
@@ -63,6 +65,11 @@
 .one-project h4 {
 	color: var(--purp-clr);
 	text-align: center;
+}
+
+.one-project-tech .skill-anchor img {
+	width: 32px;
+	margin: 0.35rem;
 }
 
 .one-project-hr {
