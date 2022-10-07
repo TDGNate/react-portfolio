@@ -2,7 +2,7 @@ import React from 'react'
 
 
 // images for projects
-import { QuizCode, teamGenerator } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker } from "../../gifs/projects"
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API } from "../../imgs/skills"
@@ -67,7 +67,7 @@ const MoreProjects = () => {
           {/* Team Profile Generator */}
 
           <div className="one-project">
-            <img src={teamGenerator} alt="" className="one-project-img" />
+            <img src={TeamGenerator} alt="" className="one-project-img" />
             <div className="one-project-bottom">
               <h3 className="one-project-title">Team Profile Generator</h3>
               <p className="one-project-text">
@@ -114,27 +114,55 @@ const MoreProjects = () => {
           </div>
 
 
+        
+          {/* Note Taker */}
+
           <div className="one-project">
-            <img src="https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q=" alt="" className="one-project-img" />
+            <img src={NoteTaker} alt="Note Taker" className="one-project-img" />
             <div className="one-project-bottom">
-              <h3 className="one-project-title">hello</h3>
+              <h3 className="one-project-title">Note Taker</h3>
               <p className="one-project-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eveniet nostrum illo est, porro dolore ipsa. Officiis rerum voluptatem ratione ea. Vel ipsam velit quis quod! Recusandae nam excepturi velit!
+                App that allows users to store their notes with a title and paragraph in a json file. Deployed on Heroku and powered by Express for the backend.
               </p>
                 <h4>Stack</h4>
-              <div className="one-project-techs">
-                <div className="one-project-tech">
+                <div className="one-project-techs">
 
-                <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
-                  <img src={Javascript} alt="javascript icon" className="skill-img" />
-                  </a>
-                  
-                  <a href="https://jquery.com/" className="skill-anchor" target="blank">
-                  <img src={jQuery} alt="javascript icon" className="skill-img" />
-                   </a>
+                  {/* HTML */}
+                  <div className="one-project-tech">
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
+                      <img src={Html} alt="Html icon" className="skill-img" />
+                      </a>
+                  </div>
 
-                </div>
-              </div>
+                  {/* CSS */}
+                  <div className="one-project-tech">
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
+                      <img src={Css3} alt="Css3 icon" className="skill-img" />
+                      </a>
+                  </div>
+                
+                  {/* javascript */}
+                  <div className="one-project-tech">
+                    <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
+                    <img src={Javascript} alt="javascript icon" className="skill-img" />
+                    </a>
+                  </div>
+
+                  {/* Node */}
+                  <div className="one-project-tech">
+                    <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
+                      <img src={Node} alt="Node icon" className="skill-img" />
+                      </a>
+                 </div>
+
+                  {/* Express */}
+                  <div className="one-project-tech">
+                    <a href="https://expressjs.com/" target="blank" className="skill-anchor">
+                      <img src={Express} alt="Express icon" className="skill-img invert" />
+                      </a>
+                 </div>
+
+                  </div>
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
                 <a href="#/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
@@ -142,8 +170,6 @@ const MoreProjects = () => {
               </div>
             </div>
           </div>
-
-
           
 
         </div>
