@@ -16,3 +16,4 @@ export const EComBackend = require('./e-commerce-backend.png');
 export const ReadMeGen = require('./readme-gen.png');
 export const WeatherApp = require('./weather-site.png');
 export const MyTodos = require('./my-todos.png');
+export const CalenderApp = require('./my-calender-app.png');

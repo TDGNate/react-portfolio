@@ -1,7 +1,7 @@
 import React from 'react'
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp } from "../../gifs/projects"
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
@@ -491,6 +491,55 @@ const MoreProjects = () => {
               <div className="one-project-btns">
                 <a href="https://mighty-ridge-88200.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
                 <a href="https://github.com/TDGNate/Note-Taker" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              </div>
+            </div>
+          </div>
+
+          {/* Calender App */}
+
+          <div className="one-project">
+            <img src={CalenderApp} alt="Note Taker" className="one-project-img" />
+            <div className="one-project-bottom">
+              <h3 className="one-project-title">Calender App</h3>
+              <p className="one-project-text">
+              A simple calendar app for scheduling your work day! It saves messages in each block event to localstorage. And depending on the time of day, each block will be color coordinated to show if it's in the future, past, or present.
+              </p>
+                <h4>Stack</h4>
+                <div className="one-project-techs">
+
+                  {/* HTML */}
+                  <div className="one-project-tech">
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
+                      <img src={Html} alt="Html icon" className="skill-img" />
+                      </a>
+                  </div>
+
+                  {/* CSS */}
+                  <div className="one-project-tech">
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
+                      <img src={Css3} alt="Css3 icon" className="skill-img" />
+                      </a>
+                  </div>
+                
+                  {/* javascript */}
+                  <div className="one-project-tech">
+                    <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
+                    <img src={Javascript} alt="javascript icon" className="skill-img" />
+                    </a>
+                </div>
+                
+                  {/* jQuery */}
+                  <div className="one-project-tech">
+                    <a href="https://jquery.com/" target="blank" className="skill-anchor">
+                    <img src={jQuery} alt="jQuery icon" className="skill-img" />
+                    </a>
+                  </div>
+
+                  </div>
+              <hr className="one-project-hr"/>
+              <div className="one-project-btns">
+                <a href="https://tdgnate.github.io/Calender-App/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Calender-App" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
