@@ -2,7 +2,7 @@ import React from 'react'
 
 import swal from 'sweetalert';
 import "../styles/sweetAlert.css"
-import "../styles/contact.css"
+import "../styles/contact.css";
 
 const Contact = () => {
   

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 // Component Pages
 import Navbar from "./Navbar"
 import Home from "./pages/Home";
+import Footer from "./Footer";
 import MoreProjects from "./pages/MoreProjects";
 
 const PortfolioContainer = () => {
@@ -26,6 +27,8 @@ const PortfolioContainer = () => {
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
 
       {renderPage()}
+
+      <Footer />
     </>
   )
 }

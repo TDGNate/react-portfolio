@@ -149,7 +149,8 @@
 }
 
 .contact-icons i:hover {
-	color: var(--purp-clr-hover);
+	color: rgb(255, 255, 255);
+	filter: drop-shadow(0 0 0.75rem rgb(232, 105, 255));
 }
 
 @media screen and (max-width: 830px) {
@@ -176,6 +177,8 @@
 	.contact-wrapper-right {
 		width: 100%;
 	}
+
+	/* Form  */
 
 	.cform-label {
 		width: 100%;

@@ -96,12 +96,12 @@ section {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: var(--blue-clr-hover);
+	background: rgb(149, 186, 255);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: var(--blue-clr);
+	background: rgb(0, 94, 255);
 }
 
 /* Handle on hover */
