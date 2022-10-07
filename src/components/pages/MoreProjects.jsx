@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 // images for projects
 import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp } from "../../gifs/projects"
 
@@ -223,10 +222,24 @@ const MoreProjects = () => {
             <div className="one-project-bottom">
               <h3 className="one-project-title">Weather App</h3>
               <p className="one-project-text">
-              Website that lets you search up cities and returns their temperature, wind speed, humidity, and UV index today. And it also displays 5 more cards below showing the 5 day forecast. Their last 8 searches will be saved in their history, and are abled to be clicked to research their saved cities again.
+              Website that lets you search up cities and returns their temperature, wind speed, humidity, and UV index. And it also displays 5 more cards showing the 5 day forecast. Their last 8 searches will be saved in their history, and are clickable to be research again.
               </p>
                 <h4>Stack</h4>
               <div className="one-project-techs">
+
+                {/* HTML */}
+                <div className="one-project-tech">
+                  <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
+                    <img src={Html} alt="Html icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* CSS */}
+                <div className="one-project-tech">
+                  <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
+                    <img src={Css3} alt="Css3 icon" className="skill-img" />
+                    </a>
+                </div>
 
                 {/* javascript */}
                 <div className="one-project-tech">
@@ -234,18 +247,11 @@ const MoreProjects = () => {
                     <img src={Javascript} alt="javascript icon" className="skill-img" />
                     </a>
                 </div>
-
-                {/* NPM */}
+                
+                {/* API */}
                 <div className="one-project-tech">
-                  <a href="https://www.npmjs.com/package/inquirer" target="blank" className="skill-anchor">
-                    <img src={NPM} alt="NPM icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* Node */}
-                <div className="one-project-tech">
-                  <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
-                    <img src={Node} alt="Node icon" className="skill-img" />
+                  <a href="https://en.wikipedia.org/wiki/API" target="blank" className="skill-anchor">
+                    <img src={API} alt="API icon" className="skill-img" />
                     </a>
                 </div>
 
