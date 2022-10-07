@@ -22,44 +22,57 @@ const MoreProjects = () => {
 
         <div className="more-projects-project-container">
 
-          {/* Quiz Game  */}
+            {/* E-Commerce Backend */}
 
-          <div className="one-project">
-            <img src={QuizCode} alt="code quiz" className="one-project-img" />
+            <div className="one-project">
+            <img src={EComBackend} alt="E-Commerce Backend Taker" className="one-project-img" />
             <div className="one-project-bottom">
-              <h3 className="one-project-title">Quiz Code</h3>
+              <h3 className="one-project-title">E-Commerce Backend</h3>
               <p className="one-project-text">
-               A quick coding quiz to test their frontend knowledge! A timer is set and score is being tracked. When the game has ended, users can save their score by adding their initials and clicking the save button. Their score will appear on the local leaderboard.
+                A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database.
               </p>
                 <h4>Stack</h4>
-              <div className="one-project-techs">
+                <div className="one-project-techs">
 
-                {/* HTML */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
-                    <img src={Html} alt="Html icon" className="skill-img" />
-                    </a>
-                </div>
+                  {/* Node */}
+                  <div className="one-project-tech">
+                    <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
+                      <img src={Node} alt="Node icon" className="skill-img" />
+                      </a>
+                 </div>
 
-                {/* CSS */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
-                    <img src={Css3} alt="Css3 icon" className="skill-img" />
-                    </a>
-                </div>
+                  {/* Express */}
+                  <div className="one-project-tech">
+                    <a href="https://expressjs.com/" target="blank" className="skill-anchor">
+                      <img src={Express} alt="Express icon" className="skill-img invert" />
+                      </a>
+                 </div>
 
-                {/* javascript */}
-                <div className="one-project-tech">
-                  <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
-                    <img src={Javascript} alt="javascript icon" className="skill-img" />
-                    </a>
-                </div>
+                  {/* API */}
+                  <div className="one-project-tech">
+                    <a href="https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm" target="blank" className="skill-anchor">
+                      <img src={API} alt="API icon" className="skill-img" />
+                      </a>
+                 </div>
 
-              </div>
+                  {/* MySQL */}
+                  <div className="one-project-tech">
+                    <a href="https://www.mysql.com/" target="blank" className="skill-anchor">
+                      <img src={MySQL} alt="MySQL icon" className="skill-img" />
+                      </a>
+                 </div>
+
+                  {/* Sequelize */}
+                  <div className="one-project-tech">
+                    <a href="https://sequelize.org/" target="blank" className="skill-anchor">
+                      <img src={Sequelize} alt="Sequelize icon" className="skill-img" />
+                      </a>
+                 </div>
+
+               </div>
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
-                <a href="https://tdgnate.github.io/Quiz-Code/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Quiz-Code" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                <a href="https://github.com/TDGNate/E-Commerce-Backend" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
@@ -108,6 +121,48 @@ const MoreProjects = () => {
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
                 <a href="https://github.com/TDGNate/Team-profile-generator" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              </div>
+            </div>
+          </div>
+
+          {/* Quiz Game  */}
+
+          <div className="one-project">
+            <img src={QuizCode} alt="code quiz" className="one-project-img" />
+            <div className="one-project-bottom">
+              <h3 className="one-project-title">Quiz Code</h3>
+              <p className="one-project-text">
+               A quick coding quiz to test their frontend knowledge! A timer is set and score is being tracked. When the game has ended, users can save their score by adding their initials and clicking the save button. Their score will appear on the local leaderboard.
+              </p>
+                <h4>Stack</h4>
+              <div className="one-project-techs">
+
+                {/* HTML */}
+                <div className="one-project-tech">
+                  <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
+                    <img src={Html} alt="Html icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* CSS */}
+                <div className="one-project-tech">
+                  <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
+                    <img src={Css3} alt="Css3 icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* javascript */}
+                <div className="one-project-tech">
+                  <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
+                    <img src={Javascript} alt="javascript icon" className="skill-img" />
+                    </a>
+                </div>
+
+              </div>
+              <hr className="one-project-hr"/>
+              <div className="one-project-btns">
+                <a href="https://tdgnate.github.io/Quiz-Code/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Quiz-Code" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
@@ -164,61 +219,6 @@ const MoreProjects = () => {
               <div className="one-project-btns">
                 <a href="https://mighty-ridge-88200.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
                 <a href="https://github.com/TDGNate/Note-Taker" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
-
-          {/* E-Commerce Backend */}
-
-          <div className="one-project">
-            <img src={EComBackend} alt="E-Commerce Backend Taker" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">E-Commerce Backend</h3>
-              <p className="one-project-text">
-                A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database.
-              </p>
-                <h4>Stack</h4>
-                <div className="one-project-techs">
-
-                  {/* Node */}
-                  <div className="one-project-tech">
-                    <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
-                      <img src={Node} alt="Node icon" className="skill-img" />
-                      </a>
-                 </div>
-
-                  {/* Express */}
-                  <div className="one-project-tech">
-                    <a href="https://expressjs.com/" target="blank" className="skill-anchor">
-                      <img src={Express} alt="Express icon" className="skill-img invert" />
-                      </a>
-                 </div>
-
-                  {/* API */}
-                  <div className="one-project-tech">
-                    <a href="https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm" target="blank" className="skill-anchor">
-                      <img src={API} alt="API icon" className="skill-img" />
-                      </a>
-                 </div>
-
-                  {/* MySQL */}
-                  <div className="one-project-tech">
-                    <a href="https://www.mysql.com/" target="blank" className="skill-anchor">
-                      <img src={MySQL} alt="MySQL icon" className="skill-img" />
-                      </a>
-                 </div>
-
-                  {/* Sequelize */}
-                  <div className="one-project-tech">
-                    <a href="https://sequelize.org/" target="blank" className="skill-anchor">
-                      <img src={Sequelize} alt="Sequelize icon" className="skill-img" />
-                      </a>
-                 </div>
-
-               </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://github.com/TDGNate/E-Commerce-Backend" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
