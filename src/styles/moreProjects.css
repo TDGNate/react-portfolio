@@ -27,11 +27,13 @@
 }
 
 .one-project {
+	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	background-color: black;
 	margin: 0.5rem;
 	width: 40%;
+	overflow: hidden;
 }
 
 .one-project-img {
@@ -61,6 +63,12 @@
 .one-project h4 {
 	color: var(--purp-clr);
 	text-align: center;
+}
+
+.one-project-hr {
+	color: rgb(255, 255, 255);
+	width: 80%;
+	margin: 0 auto;
 }
 
 /* Project Buttons  */

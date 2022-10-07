@@ -61,7 +61,7 @@ _copy the one you need :)_
 ### jQuery
 
 ```html
-{/* javascript */}
+{/* jQuery */}
 <div className="skill">
 	<a href="https://jquery.com/" className="skill-anchor" target="blank">
 		<img src="{jQuery}" alt="javascript icon" className="skill-img" />
@@ -73,7 +73,7 @@ _copy the one you need :)_
 ### Express
 
 ```html
-{/* javascript */}
+{/* Express */}
 <div className="skill">
 	<a href="https://expressjs.com/" className="skill-anchor" target="blank">
 		<img src="{Express}" alt="express icon" className="skill-img invert"
