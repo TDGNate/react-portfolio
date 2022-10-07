@@ -16,6 +16,7 @@
 .footer-links-container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: flex-start;
 }
@@ -67,4 +68,35 @@
 	height: 100%;
 	z-index: 0;
 	background-color: rgba(0, 25, 124, 0.205);
+}
+
+/* Media Query (Mobile Size)  */
+
+@media screen and (max-width: 830px) {
+	.footer-section .container {
+		padding: 0;
+	}
+
+	.footer-link-section {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		padding: 0.5rem 0.8rem;
+	}
+
+	.footer-link-section h3,
+	.footer-logo {
+		font-size: 1.25rem !important;
+		margin: 0 0 0.8rem 0 !important;
+	}
+
+	.footer-ul {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-ul li a {
+		font-size: 1rem;
+	}
 }
