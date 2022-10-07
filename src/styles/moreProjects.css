@@ -48,7 +48,7 @@
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(23, 0, 44, 0.628);
+	background-color: rgba(29, 0, 54, 0.565);
 	margin: 0.8rem;
 	width: 30%;
 	min-width: 360px;
@@ -61,7 +61,7 @@
 
 .one-project:hover {
 	transform: translate(-2.8px, -3.8px);
-	background-color: rgba(40, 0, 78, 0.628);
+	background-color: rgba(40, 0, 78, 0.579);
 }
 
 .one-project-img {
