@@ -12,3 +12,4 @@ export const QuizCode = require('./quiz.gif');
 export const TeamGenerator = require('./teamGenerator.png');
 export const NoteTaker = require('./note-taker.png');
 export const EComBackend = require('./e-commerce-backend.png');
+export const ReadMeGen = require('./readme-gen.png');
