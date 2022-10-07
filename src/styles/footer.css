@@ -12,5 +12,42 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: flex-start;
+}
+
+.footer-link-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 1rem;
+}
+
+.footer-link-section h3,
+.footer-logo {
+	font-size: 1.65rem !important;
+	font-weight: bold;
+}
+
+.footer-logo:hover {
+	color: var(--blue-clr);
+}
+
+.footer-ul {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.2rem;
+}
+
+.footer-ul li a {
+	font-size: 1.1rem;
+	font-weight: normal;
+	color: var(--light-sub-clr);
+}
+
+.footer-ul li a:hover {
+	color: var(--light-clr);
 }

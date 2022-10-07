@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Just myself  */}
         <div className="footer-link-section">
           <h3>
-            <a href="#about-me" className="logo">Nate</a>
+            <a href="#about-me" className="footer-logo">Nate</a>
           </h3>
             
           <ul className="footer-ul">
@@ -37,13 +37,13 @@ const Footer = () => {
               <a href="#about-me" className="logo">About</a>
             </li>
             <li>
-              <a href="#about-me" className="logo">Projects</a>
+              <a href="#projects" className="logo">Projects</a>
             </li>
             <li>
-              <a href="#about-me" className="logo">Skills</a>
+              <a href="#skills" className="logo">Skills</a>
             </li>
             <li>
-              <a href="#about-me" className="logo">Contact</a>
+              <a href="#contact" className="logo">Contact</a>
             </li>
           </ul>
         </div>
