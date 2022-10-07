@@ -107,8 +107,7 @@ const MoreProjects = () => {
                   </div>
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
-                <a href="#/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="#/" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                <a href="https://github.com/TDGNate/Team-profile-generator" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
@@ -165,8 +164,8 @@ const MoreProjects = () => {
                   </div>
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
-                <a href="#/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="#/" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                <a href="https://mighty-ridge-88200.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Note-Taker" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>

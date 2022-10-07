@@ -211,7 +211,7 @@
 
 	.hero-sub-title {
 		color: var(--purp-clr);
-		font-size: 1.5rem;
+		font-size: 1.5rem !important;
 		font-weight: bold;
 	}
 
