@@ -1,27 +1,40 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.103e79df.css",
-    "main.js": "/react-portfolio/static/js/main.501ef53c.js",
+    "main.css": "/react-portfolio/static/css/main.78e1229b.css",
+    "main.js": "/react-portfolio/static/js/main.7b306055.js",
+    "static/media/waterfall.jpg": "/react-portfolio/static/media/waterfall.cca9c1ccd97b1959b2a4.jpg",
+    "static/media/quiz.gif": "/react-portfolio/static/media/quiz.e669f7dfc85145861f3c.gif",
     "static/media/platello.gif": "/react-portfolio/static/media/platello.271938012054b327c77f.gif",
     "static/media/pop.gif": "/react-portfolio/static/media/pop.40d7e5cba1a2851b440a.gif",
     "static/media/techblog.gif": "/react-portfolio/static/media/techblog.9613f51ff7adf4e90b7a.gif",
     "static/media/ailenbg.jpg": "/react-portfolio/static/media/ailenbg.f84293741b079b67e804.jpg",
     "static/media/Nate-six-flags.jpg": "/react-portfolio/static/media/Nate-six-flags.ac2607f7aeedb694490f.jpg",
+    "static/media/pass-gen.gif": "/react-portfolio/static/media/pass-gen.db6857d0ecff1fc3609c.gif",
+    "static/media/readme-gen.png": "/react-portfolio/static/media/readme-gen.352ec5a7bfdcd2fe5cc2.png",
     "static/media/mountains.jpg": "/react-portfolio/static/media/mountains.c418dac06412b88fc2d0.jpg",
+    "static/media/my-todos.png": "/react-portfolio/static/media/my-todos.9711471fbc92d0352ac2.png",
     "static/media/bootstrap-icons.woff?": "/react-portfolio/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/e-commerce-backend.png": "/react-portfolio/static/media/e-commerce-backend.16f061cbe15e016e87c6.png",
     "static/media/bootstrap-icons.woff2?": "/react-portfolio/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/weather-site.png": "/react-portfolio/static/media/weather-site.83d48c63558666d50f43.png",
+    "static/media/rps.png": "/react-portfolio/static/media/rps.18297ffb7f8da37c6abe.png",
+    "static/media/teamGenerator.png": "/react-portfolio/static/media/teamGenerator.8068a75e2075665b95c1.png",
+    "static/media/my-calender-app.png": "/react-portfolio/static/media/my-calender-app.845e2d86b9a282274f20.png",
     "static/media/insomnia.png": "/react-portfolio/static/media/insomnia.ce01d16f9e95615eacda.png",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.9018c0092c134e79b43e.png",
     "static/media/MySQLWorkbench.png": "/react-portfolio/static/media/MySQLWorkbench.34af583888c57241de5b.png",
     "static/media/working-with-laptop.svg": "/react-portfolio/static/media/working-with-laptop.1e11b79e6a83b0b28e9b7c4ed238d381.svg",
     "static/media/stacked-waves.svg": "/react-portfolio/static/media/stacked-waves.772e26e415b656e2c6f8.svg",
+    "static/media/footer.svg": "/react-portfolio/static/media/footer.24cd971370da073d1e96.svg",
+    "static/media/projects-page.svg": "/react-portfolio/static/media/projects-page.85e6ac04b653e02126ba.svg",
     "index.html": "/react-portfolio/index.html",
     "static/media/contact-bg.svg": "/react-portfolio/static/media/contact-bg.26325810d76920a74a26.svg",
     "static/media/wave-middle.svg": "/react-portfolio/static/media/wave-middle.caf89d6fa9f0a88039e5.svg",
-    "main.103e79df.css.map": "/react-portfolio/static/css/main.103e79df.css.map",
-    "main.501ef53c.js.map": "/react-portfolio/static/js/main.501ef53c.js.map"
+    "main.78e1229b.css.map": "/react-portfolio/static/css/main.78e1229b.css.map",
+    "main.7b306055.js.map": "/react-portfolio/static/js/main.7b306055.js.map"
   },
   "entrypoints": [
-    "static/css/main.103e79df.css",
-    "static/js/main.501ef53c.js"
+    "static/css/main.78e1229b.css",
+    "static/js/main.7b306055.js"
   ]
 }
