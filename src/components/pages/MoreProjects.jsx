@@ -5,7 +5,7 @@ import React from 'react'
 import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen } from "../../gifs/projects"
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API } from "../../imgs/skills"
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
 
 import "../../styles/moreProjects.css"
 
@@ -116,6 +116,13 @@ const MoreProjects = () => {
                       <img src={Bootstrap} alt="Bootstrap icon" className="skill-img" />
                       </a>
                   </div>
+                
+                  {/* NPM */}
+                  <div className="one-project-tech">
+                    <a href="https://www.npmjs.com/package/inquirer" target="blank" className="skill-anchor">
+                      <img src={NPM} alt="NPM icon" className="skill-img" />
+                   </a>
+                </div>
 
                   </div>
               <hr className="one-project-hr"/>
@@ -179,24 +186,24 @@ const MoreProjects = () => {
                 <h4>Stack</h4>
               <div className="one-project-techs">
 
-                {/* HTML */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
-                    <img src={Html} alt="Html icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* CSS */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
-                    <img src={Css3} alt="Css3 icon" className="skill-img" />
-                    </a>
-                </div>
-
                 {/* javascript */}
                 <div className="one-project-tech">
                   <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
                     <img src={Javascript} alt="javascript icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* NPM */}
+                <div className="one-project-tech">
+                  <a href="https://www.npmjs.com/package/inquirer" target="blank" className="skill-anchor">
+                    <img src={NPM} alt="NPM icon" className="skill-img" />
+                    </a>
+                </div>
+
+                {/* Node */}
+                <div className="one-project-tech">
+                  <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
+                    <img src={Node} alt="Node icon" className="skill-img" />
                     </a>
                 </div>
 
