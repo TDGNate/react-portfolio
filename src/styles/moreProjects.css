@@ -1,9 +1,24 @@
 /* More Projects Page Styles  */
 
 .more-projects-page {
+	background-image: url("../svgs/projects-page.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	padding: 1rem;
-	background-color: black;
 	min-height: 100vh;
+	position: relative;
+	z-index: 1;
+}
+
+.more-projects-filter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: -1;
 }
 
 .more-projects-empty-space {
@@ -18,7 +33,8 @@
 }
 
 .more-projects-project-container {
-	background-color: pink;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.455);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
