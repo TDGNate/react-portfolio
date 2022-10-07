@@ -25,15 +25,21 @@
 
 .project-primary {
 	width: 100%;
+	height: auto;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
-	margin-bottom: 2.5rem;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 4rem;
 }
 
 .project-prime-card {
 	max-width: auto;
-	min-height: 300px;
+	/* min-height: 300px;
+	max-height: 450px; */
+	/* height: 450px;  */
+	/* height: 100%;  */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -80,7 +86,7 @@
 }
 
 .project-prime-card-right {
-	padding: 1rem;
+	padding: 0 0.5rem;
 	width: 50%;
 	height: 100%;
 }
@@ -88,6 +94,8 @@
 .project-prime-thumbnail {
 	border-radius: 10px;
 	width: 100%;
+	min-height: 375px;
+	max-height: 400px;
 	height: 100%;
 	box-shadow: 4px 11px 30px black;
 }
@@ -155,6 +163,7 @@
 
 .project-more {
 	margin: 3rem 0;
+	padding: 2.5rem 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -230,7 +239,7 @@
 	}
 
 	.project-prime-card {
-		max-width: 80%;
+		max-width: 90%;
 		min-height: 200px;
 		flex-direction: column;
 		margin: 2.5rem 0;
@@ -243,7 +252,7 @@
 	}
 
 	.project-prime-title {
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		margin: 1rem auto;
 		color: var(--purp-clr);
 		border-bottom: 1px solid var(--light-sub-clr);
@@ -251,13 +260,13 @@
 	}
 
 	.project-prime-tech-title {
-		font-size: 1.35rem;
+		font-size: 1.4rem;
 	}
 
 	.project-prime-card p {
 		color: var(--light-sub-clr);
 		margin-bottom: 1rem;
-		font-size: 1.1rem;
+		font-size: 1.15rem;
 		text-align: center;
 	}
 

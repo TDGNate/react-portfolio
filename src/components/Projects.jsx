@@ -18,9 +18,9 @@ const Projects = ({ currentPage, handlePageChange }) => {
   return (
     <section id="projects" className="project-section" >
       <div className="container">
-        <h2>Projects</h2>
+        <h2>My Work</h2>
         <div className="project-content reveal">
-          <h3>Prime</h3>
+          <h3>Essential Projects</h3>
           <div className="project-primary">
             
             {/* POP Umai Project  */}

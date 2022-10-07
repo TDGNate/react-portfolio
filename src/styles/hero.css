@@ -10,7 +10,6 @@
 }
 
 .hero-bg {
-	/* background-image: url("../imgs/mountains.jpg"); */
 	position: absolute;
 	background-position: center;
 	background-size: cover;
@@ -69,7 +68,7 @@
 
 .hero-view-projects {
 	border: 2px solid var(--blue-clr) !important;
-	padding: 2px 5px;
+	padding: 4px 9px;
 	border-radius: 5px;
 	margin: 0 4px;
 	text-align: center;
@@ -78,8 +77,10 @@
 }
 
 .hero-view-projects:hover {
-	color: var(--blue-clr-hover);
-	border: 2px solid var(--blue-clr-hover) !important;
+	box-shadow: inset 0px 0px 10px rgb(89, 147, 255),
+		0px 0px 14px rgb(87, 140, 255);
+	color: var(--light-clr);
+	border: 2px solid rgb(169, 213, 255) !important;
 }
 
 /* Hire Me Button Styles  */
@@ -94,7 +95,7 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.3rem;
-	transition: all 400ms ease-out;
+	transition: all 200ms ease-out;
 }
 
 .hero-hire-me:hover {
