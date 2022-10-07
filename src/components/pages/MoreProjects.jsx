@@ -380,19 +380,12 @@ const MoreProjects = () => {
                     <img src={Javascript} alt="javascript icon" className="skill-img" />
                     </a>
                 </div>
-                
-                {/* API */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/API" target="blank" className="skill-anchor">
-                    <img src={API} alt="API icon" className="skill-img" />
-                    </a>
-                </div>
 
               </div>
               <hr className="one-project-hr"/>
               <div className="one-project-btns">
-                <a href="https://tdgnate.github.io/Weather-site/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Weather-site" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                <a href="https://tdgnate.github.io/Nates-password-generation/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Nates-password-generation" target="blank" className="project-prime-btn github-btn">GITHUB</a>
               </div>
             </div>
           </div>
