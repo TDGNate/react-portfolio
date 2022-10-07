@@ -86,7 +86,6 @@ const Contact = () => {
           <a href="mailto:email@example.com">itsnzte@gmail.com</a>
           
           <br />
-          Phone: <span>951-591-3493</span>
         </p>
 
         <div className="contact-wrapper">
