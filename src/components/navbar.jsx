@@ -12,7 +12,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
   };
 
   return (
-    <nav className="navbar-container">
+    <nav className={`navbar-container ${isActive ? "" : "active"}`}>
       <div className="container">
         <a href="#hero" className="logo" onClick={() => handlePageChange('Home')}>Nate</a>
         <ul className={`navbar-ul ${isActive ? "" : "active"}`}>

@@ -1,4 +1,4 @@
-/* Navbar CSS */
+/* Navbar hamburger CSS */
 
 li {
 	list-style: none;
@@ -54,7 +54,8 @@ a {
 		top: 70px;
 		gap: 0;
 		flex-direction: column;
-		background-color: rgba(0, 0, 0, 0.849);
+		background-color: rgba(0, 0, 0, 0.807);
+
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
@@ -70,11 +71,9 @@ a {
 		margin-top: -1px;
 	}
 
-	.navbar-container {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background: linear-gradient(to bottom, #010101 15%, transparent);
-		z-index: 10;
+	.navbar-container.active {
+		background-color: rgba(0, 0, 0, 0.807);
+		height: 100vh;
+		overflow: hidden;
 	}
 }
