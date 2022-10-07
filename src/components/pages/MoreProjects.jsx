@@ -1,7 +1,7 @@
 import React from 'react'
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame } from "../../gifs/projects"
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
@@ -534,6 +534,48 @@ const MoreProjects = () => {
                     <img src={jQuery} alt="jQuery icon" className="skill-img" />
                     </a>
                   </div>
+
+                  </div>
+              <hr className="one-project-hr"/>
+              <div className="one-project-btns">
+                <a href="https://tdgnate.github.io/Calender-App/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                <a href="https://github.com/TDGNate/Calender-App" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              </div>
+            </div>
+          </div>
+
+          {/* Rock Paper Scissors */}
+
+          <div className="one-project">
+            <img src={RpsGame} alt="Rock paper Scissors Game" className="one-project-img" />
+            <div className="one-project-bottom">
+              <h3 className="one-project-title">Rock Paper Scissors</h3>
+              <p className="one-project-text">
+              My first website game of rock paper scissors vs a bot. I don't think I have to explain how the game works, but each element is smoothly animated and styled. The background color changes based on if the user wins or losses.
+              </p>
+                <h4>Stack</h4>
+                <div className="one-project-techs">
+
+                  {/* HTML */}
+                  <div className="one-project-tech">
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
+                      <img src={Html} alt="Html icon" className="skill-img" />
+                      </a>
+                  </div>
+
+                  {/* CSS */}
+                  <div className="one-project-tech">
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
+                      <img src={Css3} alt="Css3 icon" className="skill-img" />
+                      </a>
+                  </div>
+                
+                  {/* javascript */}
+                  <div className="one-project-tech">
+                    <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
+                    <img src={Javascript} alt="javascript icon" className="skill-img" />
+                    </a>
+                </div>
 
                   </div>
               <hr className="one-project-hr"/>
