@@ -5,10 +5,17 @@ import "../styles/navbar.css";
 
 const Navbar = ({ currentPage, handlePageChange }) => {
   
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState("true");
 
-    const handleToggle = () => {
-    setActive(!isActive);
+  const handleToggle = () => {
+
+    handlePageChange('Home')
+
+    // if the screen size is mobile, then apply the active class 
+    if (window.innerWidth < 830) {
+      setActive(!isActive);
+    }
+
   };
 
   return (
@@ -19,24 +26,24 @@ const Navbar = ({ currentPage, handlePageChange }) => {
 
           <li className="navbar-item">
             <a href="#about-me"
-              onClick={() => handlePageChange('Home')}
+              onClick={handleToggle}
             >About Me</a>
           </li>
 
           <li className={currentPage === "MoreProjects" ? "navbar-item nav-active-link" : "navbar-item"}>
             <a href="#projects"
-             onClick={() => handlePageChange('Home')}>Projects</a>
+             onClick={handleToggle}>Projects</a>
           </li>
 
           <li className="navbar-item">
             <a href="#skills"
-              onClick={() => handlePageChange('Home')}
+              onClick={handleToggle}
             >Skills</a>
           </li>
 
           <li className="navbar-item">
             <a href="#contact"
-              onClick={() => handlePageChange('Home')}
+              onClick={handleToggle}
             >Contact</a>
           </li>
           
