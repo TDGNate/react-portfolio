@@ -7,17 +7,20 @@ const Navbar = ({ currentPage, handlePageChange }) => {
   
   const [isActive, setActive] = useState("true");
 
-  const handleToggle = () => {
+  const handleToggle = (e) => {
 
-    // if (currentPage === "MoreProjects") {
-    //   handlePageChange('MoreProjects') 
-    // } else {
-    //   handlePageChange('Home') 
-    // }
-    
-    // if the screen size is mobile, then apply the active class 
+        // if the screen size is mobile, then apply the active class 
     if (window.innerWidth < 830) {
+
       setActive(!isActive);
+
+      if (currentPage === "MoreProjects") {
+        if (e.currentTarget.classList.contains('hamburger')) {
+          return
+        }
+      }
+
+      handlePageChange('Home')
     }
 
   };
