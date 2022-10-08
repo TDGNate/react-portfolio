@@ -153,6 +153,28 @@
 	filter: drop-shadow(0 0 0.75rem rgb(232, 105, 255));
 }
 
+/* Contact Section Bottom  */
+
+.contact-bottom {
+	width: 100%;
+	/* background-color: pink; */
+	padding: 5.5rem 0 0 0;
+	text-align: center;
+	margin: 0;
+	margin-bottom: -2.5rem;
+}
+
+.contact-bottom i {
+	color: var(--blue-clr);
+	font-size: 2.5rem;
+	transition: all 500ms ease;
+}
+
+.contact-bottom i:hover {
+	cursor: pointer;
+	color: var(--blue-clr-hover);
+}
+
 /* Media Query (Mobile Size)  */
 
 @media screen and (max-width: 830px) {

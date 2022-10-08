@@ -48,7 +48,7 @@
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(0, 39, 193, 0.104);
+	background-color: rgba(0, 39, 193, 0.222);
 	margin: 0.8rem;
 	width: 30%;
 	min-width: 360px;
@@ -61,7 +61,7 @@
 
 .one-project:hover {
 	transform: translate(-2.8px, -3.8px);
-	background-color: rgba(0, 40, 198, 0.278);
+	background-color: rgba(0, 38, 189, 0.41);
 }
 
 .one-project-img {
@@ -137,6 +137,10 @@
 /* Media Query (Mobile Size)  */
 
 @media screen and (max-width: 830px) {
+	.more-projects-empty-space {
+		height: 15vh;
+	}
+
 	.more-projects-page h1 {
 		text-align: center;
 	}

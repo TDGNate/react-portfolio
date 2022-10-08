@@ -153,6 +153,11 @@ const Contact = () => {
           </div>
 
         </div>
+
+        <div className="contact-bottom">
+           <i class="bi bi-arrow-up"></i>
+        </div>
+
       </div>
     </section>
   )

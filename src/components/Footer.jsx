@@ -2,7 +2,18 @@ import React from 'react';
 
 import "../styles/footer.css";
 
-const Footer = () => {
+const Footer = ({ currentPage, handlePageChange }) => {
+
+  const footerSetSection = (e) => {
+    if (currentPage === "MoreProjects") {
+      if (e.currentTarget.classList.contains('hamburger')) {
+        return
+      }
+
+      handlePageChange('Home')
+    }
+  }
+
   return (
     <section className="footer-section">
 
@@ -15,7 +26,7 @@ const Footer = () => {
         {/* Just myself  */}
         <div className="footer-link-section">
           <h3>
-            <a href="#about-me" className="footer-logo">Nate</a>
+            <a href="#about-me" className="footer-logo" onClick={footerSetSection}>Nate</a>
           </h3>
             
           <ul className="footer-ul">
@@ -38,16 +49,16 @@ const Footer = () => {
           </h3>
           <ul className="footer-ul">
             <li>
-              <a href="#about-me" className="logo">About</a>
+              <a href="#about-me" className="logo" onClick={footerSetSection}>About</a>
             </li>
             <li>
-              <a href="#projects" className="logo">Projects</a>
+              <a href="#projects" className="logo" onClick={footerSetSection}>Projects</a>
             </li>
             <li>
-              <a href="#skills" className="logo">Skills</a>
+              <a href="#skills" className="logo" onClick={footerSetSection}>Skills</a>
             </li>
             <li>
-              <a href="#contact" className="logo">Contact</a>
+              <a href="#contact" className="logo" onClick={footerSetSection}>Contact</a>
             </li>
           </ul>
         </div>
