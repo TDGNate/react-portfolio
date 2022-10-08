@@ -205,7 +205,6 @@
 	padding: 0.8rem 1.2rem;
 	margin: 1rem auto;
 	border-radius: 8px;
-	border: 2px solid #00132f;
 	text-align: center;
 	box-shadow: 8px 5px 30px black;
 	outline: none;
@@ -215,9 +214,8 @@
 .view-all-projects:hover a {
 	outline: none;
 	color: white;
-	border: 2px solid var(--blue-clr-hover);
-	box-shadow: inset 0px 0px 10px rgb(61, 129, 255),
-		0px 0px 14px rgb(121, 106, 255);
+	background-color: rgb(0, 94, 255);
+	box-shadow: none;
 }
 
 .man-laptop {
