@@ -1,9 +1,15 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+// Sweet Alert and styles 
 import swal from 'sweetalert';
 import "../styles/sweetAlert.css"
 import "../styles/contact.css";
+
+// Pull ENV Variables 
+const REACT_APP_SERV_KEY = process.env.REACT_APP_SERV_KEY;
+const REACT_APP_FORM_TEMPLATE = process.env.REACT_APP_FORM_TEMPLATE;
+const REACT_APP_FORM_PUB_KEY = process.env.REACT_APP_FORM_PUB_KEY;
 
 const Contact = () => {
 
@@ -40,16 +46,13 @@ const Contact = () => {
       message: formMessage.value,
     }
 
-    console.log(conFom)
-
-    emailjs.sendForm('service_k2icfbo', 'template_crd40yf', form.current, 'aZiPYcjt7NE2YLk9G')
+    emailjs.sendForm(REACT_APP_SERV_KEY, REACT_APP_FORM_TEMPLATE, form.current, REACT_APP_FORM_PUB_KEY)
     .then((result) => {
         console.log(result.text);
     }, (error) => {
         console.log(error.text);
     });
     
-
     setFormStatus('Sending...')
 
     swal({
