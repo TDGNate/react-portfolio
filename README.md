@@ -12,27 +12,30 @@ This website is powered my React.js, and is deployed on Github pages.
 
 ## Table Of Contents
 
-- [Usage](#usage)
+- [Technologies](#technologies)
 - [Install](#install)
 - [Contribute](#contributing)
-- [Testing](#tests)
 - [Questions](#questions)
 
-## Usage
+## Technologies
 
-na
+Here are the technologies I used for this app
+
+- [React](https://reactjs.org/)
+- [Emailjs](https://www.emailjs.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [SweetAlert](https://sweetalert.js.org/guides/)
+- [Github Pages](https://pages.github.com/)
 
 ## Install
 
-na
+If you would like to use this design, you can clone or fork, and run `npm install` to install all the packages needed to run this application.
+
+Then run `npm start` to start the application.
 
 ## Contributing
 
-na
-
-## Tests
-
-na
+Fork this, and make your pull request :)
 
 ## Questions
 
