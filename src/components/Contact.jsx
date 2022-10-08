@@ -125,7 +125,7 @@ const Contact = () => {
               <input className="cform-email" type="email" name="user_email" id="formEmail" placeholder="example@domain.com" />
               {/* Message */}
               <label className="cform-label" htmlFor="message">Message</label>
-              <textarea className="cform-message" name="message" id="formMessage" maxLength="380" placeholder="Your message..."  required />
+              <textarea className="cform-message" name="message" id="formMessage" maxLength="380" placeholder="Add your message here!"  required />
               {/* Button  */}
               <button className="cform-send" type="submit">{formStatus}</button>
               </form>
