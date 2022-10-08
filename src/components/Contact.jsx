@@ -39,44 +39,53 @@ const Contact = () => {
       swal("Please add your email!");
       return;
     }
-    
-    let conFom = {
-      name: formName.value,
-      email: formEmail.value,
-      message: formMessage.value,
-    }
 
     emailjs.sendForm(REACT_APP_SERV_KEY, REACT_APP_FORM_TEMPLATE, form.current, REACT_APP_FORM_PUB_KEY)
-    .then((result) => {
-        console.log(result.text);
+      .then((result) => {
+
+        let isOk = result.text === "OK"
+      
+        setFormStatus('Sending...')
+
+        if (isOk) {
+
+          swal({
+            title: "Thank You!",
+            text: "I will get back to you asap!",
+            icon: "success",
+            button: false
+          });
+    
+        } else {
+
+          swal({
+            title: "uh oh...",
+            text: "An error occurred...",
+            button: false
+          });
+
+        }
+
+        borderGlow()
+    
+        setTimeout(() => {
+    
+          // send confirmation 
+          setFormStatus('SEND')
+          swal.close()
+          
+          // reset form 
+          formName.value = ""
+          formEmail.value = ""
+          formMessage.value = ""
+    
+        }, 2000)
     }, (error) => {
+
         console.log(error.text);
+        
     });
     
-    setFormStatus('Sending...')
-
-    swal({
-      title: "Thank You!",
-      text: "I will get back to you asap!",
-      icon: "success",
-      button: false
-    });
-
-    borderGlow()
-
-    setTimeout(() => {
-
-      // send confirmation 
-      setFormStatus('SEND')
-      swal.close()
-      
-      // reset form 
-      formName.value = ""
-      formEmail.value = ""
-      formMessage.value = ""
-
-    }, 2000)
-
   }
 
   function borderGlow() {
@@ -99,8 +108,6 @@ const Contact = () => {
           Perris, CA
           <br />
           <a href="mailto:email@example.com">itsnzte@gmail.com</a>
-          
-          <br />
         </p>
 
         <div className="contact-wrapper">
