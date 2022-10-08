@@ -31,6 +31,8 @@ a {
 	background-color: var(--light-clr);
 }
 
+/* Media Query (Mobile Size)  */
+
 @media screen and (max-width: 830px) {
 	.hamburger {
 		display: block;

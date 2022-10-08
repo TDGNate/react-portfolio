@@ -98,6 +98,8 @@
 	transition: all 400ms ease;
 }
 
+/* Media Query (Mobile Size)  */
+
 @media screen and (max-width: 830px) {
 	.skills-box-container {
 		justify-content: space-evenly;

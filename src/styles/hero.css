@@ -171,17 +171,6 @@
 	left: 96%;
 }
 
-/* Animations  */
-
-@keyframes slide-hero-in {
-	0% {
-		transform: translateX(-1150px);
-	}
-	100% {
-		transform: translateX(0px);
-	}
-}
-
 /* Media Query (Mobile Size)  */
 
 @media screen and (max-width: 830px) {
@@ -241,5 +230,16 @@
 
 	.hero-hire-me {
 		margin: 1rem auto;
+	}
+}
+
+/* Animations  */
+
+@keyframes slide-hero-in {
+	0% {
+		transform: translateX(-1150px);
+	}
+	100% {
+		transform: translateX(0px);
 	}
 }

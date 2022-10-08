@@ -153,6 +153,8 @@
 	filter: drop-shadow(0 0 0.75rem rgb(232, 105, 255));
 }
 
+/* Media Query (Mobile Size)  */
+
 @media screen and (max-width: 830px) {
 	.contact-section {
 		padding: 3.5rem 1.1rem !important;
