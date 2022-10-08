@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import swal from 'sweetalert';
 import "../styles/sweetAlert.css"
 import "../styles/contact.css";
 
 const Contact = () => {
+
+  const form = useRef();
   
   const [formStatus, setFormStatus] = React.useState('SEND')
+
   const onSubmit = (e) => {
     e.preventDefault()
 
@@ -37,6 +41,14 @@ const Contact = () => {
     }
 
     console.log(conFom)
+
+    emailjs.sendForm('service_k2icfbo', 'template_crd40yf', form.current, 'aZiPYcjt7NE2YLk9G')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    
 
     setFormStatus('Sending...')
 
@@ -94,16 +106,16 @@ const Contact = () => {
 
             <h3>Send me a message!</h3>
 
-            <form onSubmit={onSubmit} className="cform">
+            <form  ref={form} onSubmit={onSubmit} className="cform">
               {/* Name */}
               <label className="cform-label" htmlFor="name">Name</label>
-              <input className="cform-name" type="text" id="formName" />
+              <input className="cform-name" type="text" name="user_name" id="formName" />
               {/* Email */}
               <label className="cform-label" htmlFor="email">Email</label>
-              <input className="cform-email" type="email" id="formEmail" />
+              <input className="cform-email" type="email" name="user_email" id="formEmail" />
               {/* Message */}
               <label className="cform-label" htmlFor="message">Message</label>
-              <textarea className="cform-message" type="email" id="formMessage" maxLength="380" required />
+              <textarea className="cform-message" name="message" id="formMessage" maxLength="380" required />
               {/* Button  */}
               <button className="cform-send" type="submit">{formStatus}</button>
               </form>
