@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame } from "../../gifs/projects"
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame } from "../../gifs/projects";
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM } from "../../imgs/skills";
 
-import "../../styles/moreProjects.css"
+import "../../styles/moreProjects.css";
 
 const MoreProjects = () => {
   return (
@@ -585,11 +585,10 @@ const MoreProjects = () => {
             </div>
           </div>
           
-
         </div>
       </div>
     </div>
   )
 }
 
-export default MoreProjects
+export default MoreProjects;

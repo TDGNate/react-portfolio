@@ -19,4 +19,4 @@ const Home = ({ currentPage, handlePageChange }) => {
   )
 }
 
-export default Home
+export default Home;

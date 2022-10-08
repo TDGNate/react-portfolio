@@ -1,17 +1,17 @@
 import React from "react";
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API } from "../imgs/skills"
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API } from "../imgs/skills";
 
-// Thumb Nails for projects 
-import { POPUmai, Platello, TechBlog } from "../gifs/projects"
+// Thumbnails for projects 
+import { POPUmai, Platello, TechBlog } from "../gifs/projects";
 
 import manOnPc from "../svgs/working-with-laptop.svg";
-import "../styles/project.css"
-import "../styles/animations.css"
+import "../styles/project.css";
+import "../styles/animations.css";
 
 // Animations 
-import { RevealY } from "../utils/animation.js" 
+import { RevealY } from "../utils/animation.js";
 
 const Projects = ({ currentPage, handlePageChange }) => {
 
@@ -128,7 +128,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
             <div className="project-more-left">
               <a href="#moreProjects"
                 onClick={() => handlePageChange('MoreProjects')}
-                  className="view-all-projects">View All Projects</a>
+                className="view-all-projects">View All Projects</a>
             </div>
 
             <div className="project-more-right">

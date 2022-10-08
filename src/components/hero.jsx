@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/hero.css";
 
-import { mountainBg } from "../imgs"
-import Parallax from "../utils/parallax" 
+import { mountainBg } from "../imgs";
+import Parallax from "../utils/parallax";
 
 const Hero = () => {
 

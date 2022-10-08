@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 // Sweet Alert and styles 
 import swal from 'sweetalert';
-import "../styles/sweetAlert.css"
+import "../styles/sweetAlert.css";
 import "../styles/contact.css";
 
 // Pull ENV Variables 
@@ -158,4 +158,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

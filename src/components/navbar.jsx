@@ -9,7 +9,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
 
   const handleToggle = (e) => {
 
-        // if the screen size is mobile, then apply the active class 
+    // if the screen size is mobile, then apply the active class 
     if (window.innerWidth < 830) {
 
       setActive(!isActive);

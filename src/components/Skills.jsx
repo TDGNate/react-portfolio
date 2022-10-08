@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import "../styles/skills.css"
+import "../styles/skills.css";
 
 // All Image icons for Skills 
-import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi, Insomnia, VsCode, Node, Handlebars, MySQL, Sequelize, WorkBench, Mongo, Compass, Mongoose, jQuery } from "../imgs/skills"
+import { Express, Github, Html, Css3, Bootstrap, Reactt, Javascript, Matcss, Sass, Git, NPM, Heroku, RestApi, Insomnia, VsCode, Node, Handlebars, MySQL, Sequelize, WorkBench, Mongo, Compass, Mongoose, jQuery } from "../imgs/skills";
 
 const Skills = () => {
   return (
@@ -192,4 +192,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills;
