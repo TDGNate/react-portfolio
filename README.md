@@ -14,6 +14,7 @@ This website is powered my React.js, and is deployed on Github pages.
 
 - [Technologies](#technologies)
 - [Install](#install)
+- [Screenshots](#screenshots)
 - [Contribute](#contributing)
 - [Questions](#questions)
 
@@ -32,6 +33,10 @@ Here are the technologies I used for this app
 If you would like to use this design, you can clone or fork, and run `npm install` to install all the packages needed to run this application.
 
 Then run `npm start` to start the application.
+
+## Screenshots
+
+
 
 ## Contributing
 
