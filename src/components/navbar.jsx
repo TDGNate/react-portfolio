@@ -23,6 +23,10 @@ const Navbar = ({ currentPage, handlePageChange }) => {
       handlePageChange('Home')
     }
 
+    if (currentPage === "MoreProjects") { 
+      handlePageChange('Home')
+    }
+
   };
 
   return (
