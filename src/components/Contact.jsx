@@ -119,13 +119,13 @@ const Contact = () => {
             <form  ref={form} onSubmit={onSubmit} className="cform">
               {/* Name */}
               <label className="cform-label" htmlFor="name">Name</label>
-              <input className="cform-name" type="text" name="user_name" id="formName" />
+              <input className="cform-name" type="text" name="user_name" id="formName" placeholder="John Doe" />
               {/* Email */}
               <label className="cform-label" htmlFor="email">Email</label>
-              <input className="cform-email" type="email" name="user_email" id="formEmail" />
+              <input className="cform-email" type="email" name="user_email" id="formEmail" placeholder="example@domain.com" />
               {/* Message */}
               <label className="cform-label" htmlFor="message">Message</label>
-              <textarea className="cform-message" name="message" id="formMessage" maxLength="380" required />
+              <textarea className="cform-message" name="message" id="formMessage" maxLength="380" placeholder="Your message..."  required />
               {/* Button  */}
               <button className="cform-send" type="submit">{formStatus}</button>
               </form>

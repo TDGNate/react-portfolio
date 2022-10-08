@@ -17,7 +17,7 @@ const MoreProjects = () => {
       <div className="container">
         <div className="more-projects-empty-space"></div>
         <h1>My Projects</h1>
-        <p>Here are all my backend, frontend, and full stack projects :)</p>
+        <p>Here's all my backend, frontend, and full stack projects :)</p>
 
         <div className="more-projects-project-container">
 

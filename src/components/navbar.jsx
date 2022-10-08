@@ -9,8 +9,12 @@ const Navbar = ({ currentPage, handlePageChange }) => {
 
   const handleToggle = () => {
 
-    handlePageChange('Home')
-
+    // if (currentPage === "MoreProjects") {
+    //   handlePageChange('MoreProjects') 
+    // } else {
+    //   handlePageChange('Home') 
+    // }
+    
     // if the screen size is mobile, then apply the active class 
     if (window.innerWidth < 830) {
       setActive(!isActive);
