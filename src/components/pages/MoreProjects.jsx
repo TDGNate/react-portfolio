@@ -4,7 +4,7 @@ import React from 'react'
 import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame } from "../../gifs/projects"
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM } from "../../imgs/skills"
 
 import "../../styles/moreProjects.css"
 

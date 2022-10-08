@@ -48,7 +48,7 @@
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(29, 0, 54, 0.565);
+	background-color: rgba(0, 39, 193, 0.104);
 	margin: 0.8rem;
 	width: 30%;
 	min-width: 360px;
@@ -57,11 +57,14 @@
 	max-height: 625px;
 	overflow: hidden;
 	transition: all 750ms ease;
+	/* border: 2px rgba(0, 0, 0, 0.33);  */
 }
 
 .one-project:hover {
 	transform: translate(-2.8px, -3.8px);
-	background-color: rgba(51, 0, 98, 0.579);
+	/* border-bottom: 2px solid var(--blue-clr);
+	border-right: 2px solid var(--blue-clr); */
+	background-color: rgba(0, 40, 198, 0.278);
 }
 
 .one-project-img {

@@ -36,10 +36,6 @@
 
 .project-prime-card {
 	max-width: auto;
-	/* min-height: 300px;
-	max-height: 450px; */
-	/* height: 450px;  */
-	/* height: 100%;  */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -242,7 +238,7 @@
 		max-width: 90%;
 		min-height: 200px;
 		flex-direction: column;
-		margin: 2.5rem 0;
+		margin: 2.5rem 0 4rem 0;
 		padding: 0.3rem;
 		gap: 0;
 	}
@@ -298,26 +294,39 @@
 
 	.project-more {
 		height: auto;
+		margin: 4rem 0 1rem 0;
+		justify-content: center;
+		gap: 2rem;
 	}
 
 	.project-more-right .check-out-my-projects-message {
-		top: -95px;
+		top: -125px;
 		width: 100%;
 		border: 1px solid var(--purp-clr-hover);
-		padding: 0.4rem;
+		padding: 0.3rem;
 		font-size: 0.9rem;
+		max-height: 130px;
 	}
 
 	.view-all-projects {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		background-color: var(--blue-clr);
 		color: var(--blue-clr-hover);
-		padding: 0.4rem 0.8rem;
+		padding: 0.5rem 0.9rem;
 		margin: 1rem auto;
 		color: var(--light-clr);
 	}
 
 	.man-laptop {
 		width: 100%;
+	}
+}
+
+/* Galaxy Mobile Media Query  */
+
+@media screen and (max-width: 320px) {
+	.project-more-right .check-out-my-projects-message {
+		top: -150px;
+		width: 135%;
 	}
 }
