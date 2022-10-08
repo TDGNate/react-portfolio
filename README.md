@@ -30,9 +30,21 @@ Here are the technologies I used for this app
 
 ## Install
 
-If you would like to use this design, you can clone or fork, and run `npm install` to install all the packages needed to run this application.
+If you would like to use this layout, you can clone or fork, and run `npm install` to install all the packages needed to run this application.
 
-Then run `npm start` to start the application.
+But before you install, in order for you to get emails from the contact form, you have to link up your keys in the `.env`. I used Emailjs to take care of that for me, but please read the docs -> **[EmailJS Docs](https://www.emailjs.com/docs/)**.
+
+Once you have a solid idea of how to create your email templates, and how to get your emailjs keys, then go to the `.env.EXAMPLE` file in the root, remove the ".EXAMPLE" and add your Emailjs variables.
+
+```
+ REACT_APP_SERV_KEY=( Your Server key )
+ REACT_APP_FORM_TEMPLATE=( Your Template )
+ REACT_APP_FORM_PUB_KEY=( Your public Key )
+```
+
+_Note: remove the parenthesis and make sure there's no spaces_
+
+After getting those set up, run `npm start` to start the application.
 
 ## Screenshots
 
