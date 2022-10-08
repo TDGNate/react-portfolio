@@ -1,6 +1,6 @@
 # Nate's React Portfolio
 
-This is my main portfolio that I will be presenting which showcases my projects, experience, and skills.
+This is my main portfolio that I will be presenting which showcases my projects, experience, and skills. 🙂
 
 My portfolio has an about me, projects, skills, and a contact section modularized into componets. And if the viewer chooses to dedicate their atention to just my projects, I created a whole page displaying every single one of my projects and the tools I used to create it.
 
@@ -36,7 +36,11 @@ Then run `npm start` to start the application.
 
 ## Screenshots
 
-
+  <img src="./assets/imgs/hero-section.png" alt="hero section" />
+  <img src="./assets/imgs/below-projects-section.png" alt="project section" />
+  <img src="./assets/imgs/skills-section.png" alt="skills section" />
+  <img src="./assets/imgs/contact-section.png" alt="contact section" />
+  <img src="./assets/imgs/projects-page.png" alt="project page" />
 
 ## Contributing
 
