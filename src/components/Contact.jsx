@@ -155,7 +155,9 @@ const Contact = () => {
         </div>
 
         <div className="contact-bottom">
-           <i class="bi bi-arrow-up"></i>
+          <a href="#hero">
+            <i class="bi bi-arrow-up"></i>
+          </a>
         </div>
 
       </div>

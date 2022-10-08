@@ -157,7 +157,6 @@
 
 .contact-bottom {
 	width: 100%;
-	/* background-color: pink; */
 	padding: 5.5rem 0 0 0;
 	text-align: center;
 	margin: 0;
@@ -172,7 +171,8 @@
 
 .contact-bottom i:hover {
 	cursor: pointer;
-	color: var(--blue-clr-hover);
+	color: rgb(255, 255, 255);
+	filter: drop-shadow(0 0 0.75rem rgb(86, 139, 255));
 }
 
 /* Media Query (Mobile Size)  */
