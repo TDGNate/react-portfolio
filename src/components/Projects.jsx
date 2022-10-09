@@ -32,7 +32,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
               <div className="project-prime-card-right">
                 <div className="project-prime-title">POP Umai - <span className="project-prime-title-sub">Freelance</span></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sit totam incidunt ipsam, iusto, aperiam facilis officiis pariatur fugiat eligendi enim architecto aliquid vitae accusamus dolor voluptatibus. Reprehenderit, error eius.</p>
+                <p>Collaborative full-stack application for a local business owner and her company, POP Umai. Worked directly with the client to take her ideas and desires, and make it reality. App contains smooth UI and authentication so our client can access the admin dashboard to manage her all events.</p>
                 <div className="project-prime-tech-title">
                   Technologies and Tools
                 </div>

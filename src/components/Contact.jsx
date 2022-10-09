@@ -17,26 +17,36 @@ const Contact = () => {
   
   const [formStatus, setFormStatus] = React.useState('SEND')
 
+  const [disabled, setDisabled] = React.useState(false)
+
   const onSubmit = (e) => {
     e.preventDefault()
+
+    setDisabled(true)
 
     const { formName, formEmail, formMessage } = e.target.elements
     
     // Check if name is empty 
     if (formName.value === "") {
       swal("Please add your name!");
+
+      removeDisableBtn()
       return;
     }
     
     // check if it's only one character 
     if (formName.value.length <= 1) {
       swal("Name isn't valid!");
+
+      removeDisableBtn()
       return;
     }
     
     // Check if email is empty 
     if (formEmail.value === "") {
       swal("Please add your email!");
+
+      removeDisableBtn()
       return;
     }
 
@@ -78,6 +88,9 @@ const Contact = () => {
           formName.value = ""
           formEmail.value = ""
           formMessage.value = ""
+
+          // set disable off on form button 
+          removeDisableBtn()
     
         }, 2000)
     }, (error) => {
@@ -95,6 +108,14 @@ const Contact = () => {
     setTimeout(() => {
       document.querySelector(".cform").classList.remove("border-glow") 
     }, 7800)
+
+  }
+
+  function removeDisableBtn() {
+
+    setTimeout(() => {
+    setDisabled(false)
+    }, 1250);
 
   }
 
@@ -127,7 +148,7 @@ const Contact = () => {
               <label className="cform-label" htmlFor="message">Message</label>
               <textarea className="cform-message" name="message" id="formMessage" maxLength="380" placeholder="Add your message here!"  required />
               {/* Button  */}
-              <button className="cform-send" type="submit">{formStatus}</button>
+              <button className="cform-send" type="submit" disabled={disabled}>{formStatus}</button>
               </form>
             
           </div>
