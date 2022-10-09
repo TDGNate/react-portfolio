@@ -34,7 +34,7 @@
 
 .more-projects-project-container {
 	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.33);
+	background-color: rgba(0, 0, 0, 0.398);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -45,10 +45,10 @@
 }
 
 .one-project {
-	border-radius: 8px;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(0, 39, 193, 0.222);
+	background-color: rgba(68, 0, 227, 0.166);
 	margin: 0.8rem;
 	width: 30%;
 	min-width: 360px;
@@ -57,11 +57,13 @@
 	max-height: 625px;
 	overflow: hidden;
 	transition: all 750ms ease;
+	border: 1px solid transparent;
 }
 
 .one-project:hover {
 	transform: translate(-2.8px, -3.8px);
-	background-color: rgba(0, 38, 189, 0.41);
+	background-color: rgba(0, 5, 27, 0);
+	border-bottom: 1px solid var(--purp-clr);
 }
 
 .one-project-img {
