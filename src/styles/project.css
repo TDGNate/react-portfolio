@@ -208,6 +208,7 @@
 	text-align: center;
 	box-shadow: 8px 5px 30px black;
 	outline: none;
+	transition: all 50ms ease;
 }
 
 .view-all-projects:hover,
