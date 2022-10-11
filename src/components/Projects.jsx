@@ -32,7 +32,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
               <div className="project-prime-card-right">
                 <div className="project-prime-title">POP Umai - <span className="project-prime-title-sub">Freelance</span></div>
-                <p>Collaborative full-stack application for a local business owner and her company, POP Umai. Worked directly with the client to take her ideas and desires, and make it reality. App contains smooth UI and authentication so our client can access the admin dashboard to manage her all events.</p>
+                <p>Collaborative full-stack application for a local business owner and her company, POP Umai. Worked directly with the client to take her ideas and desires, and make it reality. App contains smooth UI and authentication so our client can access the admin dashboard to manage all her events.</p>
                 <div className="project-prime-tech-title">
                   Technologies and Tools
                 </div>
