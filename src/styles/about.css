@@ -162,21 +162,14 @@
 		text-align: center;
 	}
 
-	/* About me Buttons  */
-	/* .about-btns {
-		flex-direction: column;
-	} */
-
 	.resume-btn {
 		font-size: 1rem;
-		/* width: 60%;  */
 		max-width: 150px;
 		max-height: 70px;
 		word-wrap: break-word;
 	}
 
 	.download-resume {
-		/* width: 30%;  */
 		max-width: 75px;
 	}
 
