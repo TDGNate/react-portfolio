@@ -74,88 +74,20 @@ const MoreProjects = () => {
             ]}
           />
 
-          {/* Quiz Game  */}
-
-          <div className="one-project">
-            <img src={QuizCode} alt="code quiz" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">Quiz Code</h3>
-              <p className="one-project-text">
-               A quick coding quiz to test your frontend knowledge! A timer is set and a score is being tracked. When the game has ended, you can save your score by adding your initials and clicking the save button. Then the score will appear on your local leaderboard.
-              </p>
-                <h4>Stack</h4>
-              <div className="one-project-techs">
-
-                {/* HTML */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
-                    <img src={Html} alt="Html icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* CSS */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
-                    <img src={Css3} alt="Css3 icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* javascript */}
-                <div className="one-project-tech">
-                  <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
-                    <img src={Javascript} alt="javascript icon" className="skill-img" />
-                    </a>
-                </div>
-
-              </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://tdgnate.github.io/Quiz-Code/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Quiz-Code" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
-
           {/* Read Me Generator  */}
-
-          <div className="one-project">
-            <img src={ReadMeGen} alt="README Generator" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">README Generator</h3>
-              <p className="one-project-text">
-              An app that makes it easy for users to directly create a high quality, polished, README markdown file. Just needs their project's title, description, Usage, etc. The user can choose if they want a Table of Contents, that has everything linked up for each section.
-              </p>
-                <h4>Stack</h4>
-              <div className="one-project-techs">
-
-                {/* javascript */}
-                <div className="one-project-tech">
-                  <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
-                    <img src={Javascript} alt="javascript icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* NPM */}
-                <div className="one-project-tech">
-                  <a href="https://www.npmjs.com/package/inquirer" target="blank" className="skill-anchor">
-                    <img src={NPM} alt="NPM icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* Node */}
-                <div className="one-project-tech">
-                  <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
-                    <img src={Node} alt="Node icon" className="skill-img" />
-                    </a>
-                </div>
-
-              </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://github.com/TDGNate/Readme-Generator" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard
+            title="README Generator"
+            thumbNail={ReadMeGen}
+            description="An app that makes it easy for users to directly create a high quality, polished, README markdown file. Just needs their project's title, description, Usage, etc. The user can choose if they want a Table of Contents, that has everything linked up for each section."
+            techStack={[
+              { tech: Javascript, link: "https://www.javascript.com/" },
+              { tech: NPM, link: "https://www.npmjs.com/package/inquirer" },
+              { tech: Node, link: "https://nodejs.org/en/" }
+            ]}
+            btns={[
+              { repo: "https://github.com/TDGNate/Readme-Generator" }
+            ]}
+          />
 
           {/* N8 Tech Blog */}
 
