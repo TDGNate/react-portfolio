@@ -130,6 +130,22 @@ const MoreProjects = () => {
           />
 
           {/* Password Generator */}
+          <ProjectCard
+            title="Password Generator"
+            thumbNail={PassGen}
+            description="Website that allows users to choose how they want their password to be generated. Multiple prompts will appear asking if they'd like to include Upper Case letters, Lower Case letters, Numbers, and or Special characters."
+            techStack={[
+              { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+              { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+              { tech: Javascript, link: "https://www.javascript.com/" }
+            ]}
+            btns={[
+              { repo: "https://github.com/TDGNate/Nates-password-generation" },
+              { deployed: "https://tdgnate.github.io/Nates-password-generation/" }
+            ]}
+          />
+
+          {/* Password Generator */}
 
           <div className="one-project">
             <img src={PassGen} alt="Weather App Generator" className="one-project-img" />
