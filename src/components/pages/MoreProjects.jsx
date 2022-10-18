@@ -32,7 +32,7 @@ const MoreProjects = () => {
             techStack={[
               { tech: Node, link: "https://nodejs.org/en/" },
               { tech: Express, link: "https://expressjs.com/", invert: true },
-              { tech: API, link: "https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm" },
+              { tech: API, link: "https://en.wikipedia.org/wiki/API" },
               { tech: MySQL, link: "https://www.mysql.com/" },
               { tech: Sequelize, link: "https://sequelize.org/" }
             ]}
@@ -113,53 +113,21 @@ const MoreProjects = () => {
           />
 
           {/* Weather App */}
-
-          <div className="one-project">
-            <img src={WeatherApp} alt="Weather App Generator" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">Weather App</h3>
-              <p className="one-project-text">
-              Website that lets you search up cities and returns their temperature, wind speed, humidity, and UV index. And it also displays 5 more cards showing the 5 day forecast. Their last 8 searches will be saved in their history, and are clickable to be research again.
-              </p>
-                <h4>Stack</h4>
-              <div className="one-project-techs">
-
-                {/* HTML */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
-                    <img src={Html} alt="Html icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* CSS */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
-                    <img src={Css3} alt="Css3 icon" className="skill-img" />
-                    </a>
-                </div>
-
-                {/* javascript */}
-                <div className="one-project-tech">
-                  <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
-                    <img src={Javascript} alt="javascript icon" className="skill-img" />
-                    </a>
-                </div>
-                
-                {/* API */}
-                <div className="one-project-tech">
-                  <a href="https://en.wikipedia.org/wiki/API" target="blank" className="skill-anchor">
-                    <img src={API} alt="API icon" className="skill-img" />
-                    </a>
-                </div>
-
-              </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://tdgnate.github.io/Weather-site/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Weather-site" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard
+            title="Weather App"
+            thumbNail={WeatherApp}
+            description="Website that lets you search up cities and returns their temperature, wind speed, humidity, and UV index. And it also displays 5 more cards showing the 5 day forecast. Their last 8 searches will be saved in their history, and are clickable to be research again."
+            techStack={[
+              { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+              { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+              { tech: Javascript, link: "https://www.javascript.com/" },
+              { tech: API, link: "https://en.wikipedia.org/wiki/API" }
+            ]}
+            btns={[
+              { repo: "https://github.com/TDGNate/Weather-site" },
+              { deployed: "https://tdgnate.github.io/Weather-site/" }
+            ]}
+          />
 
           {/* Password Generator */}
 
