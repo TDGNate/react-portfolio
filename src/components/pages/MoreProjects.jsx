@@ -4,7 +4,7 @@ import React from 'react';
 import ProjectCard from "../ProjectCard";
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame, Platello } from "../../gifs/projects";
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame, Platello, POPUmai } from "../../gifs/projects";
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM, Matcss } from "../../imgs/skills";
@@ -195,6 +195,27 @@ const MoreProjects = () => {
             btns={[
               { repo: "https://github.com/TDGNate/Note-Taker" },
               { deployed: "https://mighty-ridge-88200.herokuapp.com/" }
+            ]}
+          />
+
+          {/* POP Umai */}
+          <ProjectCard
+            title="POP Umai"
+            thumbNail={POPUmai}
+            description="Collaborative full-stack application for a local business owner and her company, POP Umai. Took our Clients ideas and desires, and made it reality. Added authentication for accessing the admin dashboard to manage all her events."
+            techStack={[
+              { tech: Node, link: "https://nodejs.org/en/" },
+              { tech: Express, link: "https://expressjs.com/", invert: true },
+              { tech: Handlebars, link: "https://handlebarsjs.com/", invert: true },
+              { tech: MySQL, link: "https://www.mysql.com/" },
+              { tech: Sequelize, link: "https://sequelize.org/" },
+              { tech: Bootstrap, link: "https://getbootstrap.com/" },
+              { tech: SweetAlert, link: "https://sweetalert.js.org/guides/" },
+              { tech: Heroku, link: "https://www.heroku.com/" }
+            ]}
+            btns={[
+              { repo: "https://github.com/PreDevz/POP-Umai" },
+              { deployed: "https://pop-umai.herokuapp.com/" }
             ]}
           />
 
