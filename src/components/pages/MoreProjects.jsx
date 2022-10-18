@@ -28,6 +28,13 @@ const MoreProjects = () => {
             title="E-Commerce Backend"
             thumbNail={EComBackend}
             description="A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database."
+            techStack={[
+              { tech: Node, link: "https://nodejs.org/en/" },
+              { tech: Express, link: "https://expressjs.com/" },
+              { tech: API, link: "https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm" },
+              { tech: MySQL, link: "https://www.mysql.com/" },
+              { tech: Sequelize, link: "https://sequelize.org/" }
+            ]}
           />
 
             {/* E-Commerce Backend */}
