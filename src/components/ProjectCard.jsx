@@ -21,7 +21,7 @@ const ProjectCard = ({title, thumbNail, description, techStack, btns}) => {
           techStack.map(tech => {
             return <div className="one-project-tech">
             <a href={tech.link} target="blank" className="skill-anchor">
-              <img src={tech.tech} alt="Tech Icon" className="skill-img" />
+              <img src={tech.tech} alt="Tech Icon" className={` skill-img ${tech.invert ? "invert" : ""}`} />
             </a>
           </div>
         })

@@ -30,14 +30,14 @@ const MoreProjects = () => {
             description="A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database."
             techStack={[
               { tech: Node, link: "https://nodejs.org/en/" },
-              { tech: Express, link: "https://expressjs.com/" },
+              { tech: Express, link: "https://expressjs.com/", invert: true },
               { tech: API, link: "https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm" },
               { tech: MySQL, link: "https://www.mysql.com/" },
               { tech: Sequelize, link: "https://sequelize.org/" }
             ]}
             btns={[
               {repo: "https://github.com/TDGNate/E-Commerce-Backend" },
-              {deployed: "https://www.google.com/"}
+              {deployed: "https://www.google.com/"} 
             ]}
           />
 
@@ -241,7 +241,7 @@ const MoreProjects = () => {
             <div className="one-project-bottom">
               <h3 className="one-project-title">N8 Tech Blog</h3>
               <p className="one-project-text">
-              Full-stack CMS-style blog site where developers can create posts and add comments on others. They can also view all their posts and comments and have access to update/delete their posts/comments from their dashboard.
+              Full-stack CMS-style blog site where developers can create posts and add comments on others. They can also view all their posts/comments and have access to update/delete them from their dashboard.
               </p>
                 <h4>Stack</h4>
               <div className="one-project-techs">
