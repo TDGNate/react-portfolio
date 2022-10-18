@@ -197,46 +197,20 @@ const MoreProjects = () => {
           />
 
           {/* Rock Paper Scissors */}
-
-          <div className="one-project">
-            <img src={RpsGame} alt="Rock paper Scissors Game" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">Rock Paper Scissors</h3>
-              <p className="one-project-text">
-              My first website game of rock paper scissors vs a bot. I don't think I have to explain how the game works, but each element is smoothly animated and styled. The background color changes based on if the user wins or losses.
-              </p>
-                <h4>Stack</h4>
-                <div className="one-project-techs">
-
-                  {/* HTML */}
-                  <div className="one-project-tech">
-                    <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
-                      <img src={Html} alt="Html icon" className="skill-img" />
-                      </a>
-                  </div>
-
-                  {/* CSS */}
-                  <div className="one-project-tech">
-                    <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
-                      <img src={Css3} alt="Css3 icon" className="skill-img" />
-                      </a>
-                  </div>
-                
-                  {/* javascript */}
-                  <div className="one-project-tech">
-                    <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
-                    <img src={Javascript} alt="javascript icon" className="skill-img" />
-                    </a>
-                </div>
-
-                  </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://tdgnate.github.io/Rock-Paper-Scissors/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Rock-Paper-Scissors" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard
+            title="Rock Paper Scissors"
+            thumbNail={RpsGame}
+            description=" My first website game of rock paper scissors vs a bot. I don't think I have to explain how the game works, but each element is smoothly animated and styled. The background color changes based on if the user wins or losses."
+            techStack={[
+              { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+              { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+              { tech: Javascript, link: "https://www.javascript.com/" }
+            ]}
+            btns={[
+              { repo: "https://github.com/TDGNate/Rock-Paper-Scissors" },
+              { deployed: "https://tdgnate.github.io/Rock-Paper-Scissors/" }
+            ]}
+          />
           
         </div>
       </div>
