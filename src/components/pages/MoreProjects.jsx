@@ -162,60 +162,22 @@ const MoreProjects = () => {
           />
 
           {/* Note Taker */}
-
-          <div className="one-project">
-            <img src={NoteTaker} alt="Note Taker" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">Note Taker</h3>
-              <p className="one-project-text">
-                Application that allows users to store their notes in a json file with their title and paragraph. Deployed on Heroku and powered by Express for the backend.
-              </p>
-                <h4>Stack</h4>
-                <div className="one-project-techs">
-
-                  {/* HTML */}
-                  <div className="one-project-tech">
-                    <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
-                      <img src={Html} alt="Html icon" className="skill-img" />
-                      </a>
-                  </div>
-
-                  {/* CSS */}
-                  <div className="one-project-tech">
-                    <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
-                      <img src={Css3} alt="Css3 icon" className="skill-img" />
-                      </a>
-                  </div>
-                
-                  {/* javascript */}
-                  <div className="one-project-tech">
-                    <a href="https://www.javascript.com/" target="blank" className="skill-anchor">
-                    <img src={Javascript} alt="javascript icon" className="skill-img" />
-                    </a>
-                  </div>
-
-                  {/* Node */}
-                  <div className="one-project-tech">
-                    <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
-                      <img src={Node} alt="Node icon" className="skill-img" />
-                      </a>
-                 </div>
-
-                  {/* Express */}
-                  <div className="one-project-tech">
-                    <a href="https://expressjs.com/" target="blank" className="skill-anchor">
-                      <img src={Express} alt="Express icon" className="skill-img invert" />
-                      </a>
-                 </div>
-
-                  </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://mighty-ridge-88200.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
-                <a href="https://github.com/TDGNate/Note-Taker" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard
+            title="Note Taker"
+            thumbNail={NoteTaker}
+            description="Application that allows users to store their notes in a json file with their title and paragraph. Deployed on Heroku and powered by Express for the backend."
+            techStack={[
+              { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+              { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+              { tech: Javascript, link: "https://www.javascript.com/" },
+              { tech: Node, link: "https://nodejs.org/en/" },
+              { tech: Express, link: "https://expressjs.com/", invert: true }
+            ]}
+            btns={[
+              { repo: "https://github.com/TDGNate/Note-Taker" },
+              { deployed: "https://mighty-ridge-88200.herokuapp.com/" }
+            ]}
+          />
 
           {/* Calender App */}
 
