@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../styles/projectCard.css"
 
-const ProjectCard = ({title, thumbNail, description, techStack}) => {
+const ProjectCard = ({title, thumbNail, description, techStack, btns}) => {
   return (
   <div className="one-project">
     <img src={ thumbNail } alt="E-Commerce Backend Taker" className="one-project-img" />
@@ -21,14 +21,28 @@ const ProjectCard = ({title, thumbNail, description, techStack}) => {
                 <img src={tech.tech} alt="Tech Icon" className="skill-img" />
               </a>
            </div>
-              
           })
          }
 
        </div>
       <hr className="one-project-hr"/>
-      <div className="one-project-btns">
-        <a href="https://github.com/TDGNate/E-Commerce-Backend" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+        <div className="one-project-btns">
+
+          {
+            btns.map(btn => {
+              if (btn.repo) {
+                return <a href={btn.repo} target="blank" className="project-prime-btn github-btn">GITHUB</a>
+              }
+
+              if (btn.deployed) {
+                return <a href={btn.deployed} target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+              } 
+
+              return ""
+            })
+          }
+
+        {/* <a href="https://github.com/TDGNate/E-Commerce-Backend" target="blank" className="project-prime-btn github-btn">GITHUB</a> */}
       </div>
     </div>
   </div>

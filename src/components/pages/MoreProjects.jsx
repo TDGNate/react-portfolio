@@ -35,6 +35,10 @@ const MoreProjects = () => {
               { tech: MySQL, link: "https://www.mysql.com/" },
               { tech: Sequelize, link: "https://sequelize.org/" }
             ]}
+            btns={[
+              {repo: "https://github.com/TDGNate/E-Commerce-Backend" },
+              {deployed: "https://www.google.com/"}
+            ]}
           />
 
             {/* E-Commerce Backend */}
