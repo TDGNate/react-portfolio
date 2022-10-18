@@ -4,10 +4,10 @@ import React from 'react';
 import ProjectCard from "../ProjectCard";
 
 // images for projects
-import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame } from "../../gifs/projects";
+import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame, Platello } from "../../gifs/projects";
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM } from "../../imgs/skills";
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM, Matcss } from "../../imgs/skills";
 
 import "../../styles/moreProjects.css";
 
@@ -158,6 +158,25 @@ const MoreProjects = () => {
             btns={[
               { repo: "https://github.com/TDGNate/My-Todos" },
               { deployed: "https://tdgnate.github.io/My-Todos/" }
+            ]}
+          />
+
+          {/* Platello */}
+          <ProjectCard
+            title="Platello"
+            thumbNail={Platello}
+            description="Cheers to a new dish! Website that recommends users foods and drinks based on their preferences. Powered by the Spoonacular and the CocktailDB APIs."
+            techStack={[
+              { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+              { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+              { tech: Javascript, link: "https://www.javascript.com/" },
+              { tech: Matcss, link: "https://materializecss.com/" },
+              { tech: jQuery, link: "https://jquery.com/" },
+              { tech: API, link: "https://en.wikipedia.org/wiki/API" }
+            ]}
+            btns={[
+              { repo: "https://github.com/PreDevz/Platello" },
+              { deployed: "https://predevz.github.io/Platello/" }
             ]}
           />
 
