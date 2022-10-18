@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Components 
+import ProjectCard from "../ProjectCard";
+
 // images for projects
 import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame } from "../../gifs/projects";
 
@@ -20,6 +23,12 @@ const MoreProjects = () => {
         <p>Here's all my backend, frontend, and full stack projects :)</p>
 
         <div className="more-projects-project-container">
+
+          <ProjectCard
+            title="E-Commerce Backend"
+            thumbNail={EComBackend}
+            description="A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database."
+          />
 
             {/* E-Commerce Backend */}
 
