@@ -24,6 +24,7 @@ const MoreProjects = () => {
 
         <div className="more-projects-project-container">
 
+          {/* E-Commerce Backend */}
           <ProjectCard
             title="E-Commerce Backend"
             thumbNail={EComBackend}
@@ -36,120 +37,42 @@ const MoreProjects = () => {
               { tech: Sequelize, link: "https://sequelize.org/" }
             ]}
             btns={[
-              {repo: "https://github.com/TDGNate/E-Commerce-Backend" },
-              {deployed: "https://www.google.com/"} 
+              {repo: "https://github.com/TDGNate/E-Commerce-Backend" }
             ]}
           />
 
-            {/* E-Commerce Backend */}
-
-            <div className="one-project">
-            <img src={EComBackend} alt="E-Commerce Backend Taker" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">E-Commerce Backend</h3>
-              <p className="one-project-text">
-                A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database.
-              </p>
-                <h4>Stack</h4>
-                <div className="one-project-techs">
-
-                  {/* Node */}
-                  <div className="one-project-tech">
-                    <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
-                      <img src={Node} alt="Node icon" className="skill-img" />
-                      </a>
-                 </div>
-
-                  {/* Express */}
-                  <div className="one-project-tech">
-                    <a href="https://expressjs.com/" target="blank" className="skill-anchor">
-                      <img src={Express} alt="Express icon" className="skill-img invert" />
-                      </a>
-                 </div>
-
-                  {/* API */}
-                  <div className="one-project-tech">
-                    <a href="https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm" target="blank" className="skill-anchor">
-                      <img src={API} alt="API icon" className="skill-img" />
-                      </a>
-                 </div>
-
-                  {/* MySQL */}
-                  <div className="one-project-tech">
-                    <a href="https://www.mysql.com/" target="blank" className="skill-anchor">
-                      <img src={MySQL} alt="MySQL icon" className="skill-img" />
-                      </a>
-                 </div>
-
-                  {/* Sequelize */}
-                  <div className="one-project-tech">
-                    <a href="https://sequelize.org/" target="blank" className="skill-anchor">
-                      <img src={Sequelize} alt="Sequelize icon" className="skill-img" />
-                      </a>
-                 </div>
-
-               </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://github.com/TDGNate/E-Commerce-Backend" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
-
           {/* Team Profile Generator */}
+          <ProjectCard
+            title="Team Profile Generator"
+            thumbNail={TeamGenerator}
+            description="Command line application that lets a user input data for their team which will generator an HTML page that displays each team member's name, role, id, email, and office number OR github depending on their role."
+            techStack={[
+              { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+              { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+              { tech: Node, link: "https://nodejs.org/en/" },
+              { tech: Bootstrap, link: "https://getbootstrap.com/" },
+              { tech: NPM, link: "https://www.npmjs.com/package/inquirer" }
+            ]}
+            btns={[
+              {repo: "https://github.com/TDGNate/Team-profile-generator" }
+            ]}
+          />
 
-          <div className="one-project">
-            <img src={TeamGenerator} alt="" className="one-project-img" />
-            <div className="one-project-bottom">
-              <h3 className="one-project-title">Team Profile Generator</h3>
-              <p className="one-project-text">
-                Command line application that lets a user input data for their team which will generator an HTML page that displays each team member's name, role, id, email, and office number OR github depending on their role.
-              </p>
-                <h4>Stack</h4>
-                <div className="one-project-techs">
-
-                  {/* HTML */}
-                  <div className="one-project-tech">
-                    <a href="https://en.wikipedia.org/wiki/HTML" target="blank" className="skill-anchor">
-                      <img src={Html} alt="Html icon" className="skill-img" />
-                      </a>
-                  </div>
-
-                  {/* CSS */}
-                  <div className="one-project-tech">
-                    <a href="https://en.wikipedia.org/wiki/CSS" target="blank" className="skill-anchor">
-                      <img src={Css3} alt="Css3 icon" className="skill-img" />
-                      </a>
-                  </div>
-
-                  {/* Node */}
-                  <div className="one-project-tech">
-                    <a href="https://nodejs.org/en/" target="blank" className="skill-anchor">
-                      <img src={Node} alt="Node icon" className="skill-img" />
-                      </a>
-                 </div>
-                
-                  {/* Bootstrap */}
-                  <div className="one-project-tech">
-                    <a href="https://getbootstrap.com/" target="blank" className="skill-anchor">
-                      <img src={Bootstrap} alt="Bootstrap icon" className="skill-img" />
-                      </a>
-                  </div>
-                
-                  {/* NPM */}
-                  <div className="one-project-tech">
-                    <a href="https://www.npmjs.com/package/inquirer" target="blank" className="skill-anchor">
-                      <img src={NPM} alt="NPM icon" className="skill-img" />
-                   </a>
-                </div>
-
-                  </div>
-              <hr className="one-project-hr"/>
-              <div className="one-project-btns">
-                <a href="https://github.com/TDGNate/Team-profile-generator" target="blank" className="project-prime-btn github-btn">GITHUB</a>
-              </div>
-            </div>
-          </div>
+          {/* Quiz Game  */}
+          <ProjectCard
+            title="Quiz Code"
+            thumbNail={QuizCode}
+            description="A quick coding quiz to test your frontend knowledge! A timer is set and a score is being tracked. When the game has ended, you can save your score by adding your initials and clicking the save button. Then the score will appear on your local leaderboard."
+            techStack={[
+              { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+              { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+              { tech: Javascript, link: "https://www.javascript.com/" },
+            ]}
+            btns={[
+              { repo: "https://github.com/TDGNate/Quiz-Code" },
+              { deployed: "https://tdgnate.github.io/Quiz-Code/" }
+            ]}
+          />
 
           {/* Quiz Game  */}
 
