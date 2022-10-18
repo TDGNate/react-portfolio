@@ -39,6 +39,9 @@ const Footer = ({ currentPage, handlePageChange }) => {
             <li>
              <a href="#contact">Send a Message</a>
             </li>
+            <li>
+             <a href="https://www.linkedin.com/in/christian-mcilvenny/" target="blank">LinkedIn</a>
+            </li>
           </ul>
         </div>
           
