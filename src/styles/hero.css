@@ -14,11 +14,12 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	filter: saturate(1.1);
+	filter: saturate(2);
 	transform: scaleX(-1);
 	width: 100%;
 	height: 100%;
 	z-index: 2;
+	animation: hero-fade 4.25s 158ms ease-out;
 }
 
 /* Hero left side  */
@@ -241,5 +242,17 @@
 	}
 	100% {
 		transform: translateX(0px);
+	}
+}
+
+@keyframes hero-fade {
+	0% {
+		filter: saturate(0.3);
+	}
+	68% {
+		filter: saturate(1.4);
+	}
+	100% {
+		filter: saturate(1.9);
 	}
 }
