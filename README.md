@@ -6,7 +6,7 @@ My portfolio has an about me, projects, skills, and a contact section modularize
 
 This website is powered my React.js, and is deployed on Github pages.
 
-Deployed: https://tdgnate.github.io/react-portfolio/ 
+Deployed: https://www.natemci.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
