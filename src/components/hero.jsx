@@ -38,7 +38,7 @@ const Hero = () => {
           <p className="hero-text">Thanks for visiting! <br />
           Check out some of my work!  <a href="#projects" className="hero-view-projects">Projects</a>
           </p>
-            <a href="#contact" className="hero-hire-me">Hire Me!</a>
+            <a href="#contact" className="hero-contact-me">Contact Me!</a>
           </div>
       </div>
       

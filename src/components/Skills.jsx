@@ -17,7 +17,7 @@ const Skills = () => {
 
         <h2>Technical Skills</h2>
         <p>
-          Here are my abilities and the tools i'm experienced with!
+          Here are my abilities and the tools I'm experienced with!
         </p>
 
         <div className="skills-wrapper">

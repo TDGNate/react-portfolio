@@ -34,7 +34,7 @@ const Footer = ({ currentPage, handlePageChange }) => {
              <a href="mailto:email@example.com">itsnzte@gmail.com</a>
             </li>
             <li>
-             <a href="#//">Phone: <span className="footer-number">951-591-3493</span></a>
+             <a href="tel:9515913493">Phone: <span className="footer-number">(951) 591-3493</span></a>
             </li>
             <li>
              <a href="#contact">Send a Message</a>

@@ -69,7 +69,7 @@
 }
 
 .cform-label {
-	width: 85%;
+	width: 89%;
 	padding-bottom: 0.5rem;
 	font-size: 1.1rem;
 }
@@ -93,6 +93,13 @@
 .cform-email:focus,
 .cform-message:focus {
 	border: 1px solid var(--blue-clr-hover);
+	background-color: rgba(0, 0, 0, 0.678);
+}
+
+.cform-name:hover,
+.cform-email:hover,
+.cform-message:hover {
+	background-color: rgba(0, 0, 0, 0.678);
 }
 
 .cform-message {

@@ -124,9 +124,11 @@ const Contact = () => {
       <div className="container">
         <h2>Contact</h2>
         <p className="contact-info">
-          Christian McIlvenny
+          Christian (Nate) McIlvenny
           <br />
           Perris, CA
+          <br />
+          <a href="tel:9515913493">(951) 591-3493</a>
           <br />
           <a href="mailto:email@example.com">itsnzte@gmail.com</a>
         </p>
