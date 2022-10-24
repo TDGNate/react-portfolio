@@ -44,11 +44,27 @@
 	margin: 0;
 	font-size: 1.2rem;
 	border-bottom: 1px solid transparent;
+	background: linear-gradient(
+			to right,
+			rgba(100, 200, 200, 0),
+			rgba(100, 200, 200, 0)
+		),
+		linear-gradient(to right, var(--blue-clr), var(--blue-clr));
+	background-size: 100% 0.1em, 0 0.1em;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 300ms ease;
 }
 
 .navbar-item a:hover {
+	background-size: 0 0.1em, 100% 0.1em;
 	color: var(--blue-clr-hover);
 	cursor: pointer;
+}
+
+.navbar-item a:focus {
+	background-size: 0 0.1em, 100% 0.1em;
+	color: var(--blue-clr-hover);
 }
 
 .nav-active-link {
