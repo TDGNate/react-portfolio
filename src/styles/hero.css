@@ -53,6 +53,10 @@
 	font-weight: bold;
 }
 
+.hero-title-break {
+	display: none;
+}
+
 .hero-side-content {
 	display: flex;
 	flex-direction: column;
@@ -84,7 +88,7 @@
 	border: 2px solid rgb(169, 213, 255) !important;
 }
 
-/* Hire Me Button Styles  */
+/* Contact Me Button Styles  */
 
 .hero-contact-me {
 	background-color: var(--purp-clr);
@@ -101,7 +105,6 @@
 
 .hero-contact-me:hover {
 	color: white;
-
 	background-color: var(--purp-clr-hover);
 }
 
@@ -199,6 +202,10 @@
 		color: var(--blue-clr);
 	}
 
+	.hero-title-break {
+		display: block;
+	}
+
 	.hero-sub-title {
 		color: var(--purp-clr);
 		font-size: 1.5rem !important;
@@ -229,7 +236,7 @@
 		padding: 6px 1rem;
 	}
 
-	.hero-hire-me {
+	.hero-contact-me {
 		margin: 1rem auto;
 	}
 }

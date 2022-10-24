@@ -56,8 +56,7 @@ a {
 		top: 70px;
 		gap: 0;
 		flex-direction: column;
-		background-color: rgba(0, 0, 0, 0.807);
-
+		background-color: rgba(0, 0, 0, 0.597);
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
@@ -74,7 +73,7 @@ a {
 	}
 
 	.navbar-container.active {
-		background-color: rgba(0, 0, 0, 0.807);
+		background-color: rgba(0, 0, 0, 0.553);
 		height: 100vh;
 		overflow: hidden;
 	}
