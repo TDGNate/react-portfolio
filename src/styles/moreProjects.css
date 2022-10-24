@@ -51,8 +51,17 @@
 		height: 15vh;
 	}
 
+	.more-projects-page {
+		background-image: url("../svgs/phone-projects-page.svg");
+	}
+
 	.more-projects-page h1 {
 		text-align: center;
+	}
+
+	.more-projects-sub-text {
+		color: #fff;
+		font-size: 1.1rem !important;
 	}
 
 	.more-projects-project-container {

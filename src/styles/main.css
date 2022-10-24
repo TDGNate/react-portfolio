@@ -8,16 +8,16 @@
 
 :root {
 	/* Primary Colors  */
-	--blue-clr: rgb(30, 112, 255);
-	--blue-clr-hover: rgb(91, 148, 255);
+	--blue-clr: #1e70ff;
+	--blue-clr-hover: #5b94ff;
 	/* Secondary Colors  */
-	--purp-clr: rgb(159, 50, 255);
-	--purp-clr-hover: rgb(96, 0, 180);
+	--purp-clr: #9f32ff;
+	--purp-clr-hover: #6000b4;
 	/* Contrast Colors  */
 	--dark-clr: #040010;
 	--light-clr: #fff;
 	/* sub colors  */
-	--light-sub-clr: rgb(191, 191, 191);
+	--light-sub-clr: #bfbfbf;
 	--sub-purp-clr: #070421;
 	--sub-blue-clr: #00132f;
 }
