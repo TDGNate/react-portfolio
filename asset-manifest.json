@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d87591af.css",
-    "main.js": "/static/js/main.1131d6b1.js",
+    "main.css": "/static/css/main.d093c25a.css",
+    "main.js": "/static/js/main.13edd3c1.js",
     "static/media/quiz.gif": "/static/media/quiz.e669f7dfc85145861f3c.gif",
     "static/media/platello.gif": "/static/media/platello.271938012054b327c77f.gif",
     "static/media/pop.gif": "/static/media/pop.40d7e5cba1a2851b440a.gif",
@@ -24,17 +24,18 @@
     "static/media/teamGenerator.png": "/static/media/teamGenerator.333b8285d3f0221e34c8.png",
     "static/media/my-calender-app.png": "/static/media/my-calender-app.f2d6e136e8198557633d.png",
     "static/media/working-with-laptop.svg": "/static/media/working-with-laptop.1e11b79e6a83b0b28e9b7c4ed238d381.svg",
+    "static/media/phone-projects-page.svg": "/static/media/phone-projects-page.1cab793e9af289cccdbf.svg",
     "static/media/stacked-waves.svg": "/static/media/stacked-waves.772e26e415b656e2c6f8.svg",
     "static/media/footer.svg": "/static/media/footer.24cd971370da073d1e96.svg",
     "static/media/projects-page.svg": "/static/media/projects-page.85e6ac04b653e02126ba.svg",
     "static/media/contact-bg.svg": "/static/media/contact-bg.26325810d76920a74a26.svg",
     "index.html": "/index.html",
     "static/media/wave-middle.svg": "/static/media/wave-middle.caf89d6fa9f0a88039e5.svg",
-    "main.d87591af.css.map": "/static/css/main.d87591af.css.map",
-    "main.1131d6b1.js.map": "/static/js/main.1131d6b1.js.map"
+    "main.d093c25a.css.map": "/static/css/main.d093c25a.css.map",
+    "main.13edd3c1.js.map": "/static/js/main.13edd3c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d87591af.css",
-    "static/js/main.1131d6b1.js"
+    "static/css/main.d093c25a.css",
+    "static/js/main.13edd3c1.js"
   ]
 }
