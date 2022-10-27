@@ -41,17 +41,17 @@ const Hero = () => {
         {/* Small About Me  */}
         <div className="hero-about">
           <p className="hero-about-text">
-          Hello, I go by Nate! My passion is building applications for clients, team collaboration, problem-solving, and designing UI.
+          You can just call me Nate! My passion is building applications for clients, team collaboration, problem-solving, and designing.
             <div className="hero-about-space"></div>
             <a href="/#" className="more-about-me">More About Me</a>
           </p>
-          <img src={Nate} alt="Nate" className="hero-about-img" />
+          <img src={Nate} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
         </div>
 
         {/* Hero Side Content  */}
         <div className="hero-side-content">
           <p className="hero-text">
-          Check out some of my work! <a href="#projects" className="hero-view-projects">Projects</a>
+          Check out some of my work below! <a href="#projects" className="hero-view-projects"><i class="bi bi-arrow-down"></i></a>
           </p>
             <a href="#contact" className="hero-contact-me">Contact Me!</a>
           </div>
