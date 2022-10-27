@@ -53,6 +53,26 @@
 	font-weight: bold;
 }
 
+/* Hero About  */
+
+.hero-about {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 0;
+	border-bottom: 1px solid var(--purp-clr);
+}
+
+.hero-about-text {
+	margin: 0;
+}
+
+.hero-about-img {
+	width: 275px;
+}
+
 .hero-title-break {
 	display: none;
 }

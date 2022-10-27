@@ -1,7 +1,12 @@
 import React from "react";
+
+// Styles 
 import "../styles/hero.css";
 
+// Images 
 import { mountainBg } from "../imgs";
+import { Nate } from "../imgs";
+
 import Parallax from "../utils/parallax";
 
 const Hero = () => {
@@ -31,6 +36,14 @@ const Hero = () => {
         <div className="hero-top-titles">
             <h1 className="hero-title">Hello, I'm <br className="hero-title-break"/><span className="hero-name"> Christian McIlvenny</span></h1>
             <p className="hero-sub-title">Software Developer</p>
+        </div>
+
+        {/* Small About Me  */}
+        <div className="hero-about">
+          <p className="hero-about-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid facilis suscipit harum dolorem beatae nulla?
+          </p>
+          <img src={Nate} alt="Nate" className="hero-about-img" />
         </div>
 
         {/* Hero Side Content  */}
