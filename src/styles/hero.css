@@ -60,17 +60,29 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
+	width: 85%;
 	margin: 0;
+	max-height: 275px;
 	border-bottom: 1px solid var(--purp-clr);
 }
 
 .hero-about-text {
+	width: 60%;
+	/* padding: 0 0.8rem;  */
 	margin: 0;
 }
 
 .hero-about-img {
-	width: 275px;
+	/* width: 40%; */
+	width: 280px;
+	min-width: 240px;
+}
+
+/* Specific Query For Hero About  */
+@media screen and (max-width: 985px) {
+	.hero-about {
+		width: 100%;
+	}
 }
 
 .hero-title-break {
