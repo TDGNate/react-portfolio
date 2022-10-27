@@ -56,7 +56,6 @@
 /* Hero About  */
 
 .hero-about {
-	/* padding: 0 0.3rem;  */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -66,7 +65,11 @@
 	max-height: 275px;
 	border-bottom: 1px solid var(--purp-clr);
 	overflow: hidden;
-	/* background: linear-gradient(to top, rgba(0, 0, 0, 0.201) 5%, transparent); */
+}
+
+.hero-about-space {
+	height: 0.65rem;
+	background-color: transparent;
 }
 
 .hero-about-text {
@@ -85,9 +88,9 @@
 }
 
 .hero-about-img {
-	filter: grayscale(30%) opacity(80%);
+	filter: grayscale(70%) opacity(80%);
 	width: 280px;
-	min-width: 240px;
+	min-width: 250px !important;
 	transition: all 200ms ease-out;
 }
 
@@ -287,10 +290,19 @@
 }
 
 /* Specific Query For Hero About  */
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 1040px) {
 	.hero-about {
 		width: 100%;
 		padding: 0;
+	}
+
+	.hero-about-text {
+		width: 250px;
+		font-size: 1.05rem !important;
+	}
+
+	.hero-about-space {
+		height: 0.15rem;
 	}
 }
 

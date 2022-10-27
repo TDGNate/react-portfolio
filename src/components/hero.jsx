@@ -41,8 +41,8 @@ const Hero = () => {
         {/* Small About Me  */}
         <div className="hero-about">
           <p className="hero-about-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid facilis suscipit harum dolorem beatae nulla?
-            <br />
+          Hello, I go by Nate! My passion is building applications for clients, team collaboration, problem-solving, and designing UI.
+            <div className="hero-about-space"></div>
             <a href="/#" className="more-about-me">More About Me</a>
           </p>
           <img src={Nate} alt="Nate" className="hero-about-img" />
