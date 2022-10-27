@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 
 // Component Pages
 import Navbar from "./Navbar";
-import Home from "./pages/Home";
 import Footer from "./Footer";
+
+// Pages 
+import Home from "./pages/Home";
 import MoreProjects from "./pages/MoreProjects";
+import About from "./pages/About";
 
 const PortfolioContainer = () => {
 
@@ -17,6 +20,9 @@ const PortfolioContainer = () => {
     }
     if (currentPage === 'MoreProjects') {
       return <MoreProjects />;
+    }
+    if (currentPage === 'About') {
+      return <About />;
     }
   };
 
