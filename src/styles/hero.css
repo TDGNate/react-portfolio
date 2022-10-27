@@ -62,7 +62,7 @@
 	align-items: center;
 	width: 85%;
 	margin: 0.5rem 0;
-	max-height: 235px;
+	max-height: 240px;
 	border-bottom: 1px solid var(--purp-clr);
 	overflow: hidden;
 	animation: hero-about-fade 1800ms ease-in;
@@ -89,14 +89,15 @@
 }
 
 .hero-about-img {
-	filter: grayscale(70%) opacity(80%);
+	filter: grayscale(70%) opacity(80%) hue-rotate(10deg)
+		drop-shadow(0 0 0 transparent);
 	width: 280px;
 	min-width: 250px;
-	transition: all 200ms ease-out;
+	transition: all 250ms ease-out;
 }
 
 .hero-about-img:hover {
-	filter: grayscale(0%) opacity(100%)
+	filter: grayscale(0%) opacity(100%) hue-rotate(0deg)
 		drop-shadow(2px 2px 10px rgba(0, 123, 255, 0.646));
 }
 

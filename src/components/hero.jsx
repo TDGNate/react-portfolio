@@ -7,6 +7,9 @@ import "../styles/hero.css";
 import { mountainBg } from "../imgs";
 import { Nate } from "../imgs";
 
+// Resume 
+import { Resume } from '../imgs';
+
 import Parallax from "../utils/parallax";
 
 const Hero = () => {
@@ -43,7 +46,7 @@ const Hero = () => {
           <p className="hero-about-text">
           You can just call me Nate! My passion is building applications for clients, team collaboration, problem-solving, and designing.
             <div className="hero-about-space"></div>
-            <a href="/#" className="more-about-me">More About Me</a>
+            <a href="/#" className="more-about-me">More About Me</a> | <a href={Resume} target="blank" className="more-about-me">Resume</a>
           </p>
           <img src={Nate} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
         </div>

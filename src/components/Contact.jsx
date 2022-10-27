@@ -124,7 +124,7 @@ const Contact = () => {
       <div className="container">
         <h2>Contact</h2>
         <p className="contact-info">
-          Christian (Nate) McIlvenny
+          Christian "Nate" McIlvenny
           <br />
           Perris, CA
           <br />

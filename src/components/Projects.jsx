@@ -20,7 +20,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
       <div className="container">
         <h2>My Work</h2>
         <div className="project-content reveal">
-          <h3>Essential Projects</h3>
+          <h3>Experience</h3>
           <div className="project-primary">
             
             {/* POP Umai Project  */}
