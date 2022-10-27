@@ -42,14 +42,16 @@ const Hero = () => {
         <div className="hero-about">
           <p className="hero-about-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid facilis suscipit harum dolorem beatae nulla?
+            <br />
+            <a href="/#" className="more-about-me">More About Me</a>
           </p>
           <img src={Nate} alt="Nate" className="hero-about-img" />
         </div>
 
         {/* Hero Side Content  */}
         <div className="hero-side-content">
-          <p className="hero-text">Thanks for visiting! <br />
-          Check out some of my work!  <a href="#projects" className="hero-view-projects">Projects</a>
+          <p className="hero-text">
+          Check out some of my work! <a href="#projects" className="hero-view-projects">Projects</a>
           </p>
             <a href="#contact" className="hero-contact-me">Contact Me!</a>
           </div>
