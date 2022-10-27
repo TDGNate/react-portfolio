@@ -6,7 +6,7 @@
 	position: relative;
 	display: flex;
 	z-index: 1;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .hero-bg {
@@ -28,7 +28,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 1%;
+	gap: 0%;
 	padding: 0 2.8rem;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.681);
@@ -62,7 +62,7 @@
 	align-items: center;
 	width: 85%;
 	margin: 0.5rem 0;
-	max-height: 275px;
+	max-height: 235px;
 	border-bottom: 1px solid var(--purp-clr);
 	overflow: hidden;
 	animation: hero-about-fade 1800ms ease-in;
@@ -91,7 +91,7 @@
 .hero-about-img {
 	filter: grayscale(70%) opacity(80%);
 	width: 280px;
-	min-width: 250px !important;
+	min-width: 250px;
 	transition: all 200ms ease-out;
 }
 
@@ -229,13 +229,12 @@
 
 @media screen and (max-width: 830px) {
 	/* Hero left side  */
-
 	.hero-bg {
 		background-position: 55%;
 	}
 
 	.hero-side {
-		gap: 0%;
+		gap: 4%;
 		padding: 0;
 		background-color: rgba(0, 0, 0, 0.505);
 		width: 100%;
@@ -243,11 +242,11 @@
 	}
 
 	.hero-top-titles {
-		margin: 2.5rem 0;
+		margin: 1rem 0;
 	}
 
 	.hero-title {
-		margin-top: 2.5rem;
+		margin-top: 3rem !important;
 		font-size: 2.5em;
 		font-weight: bolder;
 		padding: 0 0.5rem;
@@ -265,6 +264,7 @@
 		color: var(--purp-clr);
 		font-size: 1.5rem !important;
 		font-weight: bold;
+		margin: 0.2rem;
 	}
 
 	.hero-side-content {
@@ -273,7 +273,7 @@
 		gap: 0;
 		line-height: 1.6rem;
 		font-size: 1rem;
-		padding: 1rem 0;
+		padding: 1rem 0.5rem !important;
 	}
 
 	.hero-text {
@@ -293,6 +293,7 @@
 
 	.hero-contact-me {
 		margin: 1rem auto;
+		padding: 0.43rem 0.9rem;
 	}
 
 	.hero-view-projects i {
@@ -327,27 +328,63 @@
 		background-color: rgba(0, 0, 0, 0.703);
 		width: 100%;
 		border: none;
+		overflow: unset !important;
 	}
 
 	.hero-about-text {
 		color: var(--light-clr);
 	}
+
+	.hero-about-img {
+		width: 200px;
+	}
 }
 
 @media screen and (max-width: 560px) {
+	/* Hero Top  */
+	.hero-title {
+		margin-top: 2.6rem;
+		font-size: 1.8rem !important;
+	}
+
+	.hero-sub-title {
+		font-size: 1.3rem !important;
+	}
+
+	.hero-side-content {
+		padding: 0.5rem 0;
+	}
+
+	/* Hero About  */
+
 	.hero-about {
 		flex-direction: column;
-		margin: 0;
-		max-height: unset;
-		overflow: hidden;
+		margin: 6% 0;
+		max-height: unset !important;
+		justify-content: unset;
+		padding: 0;
 	}
 
 	.hero-about-text {
-		padding: 1rem 0;
+		font-size: 1rem !important;
+		padding: 0.8rem 0;
 	}
 
-	.hero-about-img {
-		width: 50%;
+	.hero-about > img {
+		min-width: unset;
+		width: 150px;
+		display: none;
+	}
+
+	/* Others  */
+
+	.hero-text {
+		gap: 0.2rem;
+	}
+
+	.hero-contact-me {
+		margin: 0.8rem auto;
+		padding: 0.43rem 0.9rem;
 	}
 }
 
