@@ -3,7 +3,7 @@ import React from 'react'
 // Resume and Images
 import { Nate, Resume } from "../../imgs"
 
-const About = ({ currentPage, handlePageChange }) => {
+const About = () => {
   return (
     <div id="aboutPage">
       <div className="container">
@@ -33,4 +33,4 @@ const About = ({ currentPage, handlePageChange }) => {
   )
 }
 
-export default About
+export default About;

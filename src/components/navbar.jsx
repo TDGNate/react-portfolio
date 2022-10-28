@@ -20,10 +20,20 @@ const Navbar = ({ currentPage, handlePageChange }) => {
         }
       }
 
+      if (currentPage === "About") {
+        if (e.currentTarget.classList.contains('hamburger')) {
+          return
+        }
+      }
+
       handlePageChange('Home')
     }
 
     if (currentPage === "MoreProjects") { 
+      handlePageChange('Home')
+    }
+
+    if (currentPage === "About") { 
       handlePageChange('Home')
     }
 
@@ -35,8 +45,8 @@ const Navbar = ({ currentPage, handlePageChange }) => {
         <a href="#hero" className="logo" onClick={() => handlePageChange('Home')}>Nate</a>
         <ul className={`navbar-ul ${isActive ? "" : "active"}`}>
 
-          <li className="navbar-item">
-            <a href="#about-me"
+          <li className={currentPage === "About" ? "navbar-item nav-active-link" : "navbar-item"}>
+            <a href="#aboutPage"
               onClick={handleToggle}
             >About Me</a>
           </li>
