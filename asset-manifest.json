@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d093c25a.css",
-    "main.js": "/static/js/main.13edd3c1.js",
+    "main.css": "/static/css/main.b95598e1.css",
+    "main.js": "/static/js/main.896031e7.js",
+    "static/media/daisysCakes.gif": "/static/media/daisysCakes.1959bf74be0b4242e8fa.gif",
     "static/media/quiz.gif": "/static/media/quiz.e669f7dfc85145861f3c.gif",
     "static/media/platello.gif": "/static/media/platello.271938012054b327c77f.gif",
     "static/media/pop.gif": "/static/media/pop.40d7e5cba1a2851b440a.gif",
@@ -31,11 +32,11 @@
     "static/media/contact-bg.svg": "/static/media/contact-bg.26325810d76920a74a26.svg",
     "index.html": "/index.html",
     "static/media/wave-middle.svg": "/static/media/wave-middle.caf89d6fa9f0a88039e5.svg",
-    "main.d093c25a.css.map": "/static/css/main.d093c25a.css.map",
-    "main.13edd3c1.js.map": "/static/js/main.13edd3c1.js.map"
+    "main.b95598e1.css.map": "/static/css/main.b95598e1.css.map",
+    "main.896031e7.js.map": "/static/js/main.896031e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d093c25a.css",
-    "static/js/main.13edd3c1.js"
+    "static/css/main.b95598e1.css",
+    "static/js/main.896031e7.js"
   ]
 }
