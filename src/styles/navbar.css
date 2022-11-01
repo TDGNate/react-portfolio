@@ -70,3 +70,9 @@
 .nav-active-link {
 	border-bottom: 1px solid var(--blue-clr);
 }
+
+@media screen and (max-width: 993px) {
+	.container {
+		max-width: 930px !important;
+	}
+}

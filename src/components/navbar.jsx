@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 
+// Styles 
 import "../styles/hamburger.css";
 import "../styles/navbar.css";
+
+// Resume 
+import { Resume } from "../imgs";
 
 const Navbar = ({ currentPage, handlePageChange }) => {
   
@@ -60,6 +64,12 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             <a href="#skills"
               onClick={handleToggle}
             >Skills</a>
+          </li>
+
+          <li className="navbar-item">
+            <a href={Resume} target="blank"
+              onClick={handleToggle}
+            >Resume</a>
           </li>
 
           <li className="navbar-item">
