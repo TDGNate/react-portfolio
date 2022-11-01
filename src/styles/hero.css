@@ -46,6 +46,11 @@
 
 .hero-name {
 	color: var(--blue-clr);
+	transition: all 1500ms ease;
+}
+
+.hero-name:hover {
+	color: var(--blue-clr-hover);
 }
 
 .hero-sub-title {
@@ -63,10 +68,11 @@
 	align-items: center;
 	width: 85%;
 	margin: 0.5rem 0;
-	max-height: 175px;
+	max-height: 185px;
 	border-bottom: 1px solid var(--purp-clr);
 	overflow: hidden;
-	animation: hero-about-fade 1800ms ease-in;
+	opacity: 1;
+	animation: hero-about-fade 1500ms ease;
 }
 
 .hero-about-space {
@@ -236,7 +242,7 @@
 	}
 
 	.hero-side {
-		/* gap: 4%;  */
+		align-items: center;
 		padding: 0;
 		background-color: rgba(0, 0, 0, 0.505);
 		width: 100%;
@@ -310,6 +316,10 @@
 /* Specific Query For Hero About  */
 
 @media screen and (max-width: 1040px) {
+	.hero-side {
+		gap: 3%;
+	}
+
 	.hero-about {
 		width: 100%;
 		padding: 0;
@@ -327,9 +337,10 @@
 
 @media screen and (max-width: 830px) {
 	.hero-about {
-		background-color: rgba(0, 0, 0, 0.703);
-		width: 100%;
+		background-color: rgba(0, 0, 0, 0.277);
+		width: 85%;
 		border: none;
+		border-radius: 8px;
 		overflow: unset !important;
 	}
 
@@ -339,7 +350,6 @@
 
 	.hero-about-img {
 		width: 190px;
-		/* width: 40%;  */
 		min-width: unset;
 	}
 }
@@ -389,6 +399,14 @@
 	.hero-contact-me {
 		margin: 0.8rem auto;
 		padding: 0.43rem 0.9rem;
+	}
+}
+
+/* Galaxy Fold  */
+@media screen and (max-width: 280px) {
+	.hero-about-text {
+		font-size: 0.8rem !important;
+		padding: 0.8rem 0;
 	}
 }
 

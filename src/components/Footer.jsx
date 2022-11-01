@@ -23,7 +23,7 @@ const Footer = ({ currentPage, handlePageChange }) => {
 
       <div className="footer-layer reveal"></div>
 
-      <div className="container reveal">
+      <div className="container">
 
         <div className="footer-links-container">
 

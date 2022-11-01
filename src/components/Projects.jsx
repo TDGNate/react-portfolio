@@ -19,7 +19,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
     <section id="projects" className="project-section" >
       <div className="container">
         <h2>My Work</h2>
-        <div className="project-content reveal">
+        <div className="project-content">
           <h3>Experience</h3>
           <div className="project-primary">
             
