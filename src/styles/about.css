@@ -1,15 +1,18 @@
 /* About Section Styles  */
 
-.about-section {
+#aboutPage {
+	overflow: hidden;
 	background-color: var(--dark-clr);
-	height: auto;
+	min-height: 100vh;
+	padding: 1rem 0.8rem;
 }
 
-.about-section .container {
+#aboutPage .container {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 	padding: 0;
+	margin-top: 15vh;
 }
 
 .about-content {
@@ -143,10 +146,6 @@
 /* Media Query (Mobile Size)  */
 
 @media screen and (max-width: 830px) {
-	.about-section {
-		overflow-x: hidden;
-	}
-
 	.about-content {
 		flex-direction: column;
 		gap: 2rem;

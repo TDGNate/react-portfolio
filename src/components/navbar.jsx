@@ -20,20 +20,30 @@ const Navbar = ({ currentPage, handlePageChange }) => {
 
       if (currentPage === "MoreProjects") {
         if (e.currentTarget.classList.contains('hamburger')) {
-          return
+          return;
         }
       }
 
       if (currentPage === "About") {
         if (e.currentTarget.classList.contains('hamburger')) {
-          return
+          return;
         }
       }
 
       handlePageChange('Home')
     }
 
+    console.log(typeof e.currentTarget.getAttribute("data-value"))
+
+    if (e.currentTarget.getAttribute("data-value") === "about") {
+      handlePageChange('About')
+    }
+
     if (currentPage === "MoreProjects") { 
+      if (e.currentTarget.getAttribute("data-value") === "about") {
+        handlePageChange('About')
+        return;
+      }
       handlePageChange('Home')
     }
 
@@ -50,9 +60,8 @@ const Navbar = ({ currentPage, handlePageChange }) => {
         <ul className={`navbar-ul ${isActive ? "" : "active"}`}>
 
           <li className={currentPage === "About" ? "navbar-item nav-active-link" : "navbar-item"}>
-            <a href="#aboutPage"
-              onClick={handleToggle}
-            >About Me</a>
+            <a href="#aboutPage" data-value="about"
+              onClick={handleToggle}>About Me</a>
           </li>
 
           <li className={currentPage === "MoreProjects" ? "navbar-item nav-active-link" : "navbar-item"}>

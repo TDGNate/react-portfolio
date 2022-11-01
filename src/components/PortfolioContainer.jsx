@@ -40,7 +40,6 @@ const PortfolioContainer = () => {
       {renderPage()}
 
       <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* <Footer currentPage={currentPage} handlePageChange={handlePageChange} />  */}
     </>
   )
 }
