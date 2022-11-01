@@ -244,6 +244,12 @@
 	}
 }
 
+@media screen and (max-width: 280px) {
+	.cform-send {
+		padding: 0.2rem;
+	}
+}
+
 /* border Glow  */
 
 .border-glow {

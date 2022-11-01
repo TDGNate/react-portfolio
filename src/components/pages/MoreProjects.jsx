@@ -9,6 +9,7 @@ import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp,
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM, Matcss } from "../../imgs/skills";
 
+// Styles 
 import "../../styles/moreProjects.css";
 
 const MoreProjects = () => {

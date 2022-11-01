@@ -9,6 +9,9 @@ import Home from "./pages/Home";
 import MoreProjects from "./pages/MoreProjects";
 import About from "./pages/About";
 
+// Animations 
+import { RevealLeft, RevealRight, RevealY } from "../utils/animation";
+
 const PortfolioContainer = () => {
 
   const [currentPage, setCurrentPage] = useState('Home');
@@ -37,8 +40,18 @@ const PortfolioContainer = () => {
       {renderPage()}
 
       <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* <Footer currentPage={currentPage} handlePageChange={handlePageChange} />  */}
     </>
   )
 }
+
+// Execute Animations 
+window.addEventListener("scroll", () => {
+
+  RevealLeft()
+  RevealRight()
+  RevealY()
+
+});
 
 export default PortfolioContainer;

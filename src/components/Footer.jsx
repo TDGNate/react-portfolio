@@ -1,6 +1,10 @@
 import React from 'react';
 
+// Styles 
 import "../styles/footer.css";
+
+// Animations 
+import { RevealY } from "../utils/animation";
 
 const Footer = ({ currentPage, handlePageChange }) => {
 
@@ -19,7 +23,7 @@ const Footer = ({ currentPage, handlePageChange }) => {
 
       <div className="footer-layer reveal"></div>
 
-      <div className="container">
+      <div className="container reveal">
 
         <div className="footer-links-container">
 
@@ -114,5 +118,12 @@ const Footer = ({ currentPage, handlePageChange }) => {
     </section>
   )
 }
+
+// Execute Animations 
+window.addEventListener("scroll", () => {
+
+  RevealY()
+
+});
 
 export default Footer;

@@ -33,13 +33,13 @@
 	color: white;
 	background-color: rgba(0, 0, 0, 0.681);
 	z-index: 5;
-	width: 60%;
+	width: 65%;
 	height: 100%;
 	animation: slide-hero-in 1.35s ease-out;
 }
 
 .hero-title {
-	font-size: 3.5em;
+	font-size: 3.2em;
 	font-weight: bolder;
 }
 
@@ -49,7 +49,7 @@
 
 .hero-sub-title {
 	color: var(--purp-clr);
-	font-size: 2.2rem !important;
+	font-size: 2rem !important;
 	font-weight: bold;
 }
 
