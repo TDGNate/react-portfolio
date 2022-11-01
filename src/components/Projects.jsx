@@ -1,10 +1,10 @@
 import React from "react";
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API, Reactt, Mongo, Mongoose, Sass, NPM, Git } from "../imgs/skills";
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, Matcss, jQuery, Html, Css3, API, Reactt, Mongo, Mongoose, Sass, NPM, Git } from "../imgs/skills";
 
 // Thumbnails for projects 
-import { POPUmai, Platello, TechBlog, DaisysCakes } from "../gifs/projects";
+import { POPUmai, Platello, DaisysCakes } from "../gifs/projects";
 
 import manOnPc from "../svgs/working-with-laptop.svg";
 import "../styles/project.css";
@@ -98,7 +98,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
               </div>
 
               <div className="project-prime-card-right">
-                <div className="project-prime-title">Daisy's Cakes</div>
+                <div className="project-prime-title">Daisy's Cakes - <span className="project-prime-title-sub">Freelance</span></div>
                 <p className="project-prime-middle">Full-stack Mern-Stack site for a small local owned business that creates custom cakes for all occasions. Daisy&lsquo;s Cakes had no prior website except instagram for customers to contact her for cake orders. So we took on the challenge of creating an entire website from scratch including logo, theme or layout.</p>
                 <div className="project-prime-tech-title project-prime-middle">
                   Technologies and Tools
