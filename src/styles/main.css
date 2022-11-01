@@ -84,7 +84,7 @@ section {
 /* Global classes  */
 
 .invert {
-	filter: invert(1);
+	filter: invert(1) !important;
 }
 
 /* scroll bar  */

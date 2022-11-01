@@ -1,10 +1,10 @@
 import React from "react";
 
 // Icons for projects 
-import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, Matcss, jQuery, Html, Css3, API } from "../imgs/skills";
+import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, Matcss, jQuery, Html, Css3, API, Reactt, Mongo, Mongoose, Sass, NPM, Git } from "../imgs/skills";
 
 // Thumbnails for projects 
-import { POPUmai, Platello, TechBlog } from "../gifs/projects";
+import { POPUmai, Platello, DaisysCakes } from "../gifs/projects";
 
 import manOnPc from "../svgs/working-with-laptop.svg";
 import "../styles/project.css";
@@ -57,7 +57,7 @@ const Projects = ({ currentPage, handlePageChange }) => {
 
             {/* Tech Blog Project  */}
 
-            <div className="project-prime-card reverse reveal">
+            {/* <div className="project-prime-card reverse reveal">
               <div className="project-prime-card-left">
                 <img src={TechBlog} alt="project" className="project-prime-thumbnail"/>
               </div>
@@ -70,21 +70,56 @@ const Projects = ({ currentPage, handlePageChange }) => {
                 </div>
 
                 <div className="project-prime-tech project-prime-middle">
-                  <img className="tech-icon" src={Heroku} alt="heroku icon" />
-                  <img className="tech-icon invert" src={Handlebars} alt="heroku icon" />
-                  <img className="tech-icon" src={Sequelize} alt="heroku icon" />
-                  <img className="tech-icon" src={Javascript} alt="heroku icon" />
-                  <img className="tech-icon invert" src={Express} alt="heroku icon" />
-                  <img className="tech-icon" src={Bootstrap} alt="heroku icon" />
-                  <img className="tech-icon" src={MySQL} alt="heroku icon" />
-                  <img className="tech-icon" src={Node} alt="heroku icon" />
-                  <img className="tech-icon" src={SweetAlert} alt="heroku icon" />
-                  <img className="tech-icon" src={FontAwesome} alt="heroku icon" />
+                  <img className="tech-icon" src={Heroku} alt="icon" />
+                  <img className="tech-icon invert" src={Handlebars} alt="icon" />
+                  <img className="tech-icon" src={Sequelize} alt="icon" />
+                  <img className="tech-icon" src={Javascript} alt="icon" />
+                  <img className="tech-icon invert" src={Express} alt="icon" />
+                  <img className="tech-icon" src={Bootstrap} alt="icon" />
+                  <img className="tech-icon" src={MySQL} alt="icon" />
+                  <img className="tech-icon" src={Node} alt="icon" />
+                  <img className="tech-icon" src={SweetAlert} alt="icon" />
+                  <img className="tech-icon" src={FontAwesome} alt="icon" />
                 </div>
 
                 <div className="project-prime-btns">
                   <a href="https://techer-blogger.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
                   <a href="https://github.com/TDGNate/Tech-Blog" target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                </div>
+
+              </div>
+            </div> */}
+
+            {/* For Now  | Daisy's Cakes*/}
+
+              <div className="project-prime-card reverse reveal">
+              <div className="project-prime-card-left">
+                <img src={DaisysCakes} alt="project" className="project-prime-thumbnail"/>
+              </div>
+
+              <div className="project-prime-card-right">
+                <div className="project-prime-title">Daisy's Cakes - <span className="project-prime-title-sub">Freelance</span></div>
+                <p className="project-prime-middle">Full-stack Mern-Stack site for a small local owned business that creates custom cakes for all occasions. Daisy&lsquo;s Cakes had no prior website except instagram for customers to contact her for cake orders. So we took on the challenge of creating an entire website from scratch including logo, theme or layout.</p>
+                <div className="project-prime-tech-title project-prime-middle">
+                  Technologies and Tools
+                </div>
+
+                <div className="project-prime-tech project-prime-middle">
+                  <img className="tech-icon" src={Mongo} alt="icon" />
+                  <img className="tech-icon invert" src={Express} alt="icon" />
+                  <img className="tech-icon" src={Reactt} alt="icon" />
+                  <img className="tech-icon" src={Node} alt="icon" />
+                  <img className="tech-icon" src={Git} alt="icon" />
+                  <img className="tech-icon invert" src={Mongoose} alt="icon" />
+                  <img className="tech-icon" src={Heroku} alt="icon" />
+                  <img className="tech-icon" src={SweetAlert} alt="icon" />
+                  <img className="tech-icon" src={Sass} alt="icon" />
+                  <img className="tech-icon" src={NPM} alt="icon" />
+                </div>
+
+                <div className="project-prime-btns">
+                  <a href="https://bakedwithlove.herokuapp.com/" target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                  <a href="https://github.com/PreDevz/Daisys-Cakes" target="blank" className="project-prime-btn github-btn">GITHUB</a>
                 </div>
 
               </div>
@@ -105,12 +140,12 @@ const Projects = ({ currentPage, handlePageChange }) => {
                 </div>
 
                 <div className="project-prime-tech">
-                  <img className="tech-icon" src={Html} alt="heroku icon" />
-                  <img className="tech-icon" src={Css3} alt="heroku icon" />
-                  <img className="tech-icon" src={Javascript} alt="heroku icon" />
-                  <img className="tech-icon" src={Matcss} alt="heroku icon" />
-                  <img className="tech-icon" src={jQuery} alt="heroku icon" />
-                  <img className="tech-icon" src={API} alt="heroku icon" />
+                  <img className="tech-icon" src={Html} alt="icon" />
+                  <img className="tech-icon" src={Css3} alt="icon" />
+                  <img className="tech-icon" src={Javascript} alt="icon" />
+                  <img className="tech-icon" src={Matcss} alt="icon" />
+                  <img className="tech-icon" src={jQuery} alt="icon" />
+                  <img className="tech-icon" src={API} alt="icon" />
                 </div>
 
                 <div className="project-prime-btns">
