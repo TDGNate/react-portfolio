@@ -33,8 +33,6 @@ const Navbar = ({ currentPage, handlePageChange }) => {
       handlePageChange('Home')
     }
 
-    console.log(typeof e.currentTarget.getAttribute("data-value"))
-
     if (e.currentTarget.getAttribute("data-value") === "about") {
       handlePageChange('About')
     }
