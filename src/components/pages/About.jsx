@@ -13,12 +13,17 @@ const About = () => {
   return (
     <div id="aboutPage">
       <div className="container">
-        <h2>Christian McIlvenny</h2>
+        <h2>Who am I?</h2>
 
         <div className="about-content-1">
           <div className="about-left">
-            <p className="about-text">Hello, I'm Christian but peers call me Nate! My journey began when my CyberSecurity teacher made us write our first line of code and revealed the fundamentals of computers and technology. <br />  <br /> This led to me taking a JavaScript Web Development class in college, but later I enrolled in a software engineer bootcamp at University of California, Riverside where I became a Full-Stack software engineer!</p>
-            <p>You can view my resume or download it below. <i class="bi bi-arrow-down"></i></p>
+            <p className="about-text">
+            I'm Christian but my peers call me <span className="highlight">Nate</span>! My journey began when my CyberSecurity teacher made us write our first line of code in Python and revealed the fundamentals of <span className="highlight">computers and technology</span>.
+              <br />
+              <br />
+              I love learning new things and finding ways to utilize them for personal projects. I was also self-taught for 4-6 months and built multiple <span className="highlight"> responsive websites</span> before enrolling in a Bootcamp.
+            </p>
+            <p><i>You can view my resume or download it below.</i> <i class="bi bi-arrow-down"></i></p>
 
             <div className="about-btns">
             <a href={Resume} className="resume-btn" target="blank">
@@ -41,10 +46,10 @@ const About = () => {
             <img src={Rocket} alt="" className="about-2-img" />
 
             <p className="about-2-text">
-            Very passionate full-stack developer with a Software Engineering Certificate from the University of California, Riverside. Experienced with web designing, code structuring, team collaboration, problem-solving, and having a stable Git workflow.
+            Now I'm a full-stack developer with a Software Engineering Certificate from the <span className="highlight">University of California, Riverside</span>. I'm experienced with <span className="highlight">web designing</span>, <span className="highlight">code structuring</span>, <span className="highlight"> team collaboration</span>, <span className="highlight">and problem-solving</span> while following Git Practice.
             <br />
             <br />
-            Great capability to take other designs and convert them to code, maintains full-stack websites for clients, and have the tasks ready for production. Always eager to learn more and grow with others, and can work in fast-paced environments while still completing expectations.
+            I can take other designs and convert them to code, maintain <span className="highlight"> full-stack websites</span> for clients, and have the tasks <span className="highlight"> ready for production</span>. I&#39;m always eager to learn more and grow with others and can work in <span className="highlight"> fast-paced environments</span> while still <span className="highlight"> completing expectations</span>.
               </p>
         </div>
       </div>

@@ -2,7 +2,10 @@
 
 #aboutPage {
 	overflow: hidden;
-	background-color: var(--dark-clr);
+	background-image: url("../svgs/about-page-bg.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	min-height: 100vh;
 	padding: 2.5rem 2rem;
 }
@@ -13,6 +16,12 @@
 	gap: 1rem;
 	padding: 0;
 	margin-top: 15vh;
+}
+
+.highlight {
+	color: var(--light-clr);
+	/* font-weight: bold;  */
+	/* border-bottom: 1px solid var(--light-sub-clr);  */
 }
 
 .about-content-1 {
