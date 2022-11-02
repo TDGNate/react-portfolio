@@ -157,6 +157,11 @@
 .about-2-img {
 	width: 325px;
 	height: 325px;
+	transition: all 300ms ease-in-out;
+}
+
+.about-2-img:hover {
+	filter: contrast(110%);
 }
 
 .about-2-text {
@@ -250,5 +255,28 @@
 
 	.about-content-3 {
 		margin: 0;
+	}
+}
+
+/* Galaxy Phone  */
+
+@media screen and (max-width: 280px) {
+	.about-btns {
+		gap: 1rem;
+	}
+
+	.resume-btn {
+		margin: 0;
+	}
+
+	.about-img-box {
+		width: 180px;
+		height: 180px;
+	}
+
+	/* About Content 2  */
+	.about-2-img {
+		width: 200px;
+		height: 200px;
 	}
 }
