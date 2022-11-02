@@ -163,7 +163,7 @@
 }
 
 .contact-icons i:hover {
-	color: rgb(255, 255, 255);
+	color: var(--light-clr);
 	filter: drop-shadow(0 0 0.75rem rgb(232, 105, 255));
 }
 
@@ -178,15 +178,21 @@
 }
 
 .contact-bottom i {
+	border: 2px solid transparent !important;
+	padding: 4px 9px;
+	border-radius: 5px;
 	color: var(--blue-clr);
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	transition: all 500ms ease;
 }
 
 .contact-bottom i:hover {
 	cursor: pointer;
-	color: rgb(255, 255, 255);
-	filter: drop-shadow(0 0 0.75rem rgb(86, 139, 255));
+	box-shadow: inset 0px 0px 5px rgb(89, 147, 255),
+		0px 0px 14px rgb(87, 140, 255);
+	color: var(--light-clr);
+	border: 2px solid rgb(169, 213, 255) !important;
+	/* filter: drop-shadow(0 0 0.75rem rgb(86, 139, 255));  */
 }
 
 /* Media Query (Mobile Size)  */

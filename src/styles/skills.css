@@ -29,7 +29,7 @@
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.644);
+	background-color: rgba(0, 0, 0, 0.75);
 	z-index: -1;
 }
 
@@ -39,7 +39,7 @@
 	right: 0;
 	width: 50%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.644);
+	background-color: rgba(0, 0, 0, 0.75);
 	z-index: -1;
 }
 
@@ -68,7 +68,7 @@
 	align-items: center;
 	width: 80px;
 	margin: 1rem 1.3rem;
-	transition: all 400ms ease;
+	transition: all 200ms ease;
 	text-align: center;
 }
 
@@ -79,7 +79,7 @@
 .skill:hover,
 .skill:hover .skill-title {
 	filter: saturate(300%);
-	color: var(--purp-clr);
+	color: var(--light-clr);
 }
 
 .skill-img {
@@ -93,9 +93,9 @@
 .skill-title {
 	text-align: center;
 	width: 100%;
-	color: white;
+	color: var(--light-sub-clr);
 	margin: 0.5rem 0;
-	transition: all 400ms ease;
+	transition: all 200ms ease;
 }
 
 /* Media Query (Mobile Size)  */
