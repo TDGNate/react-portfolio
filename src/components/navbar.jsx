@@ -7,9 +7,25 @@ import "../styles/navbar.css";
 // Resume 
 import { Resume } from "../imgs";
 
+// Change Navbar if user isn't at the top 
+function isNavTop() {
+  const navbarEl = document.querySelector(".navbar-container");
+
+// Check if window screen is at the top 
+  if (navbarEl) {
+    if (window.scrollY !== 0) {
+      navbarEl.classList.add("navbar-full-dark")
+    } else {
+      navbarEl.classList.remove("navbar-full-dark")
+    }
+  }
+
+}
+
 const Navbar = ({ currentPage, handlePageChange }) => {
   
   const [isActive, setActive] = useState("true");
+
 
   const handleToggle = (e) => {
 
@@ -102,5 +118,8 @@ const Navbar = ({ currentPage, handlePageChange }) => {
     </nav>
   )
 }
+
+// Listen for scroll to check if user is at the top of the page 
+window.addEventListener("scroll", isNavTop)
 
 export default Navbar;

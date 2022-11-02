@@ -6,6 +6,11 @@
 	width: 100%;
 	background: linear-gradient(to bottom, #010101 15%, transparent);
 	z-index: 10;
+	transition: all 800ms ease-in;
+}
+
+.navbar-full-dark {
+	background: rgba(0, 0, 0, 0.85) !important;
 }
 
 .navbar-container .container {
