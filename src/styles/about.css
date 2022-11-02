@@ -15,15 +15,16 @@
 	margin-top: 15vh;
 }
 
-.about-content {
+.about-content-1 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;
+	gap: 8%;
 	display: flex;
 	flex-direction: row;
+	padding: 0.5rem;
+	margin: 3rem 0;
 }
 
 .about-left {
@@ -132,6 +133,29 @@
 	transform: translate(16px, 16px);
 }
 
+/* About Section Two  */
+
+.about-content-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8%;
+	align-items: center;
+	margin: 3rem 0;
+	padding: 0.5rem;
+	width: 100%;
+}
+
+.about-2-img {
+	width: 300px;
+	height: 300px;
+}
+
+.about-2-text {
+	width: 60%;
+}
+
 /* The Middle Styles between the about and the projects section  */
 
 .middle {
@@ -146,7 +170,7 @@
 /* Media Query (Mobile Size)  */
 
 @media screen and (max-width: 830px) {
-	.about-content {
+	.about-content-1 {
 		flex-direction: column;
 		gap: 2rem;
 	}
