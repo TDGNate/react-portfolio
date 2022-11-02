@@ -46,7 +46,11 @@ const Navbar = ({ currentPage, handlePageChange }) => {
     }
 
     if (currentPage === "About") { 
-      handlePageChange('Home')
+      if (e.currentTarget.getAttribute("data-value") === "about") {
+        handlePageChange('About')
+        return;
+      }
+      handlePageChange("Home")
     }
 
   };

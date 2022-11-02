@@ -9,13 +9,32 @@ import { RevealY } from "../utils/animation";
 const Footer = ({ currentPage, handlePageChange }) => {
 
   const footerSetSection = (e) => {
-    if (currentPage === "MoreProjects" || currentPage === "About") {
+    if (currentPage === "MoreProjects") {
       if (e.currentTarget.classList.contains('hamburger')) {
         return
       }
 
-      handlePageChange('Home')
+      handlePageChange('Home') 
+      return
     }
+
+
+    if (currentPage === "About") {
+      if (e.currentTarget.getAttribute("data-value") === "about") {
+        return
+      }
+
+      handlePageChange('Home') 
+      return
+    }
+
+    if (currentPage === "Home") {
+      if (e.currentTarget.getAttribute("data-value") === "about") {
+        handlePageChange("About")
+      }
+    }
+
+
   }
 
   return (
@@ -56,7 +75,7 @@ const Footer = ({ currentPage, handlePageChange }) => {
           </h3>
           <ul className="footer-ul">
             <li>
-              <a href="#about-me" className="logo" onClick={footerSetSection}>About</a>
+              <a href="#aboutPage" className="logo" data-value="about" onClick={footerSetSection}>About</a>
             </li>
             <li>
               <a href="#projects" className="logo" onClick={footerSetSection}>Projects</a>
