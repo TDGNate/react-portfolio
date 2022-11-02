@@ -9,7 +9,7 @@ import { RevealY } from "../utils/animation";
 const Footer = ({ currentPage, handlePageChange }) => {
 
   const footerSetSection = (e) => {
-    if (currentPage === "MoreProjects") {
+    if (currentPage === "MoreProjects" || currentPage === "About") {
       if (e.currentTarget.classList.contains('hamburger')) {
         return
       }

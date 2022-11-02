@@ -9,7 +9,13 @@ import Rocket from "../../svgs/rocket.svg"
 // Resume and Images
 import { Resume, NateSixFlags } from "../../imgs";
 
-const About = () => {
+const About = ({ currentPage, handlePageChange }) => {
+
+  function changePage() {
+    handlePageChange("Home")
+    console.log('hello')
+  }
+
   return (
     <div id="aboutPage">
       <div className="container">
@@ -52,6 +58,11 @@ const About = () => {
             I can take other designs and convert them to code, maintain <span className="highlight"> full-stack websites</span> for clients, and have the tasks <span className="highlight"> ready for production</span>. I&#39;m always eager to learn more and grow with others and can work in <span className="highlight"> fast-paced environments</span> while still <span className="highlight"> completing expectations</span>.
               </p>
         </div>
+        
+        <div className="about-content-3">
+          <p><i>If you would like to contact me, you can message me  <a href="#contact" onClick={changePage}>here</a>!</i></p>
+        </div>
+
       </div>
     </div>
   )
