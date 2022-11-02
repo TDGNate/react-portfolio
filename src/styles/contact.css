@@ -16,9 +16,21 @@
 	flex-direction: column;
 }
 
+.contact-title {
+	color: var(--purp-clr);
+}
+
+.contact-title span {
+	color: var(--light-clr);
+}
+
 .contact-info {
 	font-size: 1.1rem;
 	margin: 1rem 0;
+}
+
+.contact-info span {
+	color: var(--light-clr);
 }
 
 .contact-wrapper {

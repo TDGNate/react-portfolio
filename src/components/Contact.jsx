@@ -1,8 +1,12 @@
 import React, { useRef } from 'react';
+
+// Emailjs 
 import emailjs from '@emailjs/browser';
 
-// Sweet Alert and styles 
+// Sweet Alert 
 import swal from 'sweetalert';
+
+// Styles 
 import "../styles/sweetAlert.css";
 import "../styles/contact.css";
 
@@ -101,6 +105,7 @@ const Contact = () => {
     
   }
 
+  // Function to make the border of the form glow when sent! 
   function borderGlow() {
 
     document.querySelector(".cform").classList.add("border-glow") 
@@ -111,6 +116,7 @@ const Contact = () => {
 
   }
 
+  // Removes the disable attribute on send button 
   function removeDisableBtn() {
 
     setTimeout(() => {
@@ -122,9 +128,9 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2>Contact</h2>
+        <h2 className="contact-title">Get in <span>touch...</span></h2>
         <p className="contact-info">
-          Christian "Nate" McIlvenny
+          Christian "<span>Nate</span>" McIlvenny
           <br />
           Perris, CA
           <br />
