@@ -4,17 +4,18 @@ import React from 'react';
 import "../../styles/about.css";
 
 // Resume and Images
-import { Nate, Resume } from "../../imgs";
+import { Resume, NateSixFlags } from "../../imgs";
 
 const About = () => {
   return (
     <div id="aboutPage">
       <div className="container">
-        <h2>About Me</h2>
+        <h2>Christian McIlvenny</h2>
 
         <div className="about-content">
           <div className="about-left">
-            <p className="about-text">Hello, I'm Christian McIlvenny but you can call me Nate! My journey began when my CyberSecurity teacher made us write our first line of code and revealed the fundamentals of computers and technology. <br />  <br /> This led to me taking a JavaScript Web Development class in college, but later I enrolled in a software engineer bootcamp at University of California, Riverside where I became a Full-Stack software engineer!</p>
+            <p className="about-text">Hello, I'm Christian but peers call me Nate! My journey began when my CyberSecurity teacher made us write our first line of code and revealed the fundamentals of computers and technology. <br />  <br /> This led to me taking a JavaScript Web Development class in college, but later I enrolled in a software engineer bootcamp at University of California, Riverside where I became a Full-Stack software engineer!</p>
+            <p>You can view my resume or download it below. <i class="bi bi-arrow-down"></i></p>
 
             <div className="about-btns">
             <a href={Resume} className="resume-btn" target="blank">
@@ -27,7 +28,7 @@ const About = () => {
           </div>
 
           <div className="about-img-box">
-            <img src={Nate} alt="Nate" className="about-pic" />
+            <img src={NateSixFlags} alt="Nate" className="about-pic" />
           </div>
 
         </div>
