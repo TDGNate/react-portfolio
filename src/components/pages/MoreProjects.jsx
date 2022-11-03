@@ -12,6 +12,9 @@ import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequel
 // Styles 
 import "../../styles/moreProjects.css";
 
+// Data 
+import ProjectsData from "../../ProjectsData";
+
 const MoreProjects = () => {
   return (
     <div id="moreProjects" className="more-projects-page">
@@ -25,8 +28,21 @@ const MoreProjects = () => {
 
         <div className="more-projects-project-container">
 
+          {ProjectsData.map((item, index) => {
+            return (
+              <ProjectCard
+              key={index}
+              title={item.cardTitle}
+              thumbNail={item.cardThumbnail}
+              description={item.cardDesc}
+              techStack={item.cardTechStack}
+              btns={item.cardBtns}
+              />
+            )
+          })}
+
           {/* E-Commerce Backend */}
-          <ProjectCard
+          {/* <ProjectCard
             title="E-Commerce Backend"
             thumbNail={EComBackend}
             description="A backend for an e-commerce site that users can make API requests. Created routes that can get all data, get certain data, add new item, update item, and completely remove an item from the database."
@@ -40,10 +56,10 @@ const MoreProjects = () => {
             btns={[
               {repo: "https://github.com/TDGNate/E-Commerce-Backend" }
             ]}
-          />
+          /> */}
 
           {/* Team Profile Generator */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Team Profile Generator"
             thumbNail={TeamGenerator}
             description="Command line application that lets a user input data for their team which will generator an HTML page that displays each team member's name, role, id, email, and office number OR github depending on their role."
@@ -57,10 +73,10 @@ const MoreProjects = () => {
             btns={[
               {repo: "https://github.com/TDGNate/Team-profile-generator" }
             ]}
-          />
+          /> */}
 
           {/* Quiz Game  */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Quiz Code"
             thumbNail={QuizCode}
             description="A quick coding quiz to test your frontend knowledge! A timer is set and a score is being tracked. When the game has ended, you can save your score by adding your initials and clicking the save button. Then the score will appear on your local leaderboard."
@@ -73,7 +89,7 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/Quiz-Code" },
               { deployed: "https://tdgnate.github.io/Quiz-Code/" }
             ]}
-          />
+          /> */}
 
           {/* Read Me Generator  */}
           <ProjectCard
