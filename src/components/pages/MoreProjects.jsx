@@ -216,7 +216,7 @@ const MoreProjects = () => {
           /> */}
 
           {/* POP Umai */}
-          <ProjectCard
+          {/* <ProjectCard
             title="POP Umai"
             thumbNail={POPUmai}
             description="Collaborative full-stack application for a local business owner and her company, POP Umai. Took our Clients ideas and desires, and made it reality. Added authentication for accessing the admin dashboard to manage all her events."
@@ -234,10 +234,10 @@ const MoreProjects = () => {
               { repo: "https://github.com/PreDevz/POP-Umai" },
               { deployed: "https://pop-umai.herokuapp.com/" }
             ]}
-          />
+          /> */}
 
           {/* Calender App */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Calender App"
             thumbNail={CalenderApp}
             description="A simple calendar app for scheduling your work day! It saves messages in each block event to localstorage. And depending on the time of day, each block will be color coordinated to show if it's in the future, past, or present."
@@ -251,13 +251,13 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/Calender-App" },
               { deployed: "https://tdgnate.github.io/Calender-App/" }
             ]}
-          />
+          /> */}
 
           {/* Rock Paper Scissors */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Rock Paper Scissors"
             thumbNail={RpsGame}
-            description=" My first website game of rock paper scissors vs a bot. I don't think I have to explain how the game works, but each element is smoothly animated and styled. The background color changes based on if the user wins or losses."
+            description="My first website game of rock paper scissors vs a bot. I don't think I have to explain how the game works, but each element is smoothly animated and styled. The background color changes based on if the user wins or losses."
             techStack={[
               { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
               { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
@@ -267,7 +267,7 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/Rock-Paper-Scissors" },
               { deployed: "https://tdgnate.github.io/Rock-Paper-Scissors/" }
             ]}
-          />
+          /> */}
           
         </div>
       </div>

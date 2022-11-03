@@ -179,6 +179,60 @@ const ProjectsData = [
       { deployed: "https://mighty-ridge-88200.herokuapp.com/" }
     ]
   },
+
+  /* POP Umai */
+  {
+    cardTitle: "POP Umai",
+    cardThumbnail: POPUmai,
+    cardDesc: "Collaborative full-stack application for a local business owner and her company, POP Umai. Took our Clients ideas and desires, and made it reality. Added authentication for accessing the admin dashboard to manage all her events.",
+    cardTechStack: [
+      { tech: Node, link: "https://nodejs.org/en/" },
+      { tech: Express, link: "https://expressjs.com/", invert: true },
+      { tech: Handlebars, link: "https://handlebarsjs.com/", invert: true },
+      { tech: MySQL, link: "https://www.mysql.com/" },
+      { tech: Sequelize, link: "https://sequelize.org/" },
+      { tech: Bootstrap, link: "https://getbootstrap.com/" },
+      { tech: SweetAlert, link: "https://sweetalert.js.org/guides/" },
+      { tech: Heroku, link: "https://www.heroku.com/" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/PreDevz/POP-Umai" },
+      { deployed: "https://pop-umai.herokuapp.com/" }
+    ]
+  },
+
+  /* Calender App */
+  {
+    cardTitle: "Calender App",
+    cardThumbnail: CalenderApp,
+    cardDesc: "A simple calendar app for scheduling your work day! It saves messages in each block event to localstorage. And depending on the time of day, each block will be color coordinated to show if it's in the future, past, or present.",
+    cardTechStack: [
+      { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+      { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+      { tech: Javascript, link: "https://www.javascript.com/" },
+      { tech: jQuery, link: "https://jquery.com/" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/Calender-App" },
+      { deployed: "https://tdgnate.github.io/Calender-App/" }
+    ]
+  },
+
+  /* Rock Paper Scissors */
+  {
+    cardTitle: "Rock Paper Scissors",
+    cardThumbnail: RpsGame,
+    cardDesc: "My first website game of rock paper scissors vs a bot. I don't think I have to explain how the game works, but each element is smoothly animated and styled. The background color changes based on if the user wins or losses.",
+    cardTechStack: [
+      { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+      { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+      { tech: Javascript, link: "https://www.javascript.com/" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/Rock-Paper-Scissors" },
+      { deployed: "https://tdgnate.github.io/Rock-Paper-Scissors/" }
+    ]
+  },
 ]
 
 export default ProjectsData;
