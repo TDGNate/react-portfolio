@@ -87,6 +87,10 @@ section {
 	filter: invert(1) !important;
 }
 
+.hide {
+	display: none;
+}
+
 /* scroll bar  */
 
 /* width */
