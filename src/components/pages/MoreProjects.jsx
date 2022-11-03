@@ -92,7 +92,7 @@ const MoreProjects = () => {
           /> */}
 
           {/* Read Me Generator  */}
-          <ProjectCard
+          {/* <ProjectCard
             title="README Generator"
             thumbNail={ReadMeGen}
             description="An app that makes it easy for users to directly create a high quality, polished, README markdown file. Just needs their project's title, description, Usage, etc. The user can choose if they want a Table of Contents, that has everything linked up for each section."
@@ -104,10 +104,10 @@ const MoreProjects = () => {
             btns={[
               { repo: "https://github.com/TDGNate/Readme-Generator" }
             ]}
-          />
+          /> */}
  
           {/* N8 Tech Blog */}
-          <ProjectCard
+          {/* <ProjectCard
             title="N8 Tech Blog"
             thumbNail={TechBlog}
             description="Full-stack CMS-style blog site where developers can create posts and add comments on others. They can also view all their posts/comments and have access to update/delete them from their dashboard."
@@ -126,7 +126,7 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/Tech-Blog" },
               { deployed: "https://techer-blogger.herokuapp.com/" }
             ]}
-          />
+          /> */}
 
           {/* Weather App */}
           <ProjectCard

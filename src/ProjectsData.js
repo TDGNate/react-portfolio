@@ -55,6 +55,43 @@ const ProjectsData = [
       { deployed: "https://tdgnate.github.io/Quiz-Code/" }
     ]
   },
+
+  /* Read Me Generator  */
+  {
+    cardTitle: "README Generator",
+    cardThumbnail: ReadMeGen,
+    cardDesc: "An app that makes it easy for users to directly create a high quality, polished, README markdown file. Just needs their project's title, description, Usage, etc. The user can choose if they want a Table of Contents, that has everything linked up for each section.",
+    cardTechStack: [
+      { tech: Javascript, link: "https://www.javascript.com/" },
+      { tech: NPM, link: "https://www.npmjs.com/package/inquirer" },
+      { tech: Node, link: "https://nodejs.org/en/" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/Readme-Generator" }
+    ]
+  },
+
+  /* N8 Tech Blog */
+  {
+    cardTitle: "N8 Tech Blog",
+    cardThumbnail: TechBlog,
+    cardDesc: "Full-stack CMS-style blog site where developers can create posts and add comments on others. They can also view all their posts/comments and have access to update/delete them from their dashboard.",
+    cardTechStack: [
+      { tech: Node, link: "https://nodejs.org/en/" },
+      { tech: Express, link: "https://expressjs.com/", invert: true },
+      { tech: Handlebars, link: "https://handlebarsjs.com/", invert: true },
+      { tech: MySQL, link: "https://www.mysql.com/" },
+      { tech: Sequelize, link: "https://sequelize.org/" },
+      { tech: Bootstrap, link: "https://getbootstrap.com/" },
+      { tech: SweetAlert, link: "https://sweetalert.js.org/guides/" },
+      { tech: FontAwesome, link: "https://fontawesome.com/" },
+      { tech: Heroku, link: "https://www.heroku.com/" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/Tech-Blog" },
+      { deployed: "https://techer-blogger.herokuapp.com/" }
+    ]
+  },
 ]
 
 export default ProjectsData;
