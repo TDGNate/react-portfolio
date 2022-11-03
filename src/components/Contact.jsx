@@ -1,8 +1,15 @@
 import React, { useRef } from 'react';
+
+// Emailjs 
 import emailjs from '@emailjs/browser';
 
-// Sweet Alert and styles 
+// Components 
+import ContactIcons from "./ContactIcons"
+
+// Sweet Alert 
 import swal from 'sweetalert';
+
+// Styles 
 import "../styles/sweetAlert.css";
 import "../styles/contact.css";
 
@@ -101,6 +108,7 @@ const Contact = () => {
     
   }
 
+  // Function to make the border of the form glow when sent! 
   function borderGlow() {
 
     document.querySelector(".cform").classList.add("border-glow") 
@@ -111,6 +119,7 @@ const Contact = () => {
 
   }
 
+  // Removes the disable attribute on send button 
   function removeDisableBtn() {
 
     setTimeout(() => {
@@ -122,9 +131,9 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2>Contact</h2>
+        <h2 className="contact-title">Get in <span>touch...</span></h2>
         <p className="contact-info">
-          Christian (Nate) McIlvenny
+          Christian "<span>Nate</span>" McIlvenny
           <br />
           Perris, CA
           <br />
@@ -159,19 +168,8 @@ const Contact = () => {
 
             <h3>My Socials</h3>
 
-            <div className="contact-icons">
-
-              <a href="https://github.com/TDGNate" target="blank"><i className="bi bi-github"></i></a>
-
-              <a href="https://www.linkedin.com/in/christian-mcilvenny/" target="blank"><i className="bi bi-linkedin"></i></a>
-
-              <a href="https://www.instagram.com/imnzte" target="blank"><i className="bi bi-instagram"></i></a>
-
-              <a href="mailto:email@example.com"><i className="bi bi-envelope-fill"></i></a>
-
-              <a href="https://discordapp.com/users/276568445796220928" target="blank"><i className="bi bi-discord"></i></a>
-              
-            </div>
+            {/* Contact Icons  */}
+            <ContactIcons />
 
           </div>
 

@@ -9,7 +9,7 @@ module.exports = {
     for (let i = 0; i < revealCards.length; i++) {
       let windowHeight = window.innerHeight;
       let elementTop = revealCards[i].getBoundingClientRect().top;
-      let elementVisible = 150;
+      let elementVisible = 50;
 
       if (elementTop < windowHeight - elementVisible) {
         revealCards[i].classList.add("active");

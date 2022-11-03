@@ -6,6 +6,11 @@
 	width: 100%;
 	background: linear-gradient(to bottom, #010101 15%, transparent);
 	z-index: 10;
+	transition: all 800ms ease-in;
+}
+
+.navbar-full-dark {
+	background: rgba(0, 0, 0, 0.85) !important;
 }
 
 .navbar-container .container {
@@ -68,5 +73,23 @@
 }
 
 .nav-active-link {
-	border-bottom: 1px solid var(--blue-clr);
+	background: linear-gradient(
+			to right,
+			rgba(100, 200, 200, 0),
+			rgba(100, 200, 200, 0)
+		),
+		linear-gradient(to right, var(--blue-clr), var(--blue-clr));
+	background-size: 100% 0.1em, 0 0.1em;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 300ms ease;
+	background-size: 0 0.1em, 100% 0.15em;
+}
+
+/* Media Query  */
+
+@media screen and (max-width: 993px) {
+	.container {
+		max-width: 930px !important;
+	}
 }

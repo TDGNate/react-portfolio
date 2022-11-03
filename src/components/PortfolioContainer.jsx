@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 
 // Component Pages
 import Navbar from "./Navbar";
-import Home from "./pages/Home";
 import Footer from "./Footer";
+
+// Pages 
+import Home from "./pages/Home";
 import MoreProjects from "./pages/MoreProjects";
+import About from "./pages/About";
+
+// Animations 
+import { RevealLeft, RevealRight, RevealY } from "../utils/animation";
 
 const PortfolioContainer = () => {
 
@@ -15,8 +21,13 @@ const PortfolioContainer = () => {
     if (currentPage === 'Home') {
       return <Home currentPage={currentPage} handlePageChange={handlePageChange} />; 
     }
+
     if (currentPage === 'MoreProjects') {
       return <MoreProjects />;
+    }
+
+    if (currentPage === 'About') {
+      return <About currentPage={currentPage} handlePageChange={handlePageChange}/>;
     }
   };
 
@@ -32,5 +43,14 @@ const PortfolioContainer = () => {
     </>
   )
 }
+
+// Execute Animations 
+window.addEventListener("scroll", () => {
+
+  RevealLeft()
+  RevealRight()
+  RevealY()
+
+});
 
 export default PortfolioContainer;

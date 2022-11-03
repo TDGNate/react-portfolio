@@ -1,5 +1,6 @@
 import React from 'react';
 
+// styles 
 import "../styles/skills.css";
 
 // All Image icons for Skills 

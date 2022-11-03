@@ -1,6 +1,10 @@
 import React from 'react';
 
+// Styles 
 import "../styles/footer.css";
+
+// Animations 
+import { RevealY } from "../utils/animation";
 
 const Footer = ({ currentPage, handlePageChange }) => {
 
@@ -10,8 +14,27 @@ const Footer = ({ currentPage, handlePageChange }) => {
         return
       }
 
-      handlePageChange('Home')
+      handlePageChange('Home') 
+      return
     }
+
+
+    if (currentPage === "About") {
+      if (e.currentTarget.getAttribute("data-value") === "about") {
+        return
+      }
+
+      handlePageChange('Home') 
+      return
+    }
+
+    if (currentPage === "Home") {
+      if (e.currentTarget.getAttribute("data-value") === "about") {
+        handlePageChange("About")
+      }
+    }
+
+
   }
 
   return (
@@ -52,7 +75,7 @@ const Footer = ({ currentPage, handlePageChange }) => {
           </h3>
           <ul className="footer-ul">
             <li>
-              <a href="#about-me" className="logo" onClick={footerSetSection}>About</a>
+              <a href="#aboutPage" className="logo" data-value="about" onClick={footerSetSection}>About</a>
             </li>
             <li>
               <a href="#projects" className="logo" onClick={footerSetSection}>Projects</a>
@@ -114,5 +137,12 @@ const Footer = ({ currentPage, handlePageChange }) => {
     </section>
   )
 }
+
+// Execute Animations 
+window.addEventListener("scroll", () => {
+
+  RevealY()
+
+});
 
 export default Footer;

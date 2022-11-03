@@ -17,7 +17,7 @@
 	--dark-clr: #040010;
 	--light-clr: #fff;
 	/* sub colors  */
-	--light-sub-clr: #bfbfbf;
+	--light-sub-clr: #bababa;
 	--sub-purp-clr: #070421;
 	--sub-blue-clr: #00132f;
 }
@@ -57,7 +57,7 @@ h2 {
 	font-size: 2.8rem !important;
 	padding: 0.2rem 0;
 	color: var(--light-clr);
-	font-weight: bold;
+	font-weight: bolder;
 	border-bottom: 2px solid var(--blue-clr);
 	width: fit-content;
 	margin-bottom: 2rem !important;
@@ -85,6 +85,10 @@ section {
 
 .invert {
 	filter: invert(1) !important;
+}
+
+.hide {
+	display: none;
 }
 
 /* scroll bar  */
