@@ -1,12 +1,16 @@
+// Data for all my projects 
+
 // images for projects
 import { QuizCode, TeamGenerator, NoteTaker, EComBackend, ReadMeGen, WeatherApp, TechBlog, PassGen, MyTodos, CalenderApp, RpsGame, Platello, POPUmai } from "./gifs/projects";
 
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, FontAwesome, jQuery, Html, Css3, API, NPM, Matcss } from "./imgs/skills";
 
+// Projects Array 
 const ProjectsData = [
 
   /* E-Commerce Backend */
+
   {
     cardTitle: "E-Commerce Backend",
     cardThumbnail: EComBackend,
@@ -24,6 +28,7 @@ const ProjectsData = [
   },
 
   /* Team Profile Generator */
+
   {
     cardTitle: "Team Profile Generator",
     cardThumbnail: TeamGenerator,
@@ -41,6 +46,7 @@ const ProjectsData = [
   },
 
   /* Quiz Game  */
+
   {
     cardTitle: "Quiz Code",
     cardThumbnail: QuizCode,
@@ -57,6 +63,7 @@ const ProjectsData = [
   },
 
   /* Read Me Generator  */
+
   {
     cardTitle: "README Generator",
     cardThumbnail: ReadMeGen,
@@ -72,6 +79,7 @@ const ProjectsData = [
   },
 
   /* N8 Tech Blog */
+
   {
     cardTitle: "N8 Tech Blog",
     cardThumbnail: TechBlog,
@@ -94,6 +102,7 @@ const ProjectsData = [
   },
 
   /* Weather App */
+
   {
     cardTitle: "Weather App",
     cardThumbnail: WeatherApp,
@@ -111,6 +120,7 @@ const ProjectsData = [
   },
 
   /* Password Generator */
+
   {
     cardTitle: "Password Generator",
     cardThumbnail: PassGen,
@@ -127,6 +137,7 @@ const ProjectsData = [
   },
 
   /* My Todos */
+
   {
     cardTitle: "My Todos",
     cardThumbnail: MyTodos,
@@ -144,6 +155,7 @@ const ProjectsData = [
   },
 
   /* Platello */
+
   {
     cardTitle: "Platello",
     cardThumbnail: Platello,
@@ -163,6 +175,7 @@ const ProjectsData = [
   },
 
   /* Note Taker */
+
   {
     cardTitle: "Note Taker",
     cardThumbnail: NoteTaker,
@@ -181,6 +194,7 @@ const ProjectsData = [
   },
 
   /* POP Umai */
+
   {
     cardTitle: "POP Umai",
     cardThumbnail: POPUmai,
@@ -202,6 +216,7 @@ const ProjectsData = [
   },
 
   /* Calender App */
+
   {
     cardTitle: "Calender App",
     cardThumbnail: CalenderApp,
@@ -219,6 +234,7 @@ const ProjectsData = [
   },
 
   /* Rock Paper Scissors */
+
   {
     cardTitle: "Rock Paper Scissors",
     cardThumbnail: RpsGame,
