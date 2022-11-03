@@ -92,6 +92,56 @@ const ProjectsData = [
       { deployed: "https://techer-blogger.herokuapp.com/" }
     ]
   },
+
+  /* Weather App */
+  {
+    cardTitle: "Weather App",
+    cardThumbnail: WeatherApp,
+    cardDesc: "Website that lets you search up cities and returns their temperature, wind speed, humidity, and UV index. And it also displays 5 more cards showing the 5 day forecast. Their last 8 searches will be saved in their history, and are clickable to be research again.",
+    cardTechStack: [
+      { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+      { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+      { tech: Javascript, link: "https://www.javascript.com/" },
+      { tech: API, link: "https://en.wikipedia.org/wiki/API" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/Weather-site" },
+      { deployed: "https://tdgnate.github.io/Weather-site/" }
+    ]
+  },
+
+  /* Password Generator */
+  {
+    cardTitle: "Password Generator",
+    cardThumbnail: PassGen,
+    cardDesc: "Website that allows users to choose how they want their password to be generated. Multiple prompts will appear asking if they'd like to include Upper Case letters, Lower Case letters, Numbers, and or Special characters.",
+    cardTechStack: [
+      { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+      { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+      { tech: Javascript, link: "https://www.javascript.com/" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/Nates-password-generation" },
+      { deployed: "https://tdgnate.github.io/Nates-password-generation/" }
+    ]
+  },
+
+  /* My Todos */
+  {
+    cardTitle: "My Todos",
+    cardThumbnail: MyTodos,
+    cardDesc: "A website that stores your todos in local storage for your next visit! The user can remove certain Todos by clicking the trash bin, or clear all their todos at once by clicking the clear button on the bottom.",
+    cardTechStack: [
+      { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+      { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+      { tech: Javascript, link: "https://www.javascript.com/" },
+      { tech: FontAwesome, link: "https://fontawesome.com/" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/My-Todos" },
+      { deployed: "https://tdgnate.github.io/My-Todos/" }
+    ]
+  },
 ]
 
 export default ProjectsData;

@@ -129,7 +129,7 @@ const MoreProjects = () => {
           /> */}
 
           {/* Weather App */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Weather App"
             thumbNail={WeatherApp}
             description="Website that lets you search up cities and returns their temperature, wind speed, humidity, and UV index. And it also displays 5 more cards showing the 5 day forecast. Their last 8 searches will be saved in their history, and are clickable to be research again."
@@ -143,10 +143,10 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/Weather-site" },
               { deployed: "https://tdgnate.github.io/Weather-site/" }
             ]}
-          />
+          /> */}
 
           {/* Password Generator */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Password Generator"
             thumbNail={PassGen}
             description="Website that allows users to choose how they want their password to be generated. Multiple prompts will appear asking if they'd like to include Upper Case letters, Lower Case letters, Numbers, and or Special characters."
@@ -159,10 +159,10 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/Nates-password-generation" },
               { deployed: "https://tdgnate.github.io/Nates-password-generation/" }
             ]}
-          />
+          /> */}
 
           {/* My Todos */}
-          <ProjectCard
+          {/* <ProjectCard
             title="My Todos"
             thumbNail={MyTodos}
             description="A website that stores your todos in local storage for your next visit! The user can remove certain Todos by clicking the trash bin, or clear all their todos at once by clicking the clear button on the bottom."
@@ -176,7 +176,7 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/My-Todos" },
               { deployed: "https://tdgnate.github.io/My-Todos/" }
             ]}
-          />
+          /> */}
 
           {/* Platello */}
           <ProjectCard
