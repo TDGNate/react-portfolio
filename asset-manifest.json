@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.b95598e1.css",
-    "main.js": "/static/js/main.6cfb9d4a.js",
+    "main.css": "/static/css/main.c72d6d52.css",
+    "main.js": "/static/js/main.cc3164ba.js",
     "static/media/daisysCakes.gif": "/static/media/daisysCakes.1959bf74be0b4242e8fa.gif",
+    "static/media/platello.gif": "/static/media/platello.d11e0263cdb05e5acac0.gif",
+    "static/media/pop.gif": "/static/media/pop.e1ba6b0b24a9bd4733fe.gif",
     "static/media/quiz.gif": "/static/media/quiz.e669f7dfc85145861f3c.gif",
-    "static/media/platello.gif": "/static/media/platello.271938012054b327c77f.gif",
-    "static/media/pop.gif": "/static/media/pop.40d7e5cba1a2851b440a.gif",
+    "static/media/Nate1.png": "/static/media/Nate1.8cbd5164f1a9ecaea636.png",
     "static/media/techblog.gif": "/static/media/techblog.9613f51ff7adf4e90b7a.gif",
     "static/media/ailenbg.jpg": "/static/media/ailenbg.f84293741b079b67e804.jpg",
     "static/media/Nate-six-flags.jpg": "/static/media/Nate-six-flags.ac2607f7aeedb694490f.jpg",
@@ -15,10 +16,11 @@
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "static/media/readme-gen.png": "/static/media/readme-gen.2be38a25812c02b1503d.png",
-    "static/media/Nate's Resume.pdf": "/static/media/Nate's Resume.6e37ef05fc8b8f54e522.pdf",
+    "static/media/Nate's Resume.pdf": "/static/media/Nate's Resume.97b81aaf66ded6008961.pdf",
     "static/media/e-commerce-backend.png": "/static/media/e-commerce-backend.8047bbebbb2152d1a035.png",
     "static/media/my-todos.png": "/static/media/my-todos.b109f1717fa7ba10724a.png",
     "static/media/insomnia.png": "/static/media/insomnia.ce01d16f9e95615eacda.png",
+    "static/media/rocket.svg": "/static/media/rocket.a9fe6458ec6cf1d195f35f5c5c640a4c.svg",
     "static/media/weather-site.png": "/static/media/weather-site.1e724327ed05d5406e0e.png",
     "static/media/rps.png": "/static/media/rps.fe3840ab1d6ceee2eb31.png",
     "static/media/MySQLWorkbench.png": "/static/media/MySQLWorkbench.34af583888c57241de5b.png",
@@ -26,17 +28,17 @@
     "static/media/my-calender-app.png": "/static/media/my-calender-app.f2d6e136e8198557633d.png",
     "static/media/working-with-laptop.svg": "/static/media/working-with-laptop.1e11b79e6a83b0b28e9b7c4ed238d381.svg",
     "static/media/phone-projects-page.svg": "/static/media/phone-projects-page.1cab793e9af289cccdbf.svg",
-    "static/media/stacked-waves.svg": "/static/media/stacked-waves.772e26e415b656e2c6f8.svg",
+    "static/media/about-page-bg.svg": "/static/media/about-page-bg.e5e1194f422abccbeffe.svg",
     "static/media/footer.svg": "/static/media/footer.24cd971370da073d1e96.svg",
     "static/media/projects-page.svg": "/static/media/projects-page.85e6ac04b653e02126ba.svg",
     "static/media/contact-bg.svg": "/static/media/contact-bg.26325810d76920a74a26.svg",
     "index.html": "/index.html",
-    "static/media/wave-middle.svg": "/static/media/wave-middle.caf89d6fa9f0a88039e5.svg",
-    "main.b95598e1.css.map": "/static/css/main.b95598e1.css.map",
-    "main.6cfb9d4a.js.map": "/static/js/main.6cfb9d4a.js.map"
+    "static/media/new-project-bg.svg": "/static/media/new-project-bg.4f086eac6ad6b2f8fd50.svg",
+    "main.c72d6d52.css.map": "/static/css/main.c72d6d52.css.map",
+    "main.cc3164ba.js.map": "/static/js/main.cc3164ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.b95598e1.css",
-    "static/js/main.6cfb9d4a.js"
+    "static/css/main.c72d6d52.css",
+    "static/js/main.cc3164ba.js"
   ]
 }
