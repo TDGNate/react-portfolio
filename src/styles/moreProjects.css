@@ -62,6 +62,8 @@
 	background-color: #6000b468;
 	color: var(--light-clr);
 	transition: all 250ms ease;
+	border: none;
+	outline: none;
 }
 
 .show-more-projects:hover {

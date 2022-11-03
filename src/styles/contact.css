@@ -262,6 +262,7 @@
 }
 
 /* Galaxy Fold  */
+
 @media screen and (max-width: 280px) {
 	.cform-send {
 		padding: 0.2rem;
@@ -269,10 +270,13 @@
 }
 
 /* border Glow  */
+
 .border-glow {
 	transition: all 300ms ease;
 	animation: glow-border 4800ms ease;
 }
+
+/* Animations  */
 
 @keyframes glow-border {
 	0% {

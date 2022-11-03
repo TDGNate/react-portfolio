@@ -317,12 +317,6 @@
 	}
 }
 
-/* @media screen and (max-width: 580px) {
-	.project-prime-card-left {
-		width: 10;
-	}
-} */
-
 /* Galaxy Mobile Media Query  */
 
 @media screen and (max-width: 320px) {

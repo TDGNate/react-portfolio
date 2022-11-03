@@ -86,10 +86,6 @@
 	background-size: 0 0.1em, 100% 0.15em;
 }
 
-/* .nav-active-link a {
-	color: var(--blue-clr-hover);
-} */
-
 /* Media Query  */
 
 @media screen and (max-width: 993px) {

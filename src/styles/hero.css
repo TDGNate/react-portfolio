@@ -99,7 +99,6 @@
 	filter: grayscale(70%) opacity(80%) hue-rotate(10deg)
 		drop-shadow(0 0 0 transparent);
 	width: 220px;
-	/* width: 40%;  */
 	min-width: 250px;
 	transition: all 250ms ease-out;
 }
@@ -403,6 +402,7 @@
 }
 
 /* Galaxy Fold  */
+
 @media screen and (max-width: 280px) {
 	.hero-about-text {
 		font-size: 0.8rem !important;

@@ -18,9 +18,13 @@
 	margin-top: 13vh;
 }
 
+/* Text highlight styles  */
+
 .highlight {
 	color: var(--light-clr);
 }
+
+/* 1st About section  */
 
 .about-content-1 {
 	display: flex;
