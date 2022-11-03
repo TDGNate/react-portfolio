@@ -179,7 +179,7 @@ const MoreProjects = () => {
           /> */}
 
           {/* Platello */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Platello"
             thumbNail={Platello}
             description="Cheers to a new dish! Website that recommends users foods and drinks based on their preferences. Powered by the Spoonacular and the CocktailDB APIs."
@@ -195,10 +195,10 @@ const MoreProjects = () => {
               { repo: "https://github.com/PreDevz/Platello" },
               { deployed: "https://predevz.github.io/Platello/" }
             ]}
-          />
+          /> */}
 
           {/* Note Taker */}
-          <ProjectCard
+          {/* <ProjectCard
             title="Note Taker"
             thumbNail={NoteTaker}
             description="Application that allows users to store their notes in a json file with their title and paragraph. Deployed on Heroku and powered by Express for the backend."
@@ -213,7 +213,7 @@ const MoreProjects = () => {
               { repo: "https://github.com/TDGNate/Note-Taker" },
               { deployed: "https://mighty-ridge-88200.herokuapp.com/" }
             ]}
-          />
+          /> */}
 
           {/* POP Umai */}
           <ProjectCard

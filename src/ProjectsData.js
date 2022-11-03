@@ -142,6 +142,43 @@ const ProjectsData = [
       { deployed: "https://tdgnate.github.io/My-Todos/" }
     ]
   },
+
+  /* Platello */
+  {
+    cardTitle: "Platello",
+    cardThumbnail: Platello,
+    cardDesc: "Cheers to a new dish! Website that recommends users foods and drinks based on their preferences. Powered by the Spoonacular and the CocktailDB APIs.",
+    cardTechStack: [
+      { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+      { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+      { tech: Javascript, link: "https://www.javascript.com/" },
+      { tech: Matcss, link: "https://materializecss.com/" },
+      { tech: jQuery, link: "https://jquery.com/" },
+      { tech: API, link: "https://en.wikipedia.org/wiki/API" }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/PreDevz/Platello" },
+      { deployed: "https://predevz.github.io/Platello/" }
+    ]
+  },
+
+  /* Note Taker */
+  {
+    cardTitle: "Note Taker",
+    cardThumbnail: NoteTaker,
+    cardDesc: "Application that allows users to store their notes in a json file with their title and paragraph. Deployed on Heroku and powered by Express for the backend.",
+    cardTechStack: [
+      { tech: Html, link: "https://en.wikipedia.org/wiki/HTML" },
+      { tech: Css3, link: "https://en.wikipedia.org/wiki/CSS" },
+      { tech: Javascript, link: "https://www.javascript.com/" },
+      { tech: Node, link: "https://nodejs.org/en/" },
+      { tech: Express, link: "https://expressjs.com/", invert: true }
+    ],
+    cardBtns: [
+      { repo: "https://github.com/TDGNate/Note-Taker" },
+      { deployed: "https://mighty-ridge-88200.herokuapp.com/" }
+    ]
+  },
 ]
 
 export default ProjectsData;
