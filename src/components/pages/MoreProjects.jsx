@@ -13,12 +13,42 @@ const MoreProjects = () => {
 
   const [displayedElCount, setDisplayElCount] = useState(3);
 
+  const loadMoreBtn = document.querySelector(".show-more-projects")
+  console.log(displayedElCount, ProjectsData.length)
+
+  // function to load more projects 
   function loadMore() {
     setDisplayElCount(displayedElCount + 3)
+
+    console.log(displayedElCount, ProjectsData.length)
+
+    toggleShowMoreBtn()
   }
 
   const slice = ProjectsData.slice(0, displayedElCount);
 
+    // function to hide button when limit is reached 
+  function toggleShowMoreBtn() {
+
+    setTimeout(() => {
+
+      let currentNumberOfProjects = displayedElCount;
+      let totalNumberOfProjects = ProjectsData.length;
+
+        if (  totalNumberOfProjects <= currentNumberOfProjects) {
+          if (loadMoreBtn) {
+            loadMoreBtn.classList.add("hide")
+          }
+          console.log('limit reached')
+        } else {
+          if (loadMoreBtn) {
+            loadMoreBtn.classList.remove("hide")
+          }
+          console.log('not reached yet')
+        }
+      }, 500)
+  }
+  
   return (
     <div id="moreProjects" className="more-projects-page">
       
