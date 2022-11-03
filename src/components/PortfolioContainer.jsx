@@ -14,7 +14,7 @@ import { RevealLeft, RevealRight, RevealY } from "../utils/animation";
 
 const PortfolioContainer = () => {
 
-  const [currentPage, setCurrentPage] = useState('MoreProjects');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   // check which page the user is currently on 
   const renderPage = () => {
