@@ -2,20 +2,28 @@ import React from 'react';
 
 // Components 
 import Hero from "../Hero";
-// import About from "../About"; 
 import Projects from "../Projects";
 import Skills from "../Skills";
 import Contact from "../Contact";
 
+// Motion | smooth animations when transitioning pages 
+import { motion } from "framer-motion";
+
 const Home = ({ currentPage, handlePageChange }) => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: .5 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.00 }}
+      exit={{ opacity: 0 }}
+    >
+
       <Hero currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* <About />  */}
       <Projects currentPage={currentPage} handlePageChange={handlePageChange} />
       <Skills />
       <Contact />
-    </>
+      
+    </motion.div>
   )
 }
 
