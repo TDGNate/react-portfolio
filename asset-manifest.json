@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c72d6d52.css",
-    "main.js": "/static/js/main.cc3164ba.js",
+    "main.css": "/static/css/main.8f495df6.css",
+    "main.js": "/static/js/main.4dc1640f.js",
     "static/media/daisysCakes.gif": "/static/media/daisysCakes.1959bf74be0b4242e8fa.gif",
     "static/media/platello.gif": "/static/media/platello.d11e0263cdb05e5acac0.gif",
     "static/media/pop.gif": "/static/media/pop.e1ba6b0b24a9bd4733fe.gif",
@@ -16,7 +16,7 @@
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "static/media/readme-gen.png": "/static/media/readme-gen.2be38a25812c02b1503d.png",
-    "static/media/Nate's Resume.pdf": "/static/media/Nate's Resume.97b81aaf66ded6008961.pdf",
+    "static/media/Nate's Resume.pdf": "/static/media/Nate's Resume.a908ee96ddc41e5702b4.pdf",
     "static/media/e-commerce-backend.png": "/static/media/e-commerce-backend.8047bbebbb2152d1a035.png",
     "static/media/my-todos.png": "/static/media/my-todos.b109f1717fa7ba10724a.png",
     "static/media/insomnia.png": "/static/media/insomnia.ce01d16f9e95615eacda.png",
@@ -34,11 +34,11 @@
     "static/media/contact-bg.svg": "/static/media/contact-bg.26325810d76920a74a26.svg",
     "index.html": "/index.html",
     "static/media/new-project-bg.svg": "/static/media/new-project-bg.4f086eac6ad6b2f8fd50.svg",
-    "main.c72d6d52.css.map": "/static/css/main.c72d6d52.css.map",
-    "main.cc3164ba.js.map": "/static/js/main.cc3164ba.js.map"
+    "main.8f495df6.css.map": "/static/css/main.8f495df6.css.map",
+    "main.4dc1640f.js.map": "/static/js/main.4dc1640f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c72d6d52.css",
-    "static/js/main.cc3164ba.js"
+    "static/css/main.8f495df6.css",
+    "static/js/main.4dc1640f.js"
   ]
 }
