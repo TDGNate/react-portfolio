@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const Home = ({ currentPage, handlePageChange }) => {
   return (
     <motion.div
-      initial={{ opacity: .5 }}
+      initial={{ opacity: .6 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.00 }}
       exit={{ opacity: 0 }}
@@ -22,7 +22,7 @@ const Home = ({ currentPage, handlePageChange }) => {
       <Projects currentPage={currentPage} handlePageChange={handlePageChange} />
       <Skills />
       <Contact />
-      
+
     </motion.div>
   )
 }
