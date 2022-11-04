@@ -9,6 +9,9 @@ import "../../styles/moreProjects.css";
 // Data 
 import ProjectsData from "../../ProjectsData";
 
+// Motion | smooth animations when transitioning pages 
+import { motion } from "framer-motion";
+
 const MoreProjects = () => {
 
   const [displayedElCount, setDisplayElCount] = useState(3);
@@ -24,7 +27,7 @@ const MoreProjects = () => {
 
   const slice = ProjectsData.slice(0, displayedElCount);
 
-    // function to hide button when limit is reached 
+  // function to hide button when limit is reached 
   function toggleShowMoreBtn() {
 
     setTimeout(() => {
@@ -50,7 +53,14 @@ const MoreProjects = () => {
   }
   
   return (
-    <div id="moreProjects" className="more-projects-page">
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.00 }}
+      exit={{ opacity: 0 }}
+      id="moreProjects"
+      className="more-projects-page"
+    >
       
       <div className="more-projects-filter"></div>
 
@@ -81,7 +91,7 @@ const MoreProjects = () => {
           
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

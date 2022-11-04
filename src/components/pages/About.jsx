@@ -9,6 +9,9 @@ import Rocket from "../../svgs/rocket.svg"
 // Resume and Images
 import { Resume, NateSixFlags } from "../../imgs";
 
+// Motion | smooth animations when transitioning pages 
+import { motion } from "framer-motion";
+
 const About = ({ currentPage, handlePageChange }) => {
 
   function changePage() {
@@ -17,7 +20,13 @@ const About = ({ currentPage, handlePageChange }) => {
   }
 
   return (
-    <div id="aboutPage">
+    <motion.div
+      initial={{ opacity: .6 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.00 }}
+      exit={{ opacity: 0 }}
+      id="aboutPage"
+    >
       <div className="container">
         <h2>Who am I?</h2>
 
@@ -64,7 +73,7 @@ const About = ({ currentPage, handlePageChange }) => {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

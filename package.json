@@ -15,7 +15,8 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sweetalert": "^2.1.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "framer-motion": "^7.6.1"
   },
   "scripts": {
     "predeploy": "npm run build",
