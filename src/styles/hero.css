@@ -96,7 +96,7 @@
 }
 
 .hero-about-img {
-	filter: grayscale(15%) opacity(80%) hue-rotate(10deg)
+	filter: grayscale(15%) opacity(80%) hue-rotate(5deg)
 		drop-shadow(0 0 0 transparent);
 	width: 220px;
 	min-width: 250px;
