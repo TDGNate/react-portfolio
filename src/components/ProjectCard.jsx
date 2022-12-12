@@ -2,9 +2,9 @@ import React from 'react'
 
 import "../styles/projectCard.css"
 
-const ProjectCard = ({title, thumbNail, description, techStack, btns}) => {
+const ProjectCard = ({key, title, thumbNail, description, techStack, btns}) => {
   return (
-  <div className="one-project">
+  <div className="one-project" defaultValue={key}>
     <img src={ thumbNail } alt="E-Commerce Backend Taker" className="one-project-img" />
       <div className="one-project-bottom">
         

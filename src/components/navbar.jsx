@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar-container ${isActive ? "" : "active"}`}>
       <div className="container">
-        <a href="#hero" className="logo">Nate</a>
+        <a href="/#hero" className="logo">Nate</a>
         <ul className={`navbar-ul ${isActive ? "" : "active"}`}>
 
           <li className="navbar-item">
