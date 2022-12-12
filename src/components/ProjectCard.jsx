@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../styles/projectCard.css"
 
-const ProjectCard = ({title, thumbNail, description, techStack, btns}) => {
+const ProjectCard = ({ title, thumbNail, description, techStack, btns }) => {
   return (
   <div className="one-project">
     <img src={ thumbNail } alt="E-Commerce Backend Taker" className="one-project-img" />
@@ -18,8 +18,8 @@ const ProjectCard = ({title, thumbNail, description, techStack, btns}) => {
 
         {/* Check each Project's Card tech stack and display them  */}
         {
-          techStack.map(tech => {
-            return <div className="one-project-tech">
+          techStack.map((tech, index) => {
+            return <div key={index} className="one-project-tech">
             <a href={tech.link} target="blank" className="skill-anchor">
               <img src={tech.tech} alt="Tech Icon" className={` skill-img ${tech.invert ? "invert" : ""}`} />
             </a>
@@ -34,12 +34,12 @@ const ProjectCard = ({title, thumbNail, description, techStack, btns}) => {
 
           {/* Check if the cards has buttons to display with their links  */}
           {
-            btns.map(btn => {
+            btns.map((btn, index) => {
               if (btn.repo) {
-                return <a href={btn.repo} target="blank" className="project-prime-btn github-btn">GITHUB</a>
+                return <a key={index} href={btn.repo} target="blank" className="project-prime-btn github-btn">GITHUB</a>
               }
               if (btn.deployed) {
-                return <a href={btn.deployed} target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
+                return <a key={index} href={btn.deployed} target="blank" className="project-prime-btn deploy-btn">DEPLOY</a>
               } 
               return ""
             })

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Component Pages
 import Navbar from "./Navbar";
@@ -9,37 +9,35 @@ import Home from "./pages/Home";
 import MoreProjects from "./pages/MoreProjects";
 import About from "./pages/About";
 
+// Router
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation
+} from "react-router-dom";
+
 // Animations 
 import { RevealLeft, RevealRight, RevealY } from "../utils/animation";
 
 const PortfolioContainer = () => {
 
-  const [currentPage, setCurrentPage] = useState('Home');
-
-  // check which page the user is currently on 
-  const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home currentPage={currentPage} handlePageChange={handlePageChange} />; 
-    }
-
-    if (currentPage === 'MoreProjects') {
-      return <MoreProjects />;
-    }
-
-    if (currentPage === 'About') {
-      return <About currentPage={currentPage} handlePageChange={handlePageChange}/>;
-    }
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
+  const location = useLocation();
 
   return (
     <>
-      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Navbar />
 
-      {renderPage()}
+      {/* Page  */}
+      <div className="page-wrapper">
+       <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/projects" element={<MoreProjects />} />
+            <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
 
-      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Footer  />
     </>
   )
 }

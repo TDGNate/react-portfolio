@@ -4,15 +4,17 @@ import React from "react";
 import "../styles/hero.css";
 
 // Images 
-import { mountainBg } from "../imgs";
-import { Nate } from "../imgs";
+import { mountainBg, NatePortrait } from "../imgs";
 
 // Resume 
 import { Resume } from '../imgs';
 
+// Link 
+import { Link } from "react-router-dom";
+
 import Parallax from "../utils/parallax";
 
-const Hero = ({ currentPage, handlePageChange }) => {
+const Hero = () => {
 
   return (
     <div className="hero" id="hero">
@@ -45,16 +47,17 @@ const Hero = ({ currentPage, handlePageChange }) => {
         <div className="hero-about">
           <p className="hero-about-text">
           You can just call me Nate! My passion is building applications for clients, team collaboration, problem-solving, and designing.
-            <div className="hero-about-space"></div>
-            <a href="#aboutPage" className="more-about-me" onClick={() => handlePageChange('About')}>More About Me</a> | <a href={Resume} target="blank" className="more-about-me">Resume</a>
+            {/* <div className="hero-about-space"></div>  */}
+            <br />
+            <Link to="/about" className="more-about-me">More About Me</Link> | <a href={Resume} target="blank" className="more-about-me">Resume</a>
           </p>
-          <img src={Nate} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
+          <img src={NatePortrait} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
         </div>
 
         {/* Hero Side Content  */}
         <div className="hero-side-content">
           <p className="hero-text">
-          Check out some of my work below! <a href="#projects" className="hero-view-projects"><i class="bi bi-arrow-down"></i></a>
+          Check out some of my work below! <a href="#projects" className="hero-view-projects"><i className="bi bi-arrow-down"></i></a>
           </p>
             <a href="#contact" className="hero-contact-me">Contact Me!</a>
           </div>

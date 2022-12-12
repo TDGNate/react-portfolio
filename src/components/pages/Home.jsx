@@ -9,7 +9,7 @@ import Contact from "../Contact";
 // Motion | smooth animations when transitioning pages 
 import { motion } from "framer-motion";
 
-const Home = ({ currentPage, handlePageChange }) => {
+const Home = () => {
   return (
     <motion.div
       initial={{ opacity: .6 }}
@@ -18,8 +18,8 @@ const Home = ({ currentPage, handlePageChange }) => {
       exit={{ opacity: 0 }}
     >
 
-      <Hero currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Projects currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Hero />
+      <Projects />
       <Skills />
       <Contact />
 

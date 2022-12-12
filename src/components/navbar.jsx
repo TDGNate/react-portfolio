@@ -7,6 +7,9 @@ import "../styles/navbar.css";
 // Resume 
 import { Resume } from "../imgs";
 
+// Link 
+import { Link } from "react-router-dom";
+
 // Change Navbar if user isn't at the top 
 function isNavTop() {
   const navbarEl = document.querySelector(".navbar-container");
@@ -22,7 +25,7 @@ function isNavTop() {
 
 }
 
-const Navbar = ({ currentPage, handlePageChange }) => {
+const Navbar = () => {
   
   const [isActive, setActive] = useState("true");
 
@@ -31,64 +34,28 @@ const Navbar = ({ currentPage, handlePageChange }) => {
 
     // if the screen size is mobile, then apply the active class 
     if (window.innerWidth < 830) {
-
       setActive(!isActive);
-
-      if (currentPage === "MoreProjects") {
-        if (e.currentTarget.classList.contains('hamburger')) {
-          return;
-        }
-      }
-
-      if (currentPage === "About") {
-        if (e.currentTarget.classList.contains('hamburger')) {
-          return;
-        }
-      }
-
-      handlePageChange('Home')
     }
-
-    if (e.currentTarget.getAttribute("data-value") === "about") {
-      handlePageChange('About')
-    }
-
-    if (currentPage === "MoreProjects") { 
-      if (e.currentTarget.getAttribute("data-value") === "about") {
-        handlePageChange('About')
-        return;
-      }
-      handlePageChange('Home')
-    }
-
-    if (currentPage === "About") { 
-      if (e.currentTarget.getAttribute("data-value") === "about") {
-        handlePageChange('About')
-        return;
-      }
-      handlePageChange("Home")
-    }
-
   };
 
   return (
     <nav className={`navbar-container ${isActive ? "" : "active"}`}>
       <div className="container">
-        <a href="#hero" className="logo" onClick={() => handlePageChange('Home')}>Nate</a>
+        <a href="/#hero" className="logo">Nate</a>
         <ul className={`navbar-ul ${isActive ? "" : "active"}`}>
 
-          <li className={currentPage === "About" ? "navbar-item nav-active-link" : "navbar-item"}>
-            <a href="#aboutPage" data-value="about"
-              onClick={handleToggle}>About Me</a>
-          </li>
-
-          <li className={currentPage === "MoreProjects" ? "navbar-item nav-active-link" : "navbar-item"}>
-            <a href="#projects"
-             onClick={handleToggle}>Projects</a>
+          <li className="navbar-item">
+            <Link to="/about"
+              onClick={handleToggle}>About Me</Link>
           </li>
 
           <li className="navbar-item">
-            <a href="#skills"
+            <Link to="/projects"
+             onClick={handleToggle}>Projects</Link>
+          </li>
+
+          <li className="navbar-item">
+            <a href="/#skills"
               onClick={handleToggle}
             >Skills</a>
           </li>

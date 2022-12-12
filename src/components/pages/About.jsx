@@ -38,14 +38,14 @@ const About = ({ currentPage, handlePageChange }) => {
               <br />
               I love learning new things and finding ways to utilize them for personal projects. I was also self-taught for 4-6 months and built multiple <span className="highlight"> responsive websites</span> before enrolling in a Bootcamp.
             </p>
-            <p><i>You can view my resume or download it below.</i> <i class="bi bi-arrow-down"></i></p>
+            <p><i>You can view my resume or download it below.</i> <i className="bi bi-arrow-down"></i></p>
 
             <div className="about-btns">
             <a href={Resume} className="resume-btn" target="blank">
               View Resume
               </a>
             <a href={Resume} className="resume-btn download-resume" target="blank" download>
-              <i class="bi bi-download"></i>
+              <i className="bi bi-download"></i>
             </a>
             </div>
           </div>

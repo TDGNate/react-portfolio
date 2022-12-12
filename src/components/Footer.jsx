@@ -6,36 +6,10 @@ import "../styles/footer.css";
 // Animations 
 import { RevealY } from "../utils/animation";
 
-const Footer = ({ currentPage, handlePageChange }) => {
+// Link 
+import { Link } from "react-router-dom";
 
-  const footerSetSection = (e) => {
-    if (currentPage === "MoreProjects") {
-      if (e.currentTarget.classList.contains('hamburger')) {
-        return
-      }
-
-      handlePageChange('Home') 
-      return
-    }
-
-
-    if (currentPage === "About") {
-      if (e.currentTarget.getAttribute("data-value") === "about") {
-        return
-      }
-
-      handlePageChange('Home') 
-      return
-    }
-
-    if (currentPage === "Home") {
-      if (e.currentTarget.getAttribute("data-value") === "about") {
-        handlePageChange("About")
-      }
-    }
-
-
-  }
+const Footer = () => {
 
   return (
     <section className="footer-section">
@@ -49,7 +23,7 @@ const Footer = ({ currentPage, handlePageChange }) => {
         {/* Just myself  */}
         <div className="footer-link-section">
           <h3>
-            <a href="#about-me" className="footer-logo" onClick={footerSetSection}>Nate</a>
+            <Link to="about" className="footer-logo">Nate</Link>
           </h3>
             
           <ul className="footer-ul">
@@ -60,7 +34,7 @@ const Footer = ({ currentPage, handlePageChange }) => {
              <a href="tel:9515913493">Phone: <span className="footer-number">(951) 591-3493</span></a>
             </li>
             <li>
-             <a href="#contact">Send a Message</a>
+             <a href="/#contact">Send a Message</a>
             </li>
             <li>
              <a href="https://www.linkedin.com/in/christian-mcilvenny/" target="blank">LinkedIn</a>
@@ -75,16 +49,16 @@ const Footer = ({ currentPage, handlePageChange }) => {
           </h3>
           <ul className="footer-ul">
             <li>
-              <a href="#aboutPage" className="logo" data-value="about" onClick={footerSetSection}>About</a>
+              <Link to="/about" className="logo" data-value="about">About</Link>
             </li>
             <li>
-              <a href="#projects" className="logo" onClick={footerSetSection}>Projects</a>
+              <Link to="/projects" className="logo">Projects</Link>
             </li>
             <li>
-              <a href="#skills" className="logo" onClick={footerSetSection}>Skills</a>
+              <a href="/#skills" className="logo">Skills</a>
             </li>
             <li>
-              <a href="#contact" className="logo" onClick={footerSetSection}>Contact</a>
+              <a href="/#contact" className="logo">Contact</a>
             </li>
           </ul>
         </div>
