@@ -4,11 +4,13 @@ import React from "react";
 import "../styles/hero.css";
 
 // Images 
-import { mountainBg } from "../imgs";
-import { Nate } from "../imgs";
+import { mountainBg, Nate, NatePortrait } from "../imgs";
 
 // Resume 
 import { Resume } from '../imgs';
+
+// Link 
+import { Link } from "react-router-dom";
 
 import Parallax from "../utils/parallax";
 
@@ -48,7 +50,7 @@ const Hero = ({ currentPage, handlePageChange }) => {
             <div className="hero-about-space"></div>
             <a href="#aboutPage" className="more-about-me" onClick={() => handlePageChange('About')}>More About Me</a> | <a href={Resume} target="blank" className="more-about-me">Resume</a>
           </p>
-          <img src={Nate} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
+          <img src={NatePortrait} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
         </div>
 
         {/* Hero Side Content  */}
