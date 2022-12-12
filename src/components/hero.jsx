@@ -4,7 +4,7 @@ import React from "react";
 import "../styles/hero.css";
 
 // Images 
-import { mountainBg, Nate, NatePortrait } from "../imgs";
+import { mountainBg, NatePortrait } from "../imgs";
 
 // Resume 
 import { Resume } from '../imgs';
