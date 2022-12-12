@@ -2,20 +2,20 @@
 
 #aboutPage {
 	overflow: hidden;
-	background-image: url("../svgs/about-page-bg.svg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	min-height: 100vh;
 	padding: 2.3rem 2rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../svgs/about-page-bg.svg");
 }
 
 #aboutPage .container {
-	display: flex;
-	flex-direction: column;
 	gap: 1rem;
 	padding: 0;
+	display: flex;
 	margin-top: 13vh;
+	flex-direction: column;
 }
 
 /* Text highlight styles  */
@@ -27,21 +27,20 @@
 /* 1st About section  */
 
 .about-content-1 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	gap: 8%;
 	display: flex;
-	flex-direction: row;
 	padding: 0.5rem;
 	margin: 2.8rem 0;
+	flex-direction: row;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .about-left {
 	width: 50%;
-	margin-right: 1rem;
 	display: flex;
+	margin-right: 1rem;
 	flex-direction: column;
 	justify-content: center;
 }
@@ -51,12 +50,12 @@
 }
 
 .about-btns {
+	width: 100%;
+	height: 100%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	height: 100%;
-	width: 100%;
+	justify-content: center;
 }
 
 .resume-btn {
@@ -73,9 +72,9 @@
 }
 
 .resume-btn:hover {
+	box-shadow: none;
 	color: var(--light-clr);
 	background-color: rgb(0, 94, 255);
-	box-shadow: none;
 }
 
 .download-resume {
@@ -85,45 +84,45 @@
 /* About Me Picture  */
 
 .about-img-box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 280px;
-	height: 280px;
-	border: 1px solid var(--lght-clr);
-	position: relative;
-	transition: all 300ms ease-in-out;
 	z-index: 2;
+	width: 280px;
+	display: flex;
+	height: 280px;
 	margin-top: 1rem;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	transition: all 300ms ease-in-out;
+	border: 1px solid var(--lght-clr);
 }
 
 .about-img-box::after {
+	z-index: -1;
 	content: "";
-	position: absolute;
 	width: 100%;
 	height: 100%;
-	border: 1px dashed var(--light-clr);
+	position: absolute;
 	transform: translate(21px, 21px);
-	z-index: -1;
 	transition: all 300ms ease-in-out;
+	border: 1px dashed var(--light-clr);
 }
 
 .about-img-box::before {
 	content: "";
-	position: absolute;
+	z-index: -1;
 	width: 100%;
 	height: 100%;
-	border: 1px dashed var(--light-clr);
+	position: absolute;
 	transform: translate(-21px, -21px);
-	z-index: -1;
 	transition: all 300ms ease-in-out;
+	border: 1px dashed var(--light-clr);
 }
 
 .about-pic {
 	width: 100%;
 	height: 100%;
-	transition: all 300ms ease-in-out;
 	filter: grayscale(65%);
+	transition: all 300ms ease-in-out;
 }
 
 .about-pic:hover {
@@ -147,15 +146,14 @@
 /* About Section Two  */
 
 .about-content-2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	gap: 8%;
-	align-items: center;
-	margin: 2.8rem 0;
-	padding: 0.5rem;
 	width: 100%;
+	display: flex;
+	padding: 0.5rem;
+	margin: 2.8rem 0;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 .about-2-img {
@@ -176,22 +174,22 @@
 
 .about-bottom-line {
 	width: 50%;
+	height: 2px;
+	color: white;
 	margin: 1.5rem auto;
 	background-color: white;
-	color: white;
-	height: 2px;
 }
 
 .about-content-3 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	gap: 8%;
-	align-items: center;
-	margin-top: 2.5rem;
-	padding: 0.5rem;
 	width: 100%;
+	display: flex;
+	padding: 0.5rem;
+	margin-top: 2.5rem;
+	align-items: center;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Media Query (Mobile Size)  */
@@ -206,9 +204,9 @@
 	}
 
 	.about-content-1 {
-		flex-direction: column;
 		gap: 2rem;
 		margin: 1.8rem 0;
+		flex-direction: column;
 	}
 
 	.about-left {
