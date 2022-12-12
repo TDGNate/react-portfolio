@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f495df6.css",
-    "main.js": "/static/js/main.4dc1640f.js",
+    "main.css": "/static/css/main.24b7c83d.css",
+    "main.js": "/static/js/main.fc30b729.js",
     "static/media/daisysCakes.gif": "/static/media/daisysCakes.1959bf74be0b4242e8fa.gif",
     "static/media/platello.gif": "/static/media/platello.d11e0263cdb05e5acac0.gif",
     "static/media/pop.gif": "/static/media/pop.e1ba6b0b24a9bd4733fe.gif",
@@ -12,6 +12,7 @@
     "static/media/Nate-six-flags.jpg": "/static/media/Nate-six-flags.ac2607f7aeedb694490f.jpg",
     "static/media/waterfall.jpg": "/static/media/waterfall.b6c34d21142997d17891.jpg",
     "static/media/pass-gen.gif": "/static/media/pass-gen.db6857d0ecff1fc3609c.gif",
+    "static/media/Nate-Portrait.jpg": "/static/media/Nate-Portrait.a9dadae786feac28ec9c.jpg",
     "static/media/mountains.jpg": "/static/media/mountains.c418dac06412b88fc2d0.jpg",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
@@ -34,11 +35,11 @@
     "static/media/contact-bg.svg": "/static/media/contact-bg.26325810d76920a74a26.svg",
     "index.html": "/index.html",
     "static/media/new-project-bg.svg": "/static/media/new-project-bg.4f086eac6ad6b2f8fd50.svg",
-    "main.8f495df6.css.map": "/static/css/main.8f495df6.css.map",
-    "main.4dc1640f.js.map": "/static/js/main.4dc1640f.js.map"
+    "main.24b7c83d.css.map": "/static/css/main.24b7c83d.css.map",
+    "main.fc30b729.js.map": "/static/js/main.fc30b729.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f495df6.css",
-    "static/js/main.4dc1640f.js"
+    "static/css/main.24b7c83d.css",
+    "static/js/main.fc30b729.js"
   ]
 }
