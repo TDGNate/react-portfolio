@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 import Parallax from "../utils/parallax";
 
-const Hero = ({ currentPage, handlePageChange }) => {
+const Hero = () => {
 
   return (
     <div className="hero" id="hero">
@@ -49,7 +49,7 @@ const Hero = ({ currentPage, handlePageChange }) => {
           You can just call me Nate! My passion is building applications for clients, team collaboration, problem-solving, and designing.
             {/* <div className="hero-about-space"></div>  */}
             <br />
-            <a href="#aboutPage" className="more-about-me" onClick={() => handlePageChange('About')}>More About Me</a> | <a href={Resume} target="blank" className="more-about-me">Resume</a>
+            <Link to="/about" className="more-about-me">More About Me</Link> | <a href={Resume} target="blank" className="more-about-me">Resume</a>
           </p>
           <img src={NatePortrait} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
         </div>
