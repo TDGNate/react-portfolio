@@ -177,7 +177,7 @@ const Contact = () => {
 
         <div className="contact-bottom">
           <a href="#hero">
-            <i class="bi bi-arrow-up"></i>
+            <i className="bi bi-arrow-up"></i>
           </a>
         </div>
 

@@ -47,7 +47,8 @@ const Hero = ({ currentPage, handlePageChange }) => {
         <div className="hero-about">
           <p className="hero-about-text">
           You can just call me Nate! My passion is building applications for clients, team collaboration, problem-solving, and designing.
-            <div className="hero-about-space"></div>
+            {/* <div className="hero-about-space"></div>  */}
+            <br />
             <a href="#aboutPage" className="more-about-me" onClick={() => handlePageChange('About')}>More About Me</a> | <a href={Resume} target="blank" className="more-about-me">Resume</a>
           </p>
           <img src={NatePortrait} alt="Nate" className="hero-about-img" title="Hey it's me, Nate!" />
@@ -56,7 +57,7 @@ const Hero = ({ currentPage, handlePageChange }) => {
         {/* Hero Side Content  */}
         <div className="hero-side-content">
           <p className="hero-text">
-          Check out some of my work below! <a href="#projects" className="hero-view-projects"><i class="bi bi-arrow-down"></i></a>
+          Check out some of my work below! <a href="#projects" className="hero-view-projects"><i className="bi bi-arrow-down"></i></a>
           </p>
             <a href="#contact" className="hero-contact-me">Contact Me!</a>
           </div>
