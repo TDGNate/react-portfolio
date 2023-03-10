@@ -3,6 +3,9 @@ import React from "react";
 // Icons for projects 
 import { Node, Javascript, MySQL, Heroku, Bootstrap, Express, Handlebars, Sequelize, SweetAlert, Matcss, jQuery, Html, Css3, API, Reactt, Mongo, Mongoose, Sass, NPM, Git } from "../imgs/skills";
 
+// Link 
+import { Link } from "react-router-dom";
+
 // Thumbnails for projects 
 import { POPUmai, Platello, DaisysCakes } from "../gifs/projects";
 
@@ -161,9 +164,9 @@ const Projects = ({ currentPage, handlePageChange }) => {
           <div className="project-more">
 
             <div className="project-more-left">
-              <a href="#moreProjects"
-                onClick={() => handlePageChange('MoreProjects')}
-                className="view-all-projects">View All Projects</a>
+              <Link
+                to="/projects"
+                className="view-all-projects">View All Projects</Link>
             </div>
 
             <div className="project-more-right">
