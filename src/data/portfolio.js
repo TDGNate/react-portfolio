@@ -25,7 +25,7 @@ import {
 export const hero = {
   eyebrow: "Creative Builder · Mechanical Engineering Student",
   title: "I like building things that feel simple — and work well.",
-  body: "I'm Nate — a former game developer (Unreal Engine + Verse) who started out in web dev and still builds software while exploring AI. These days I'm studying Mechanical Engineering at California Baptist University.",
+  body: "I'm Christian McIlvenny — I go by Nate, short for my middle name, Nathaniel. A former game developer (Unreal Engine + Verse) who started out in web dev and still builds software while exploring AI. These days I'm studying Mechanical Engineering at California Baptist University.",
 };
 
 // ---- About --------------------------------------------------------------
