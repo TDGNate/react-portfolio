@@ -7,7 +7,6 @@ export const Platello = require('./platello.gif');
 export const TechBlog = require('./techblog.gif');
 export const QuizCode = require('./quiz.gif');
 export const PassGen = require('./pass-gen.gif');
-export const DaisysCakes = require("./daisysCakes.gif")
 
 // PNGS 
 
