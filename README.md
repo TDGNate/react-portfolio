@@ -1,69 +1,74 @@
-# Nate's React Portfolio
+# Nate's Portfolio — natemci.com
 
-This is my main portfolio that I will be presenting which showcases my projects, experience, and skills. 🙂
+The personal portfolio of Christian "Nate" McIlvenny — a creative builder, former
+game developer (Unreal Engine + Verse), and Mechanical Engineering student at
+California Baptist University.
 
-My portfolio has an about me, projects, skills, and a contact section modularized into components. And if the viewer chooses to dedicate their attention to just my projects, I created a whole page displaying every single one of my projects and the tools I used to create it.
-
-This website is powered my React.js, and is deployed on Github pages.
-
-Deployed: https://www.natemci.com
+**Live:** https://natemci.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[MIT](https://choosealicense.com/licenses/mit/)
+## About
 
-## Table Of Contents
+A modern, animation-forward site with an Apple-style "liquid / frosted glass"
+treatment on the nav, cards, and buttons. It ships with a **light + dark theme**
+(defaults to your system preference, remembers your choice), smooth-scrolling
+section nav, cursor parallax in the hero, and scroll-reveal animations.
 
-- [Technologies](#technologies)
-- [Install](#install)
-- [Screenshots](#screenshots)
-- [Contribute](#contributing)
-- [Questions](#questions)
+It's two views:
 
-## Technologies
+- **Home** (`/`) — a single scrolling page: Hero, About + timeline, Skills &
+  Tools, a Projects preview, Faith, and Contact.
+- **Projects** (`/projects`) — the three project focus areas in detail, a full
+  grid of individual web/coding builds (each with its source and, where still
+  hosted, a live demo), and a Highlights section.
 
-Here are the technologies I used for this app
+The visual design was created in Claude and reproduced here in React.
 
-- [React](https://reactjs.org/)
-- [Emailjs](https://www.emailjs.com/)
-- [Bootstrap](https://getbootstrap.com/)
-- [SweetAlert](https://sweetalert.js.org/guides/)
-- [Github Pages](https://pages.github.com/)
+## Tech
 
-## Install
+- [React](https://reactjs.org/) + [React Router](https://reactrouter.com/)
+- [Create React App](https://create-react-app.dev/)
+- [GitHub Pages](https://pages.github.com/) (custom domain via `CNAME`)
+- Fonts: Space Grotesk (headings) + Inter (body)
 
-If you would like to use this layout, you can clone or fork, and run `npm install` to install all the packages needed to run this application.
-
-But before you install, in order for you to get emails from the contact form, you have to link up your keys in the `.env`. I used Emailjs to take care of that for me, but please read the docs -> **[EmailJS Docs](https://www.emailjs.com/docs/)**.
-
-Once you have a solid idea of how to create your email templates, and how to get your emailjs keys, then go to the `.env.EXAMPLE` file in the root, remove the ".EXAMPLE" and add your Emailjs variables.
+## Project structure
 
 ```
- REACT_APP_SERV_KEY=( Your Server key )
- REACT_APP_FORM_TEMPLATE=( Your Template )
- REACT_APP_FORM_PUB_KEY=( Your public Key )
+src/
+  theme/         theme tokens + provider (light/dark, glass recipe)
+  components/    Nav, Reveal, ScrollToHash, UI primitives, sections/
+  pages/         Home, Projects
+  data/          portfolio.js — single source of truth for all content
+  hooks/         useMouseParallax
+  styles/        global.css (keyframes, media queries, hover interactions)
+public/
+  Christian-McIlvenny-Resume.pdf
+  CNAME, 404.html (SPA fallback), index.html
 ```
 
-_Note: remove the parenthesis and make sure there's no spaces_
+## Run locally
 
-After getting those set up, run `npm start` to start the application.
+```
+npm install
+npm start
+```
 
-## Screenshots
+Opens http://localhost:3000.
 
-  <img src="./assets/imgs/hero-section.png" alt="hero section" />
-  <img src="./assets/imgs/below-projects-section.png" alt="project section" />
-  <img src="./assets/imgs/skills-section.png" alt="skills section" />
-  <img src="./assets/imgs/contact-section.png" alt="contact section" />
-  <img src="./assets/imgs/projects-page.png" alt="project page" />
+## Deploy
 
-## Contributing
+The site deploys to GitHub Pages and is served at the custom domain
+`natemci.com` (see `public/CNAME`).
 
-Fork this, and make your pull request :)
+```
+npm run deploy
+```
+
+This builds the app and publishes `build/` to the `gh-pages` branch.
 
 ## Questions
 
-_Reach Out!_
+_Reach out!_
 
-Github: [TDGNate](https://github.com/TDGNate)
-
-Email: itsnzte@gmail.com
+GitHub: [TDGNate](https://github.com/TDGNate) · Email: itsnzte@gmail.com
