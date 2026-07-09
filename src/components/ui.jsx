@@ -203,6 +203,128 @@ export function CategoryBanner({ label, angle = "135deg", height = "150px" }) {
   );
 }
 
+// Small inline icons (currentColor, so they inherit the button text color).
+function ArrowIcon() {
+  return (
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      style={{ display: "block" }}
+      aria-hidden="true"
+    >
+      <line x1="7" y1="17" x2="17" y2="7" />
+      <polyline points="7 7 17 7 17 17" />
+    </svg>
+  );
+}
+
+function CodeIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      style={{ display: "block" }}
+      aria-hidden="true"
+    >
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
+    </svg>
+  );
+}
+
+/**
+ * The Live / Github link buttons for a project card.
+ * - Live button (arrow icon) when there's a live URL.
+ * - Github button (code icon) when there's a repo.
+ * `single` (homepage) renders ONE button: the live link if present, else the
+ * repo. Otherwise (projects page) it renders both, plus a "Source private" note.
+ */
+export function ProjectButtons({
+  live,
+  liveLabel,
+  repo,
+  privateSource,
+  single = false,
+  marginTop = "22px",
+}) {
+  const { tokens: t } = useTheme();
+
+  const liveBtn = live ? (
+    <GlassButton
+      href={live}
+      target="_blank"
+      rel="noopener"
+      fontSize="13px"
+      padding="9px 16px"
+    >
+      <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+        {liveLabel || "Live"}
+        <ArrowIcon />
+      </span>
+    </GlassButton>
+  ) : null;
+
+  const repoBtn = repo ? (
+    <GlassButton
+      href={repo}
+      target="_blank"
+      rel="noopener"
+      fontSize="13px"
+      padding="9px 16px"
+    >
+      <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+        Github
+        <CodeIcon />
+      </span>
+    </GlassButton>
+  ) : null;
+
+  let content;
+  if (single) {
+    content = liveBtn || repoBtn;
+    if (!content) return null;
+  } else {
+    if (!liveBtn && !repoBtn && !privateSource) return null;
+    content = (
+      <>
+        {liveBtn}
+        {repoBtn}
+        {privateSource && (
+          <span style={{ fontSize: "12.5px", color: t.c.textMuted }}>
+            Source private
+          </span>
+        )}
+      </>
+    );
+  }
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        gap: "10px",
+        marginTop,
+        flexWrap: "wrap",
+        alignItems: "center",
+      }}
+    >
+      {content}
+    </div>
+  );
+}
+
 /**
  * Small frosted-glass pill used for value chips and skill tags.
  */
