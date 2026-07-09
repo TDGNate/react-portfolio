@@ -5,6 +5,7 @@
 // Projects page with their real screenshots + links.
 
 import {
+  Makullveny,
   QuizCode,
   TeamGenerator,
   NoteTaker,
@@ -111,6 +112,21 @@ export const highlights = [
   { title: "First Degree Black Belt", sub: "ATA Taekwondo, earned at age 14" },
 ];
 
+// ---- Makullveny — current flagship (public landing page, private source) --
+export const makullveny = {
+  title: "Makullveny",
+  thumbnail: Makullveny,
+  kicker: "TDG · Desktop Study App",
+  descShort:
+    "A local-first desktop study app in active development — a calm dashboard, a notes “Library Desk,” ambient study atmosphere, and student tools, all in one focused place.",
+  desc: "A local-first desktop study assistant in active development. It opens on a calm dashboard, then gives students focused spaces for notes, tools, ambience, and study music. The “Library Desk” lets you build books, bookshelves, and pages for classes and journals — with typed text, drawings, and imported images — while ambient sounds, a lofi radio, and warm cabin themes keep long study sessions calm. Notes stay on your computer by default.",
+  tagsShort: ["Desktop App", "Local-first", "Study Tools"],
+  tags: ["Desktop App", "Local-first", "Notes & Study Tools", "In development"],
+  live: "https://tdg-org.github.io/makullveny-site/",
+  liveLabel: "View site ↗",
+  privateSource: true,
+};
+
 // ---- Individual coding projects (Projects page grid) -------------------
 // Real screenshots + repos. "Live" links point only at demos still hosted on
 // GitHub Pages; the old Heroku demos went offline when free dynos ended, so
@@ -215,6 +231,39 @@ export const codingProjects = [
     live: "https://tdgnate.github.io/Rock-Paper-Scissors/",
   },
 ];
+
+// ---- Home "Selected Projects" (categories + featured real projects) -----
+const _n8 = codingProjects.find((p) => p.title === "N8 Tech Blog");
+
+export const homeFeatured = [
+  {
+    key: "makullveny",
+    title: makullveny.title,
+    thumbnail: makullveny.thumbnail,
+    bannerLabel: null,
+    desc: makullveny.descShort,
+    tags: makullveny.tagsShort,
+  },
+  {
+    key: "n8",
+    title: _n8.title,
+    thumbnail: _n8.thumbnail,
+    bannerLabel: null,
+    desc: _n8.desc,
+    tags: _n8.tags.slice(0, 3),
+  },
+  ...featuredProjects.map((c) => ({
+    key: c.id,
+    title: c.title,
+    thumbnail: null,
+    bannerLabel: c.kicker,
+    desc: c.descShort,
+    tags: c.tagsShort,
+  })),
+];
+
+// ---- Projects page: every real project as a card (flagship first) -------
+export const projectsPageProjects = [makullveny, ...codingProjects];
 
 // ---- Contact / footer ---------------------------------------------------
 export const RESUME_URL = `${process.env.PUBLIC_URL}/Christian-McIlvenny-Resume.pdf`;

@@ -8,8 +8,9 @@ export const TechBlog = require('./techblog.gif');
 export const QuizCode = require('./quiz.gif');
 export const PassGen = require('./pass-gen.gif');
 
-// PNGS 
+// PNGS
 
+export const Makullveny = require('./makullveny.png');
 export const TeamGenerator = require('./teamGenerator.png');
 export const NoteTaker = require('./note-taker.png');
 export const EComBackend = require('./e-commerce-backend.png');
