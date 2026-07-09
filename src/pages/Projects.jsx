@@ -5,10 +5,12 @@ import { GlassButton, SolidButton, CategoryBanner } from "../components/ui";
 import SiteFooterMark from "../components/SiteFooterMark";
 import {
   featuredProjects,
-  codingProjects,
+  projectsPageProjects,
   highlights,
   contactLinks,
 } from "../data/portfolio";
+
+const ANGLES = ["135deg", "115deg", "155deg"];
 
 // A tag chip (solid, matches the design's project-card tags).
 function TagChip({ children }) {
@@ -29,11 +31,30 @@ function TagChip({ children }) {
   );
 }
 
-// Large detailed category card (image half + text half, stacks on narrow).
-function FeaturedCard({ p, angle }) {
+/**
+ * Horizontal glass project card: image (or accent banner) on one side, text on
+ * the other. On desktop the media sits to the LEFT and the content to the
+ * RIGHT (the featured "new style" layout); on narrow screens the grid collapses
+ * so the media stacks on top.
+ */
+function HCard({
+  image,
+  imageAlt,
+  bannerLabel,
+  bannerAngle = "135deg",
+  kicker,
+  title,
+  desc,
+  tags,
+  live,
+  liveLabel,
+  repo,
+  privateSource,
+}) {
   const { tokens: t } = useTheme();
   return (
     <Reveal
+      threshold={0.12}
       style={{
         position: "relative",
         borderRadius: "28px",
@@ -64,26 +85,63 @@ function FeaturedCard({ p, angle }) {
           position: "relative",
           zIndex: 1,
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px,1fr))",
           gap: 0,
         }}
       >
-        <div style={{ minHeight: "220px", display: "flex" }}>
-          <CategoryBanner label={p.kicker} angle={angle} height="100%" />
+        {/* Media side */}
+        <div
+          style={{
+            position: "relative",
+            minHeight: "230px",
+            background: t.c.bgAlt,
+            overflow: "hidden",
+          }}
+        >
+          {image ? (
+            <img
+              src={image}
+              alt={imageAlt}
+              loading="lazy"
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
+          ) : (
+            <div style={{ position: "absolute", inset: 0 }}>
+              <CategoryBanner label={bannerLabel} angle={bannerAngle} height="100%" />
+            </div>
+          )}
         </div>
-        <div style={{ padding: "34px" }}>
-          <div
-            style={{
-              fontSize: "12.5px",
-              fontWeight: 600,
-              letterSpacing: "0.04em",
-              textTransform: "uppercase",
-              color: t.c.accentDeep,
-              marginBottom: "10px",
-            }}
-          >
-            {p.kicker}
-          </div>
+
+        {/* Text side */}
+        <div
+          style={{
+            padding: "34px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          {kicker && (
+            <div
+              style={{
+                fontSize: "12.5px",
+                fontWeight: 600,
+                letterSpacing: "0.04em",
+                textTransform: "uppercase",
+                color: t.c.accentDeep,
+                marginBottom: "10px",
+              }}
+            >
+              {kicker}
+            </div>
+          )}
           <h3
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
@@ -93,7 +151,7 @@ function FeaturedCard({ p, angle }) {
               color: t.c.text,
             }}
           >
-            {p.titleLong || p.title}
+            {title}
           </h3>
           <p
             style={{
@@ -103,152 +161,60 @@ function FeaturedCard({ p, angle }) {
               margin: "0 0 20px",
             }}
           >
-            {p.descLong}
+            {desc}
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-            {p.tags.map((tag) => (
+            {tags.map((tag) => (
               <TagChip key={tag}>{tag}</TagChip>
             ))}
           </div>
+          {(live || repo || privateSource) && (
+            <div
+              style={{
+                display: "flex",
+                gap: "10px",
+                marginTop: "22px",
+                flexWrap: "wrap",
+                alignItems: "center",
+              }}
+            >
+              {live && (
+                <GlassButton
+                  href={live}
+                  target="_blank"
+                  rel="noopener"
+                  fontSize="13px"
+                  padding="9px 16px"
+                >
+                  {liveLabel || "Live ↗"}
+                </GlassButton>
+              )}
+              {repo && (
+                <GlassButton
+                  href={repo}
+                  target="_blank"
+                  rel="noopener"
+                  fontSize="13px"
+                  padding="9px 16px"
+                >
+                  Code
+                </GlassButton>
+              )}
+              {privateSource && (
+                <span style={{ fontSize: "12.5px", color: t.c.textMuted }}>
+                  Source private
+                </span>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </Reveal>
   );
 }
 
-// Individual coding-project glass card (real screenshot + links).
-function CodingCard({ p }) {
-  const { tokens: t } = useTheme();
-  return (
-    <div
-      style={{
-        position: "relative",
-        borderRadius: "26px",
-        overflow: "hidden",
-        boxShadow: `0 12px 40px ${t.c.shadow}`,
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backdropFilter: `blur(${t.blurStrong}px) saturate(160%) brightness(1.05)`,
-          WebkitBackdropFilter: `blur(${t.blurStrong}px) saturate(160%) brightness(1.05)`,
-          background: t.glassTint,
-          transform: "translateZ(0)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          borderRadius: "inherit",
-          boxShadow: t.glassEdge,
-        }}
-      />
-      <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          display: "flex",
-          flexDirection: "column",
-          flex: 1,
-        }}
-      >
-        <div style={{ height: "190px", background: t.c.bgAlt, overflow: "hidden" }}>
-          <img
-            src={p.thumbnail}
-            alt={`${p.title} screenshot`}
-            loading="lazy"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              display: "block",
-            }}
-          />
-        </div>
-        <div
-          style={{
-            padding: "22px",
-            display: "flex",
-            flexDirection: "column",
-            flex: 1,
-          }}
-        >
-          <h3
-            style={{
-              fontFamily: "'Space Grotesk', sans-serif",
-              fontSize: "17px",
-              fontWeight: 600,
-              margin: "0 0 10px",
-              color: t.c.text,
-            }}
-          >
-            {p.title}
-          </h3>
-          <p
-            style={{
-              fontSize: "14px",
-              lineHeight: 1.6,
-              color: t.c.textMuted,
-              margin: "0 0 16px",
-            }}
-          >
-            {p.desc}
-          </p>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "8px",
-              marginBottom: "18px",
-            }}
-          >
-            {p.tags.map((tag) => (
-              <TagChip key={tag}>{tag}</TagChip>
-            ))}
-          </div>
-          <div
-            style={{
-              display: "flex",
-              gap: "10px",
-              marginTop: "auto",
-              flexWrap: "wrap",
-            }}
-          >
-            {p.live && (
-              <GlassButton
-                href={p.live}
-                target="_blank"
-                rel="noopener"
-                fontSize="13px"
-                padding="9px 16px"
-              >
-                Live ↗
-              </GlassButton>
-            )}
-            <GlassButton
-              href={p.repo}
-              target="_blank"
-              rel="noopener"
-              fontSize="13px"
-              padding="9px 16px"
-            >
-              Code
-            </GlassButton>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function Projects() {
   const { tokens: t } = useTheme();
-  const angles = ["135deg", "115deg", "155deg"];
 
   return (
     <>
@@ -315,39 +281,47 @@ export default function Projects() {
               margin: 0,
             }}
           >
-            A closer look at what I've made — from shipped games to team websites to
-            competition robots.
+            A closer look at what I've made — from a desktop study app in progress to
+            shipped games, team websites, and competition robots.
           </p>
         </div>
       </div>
 
-      {/* Featured category cards */}
+      {/* Focus-area category cards */}
       <div
         style={{
           position: "relative",
           maxWidth: "1040px",
           margin: "0 auto",
-          padding: "50px 28px 30px",
+          padding: "50px 28px 20px",
           display: "flex",
           flexDirection: "column",
           gap: "30px",
         }}
       >
         {featuredProjects.map((p, i) => (
-          <FeaturedCard key={p.id} p={p} angle={angles[i % angles.length]} />
+          <HCard
+            key={p.id}
+            bannerLabel={p.kicker}
+            bannerAngle={ANGLES[i % ANGLES.length]}
+            kicker={p.kicker}
+            title={p.titleLong || p.title}
+            desc={p.descLong}
+            tags={p.tags}
+          />
         ))}
       </div>
 
-      {/* More projects — the real coding builds */}
+      {/* Every real project as a horizontal card */}
       <div
         style={{
           position: "relative",
-          maxWidth: "1180px",
+          maxWidth: "1040px",
           margin: "0 auto",
           padding: "40px 28px 20px",
         }}
       >
-        <Reveal>
+        <Reveal style={{ marginBottom: "34px" }}>
           <div
             style={{
               fontSize: "13px",
@@ -369,33 +343,40 @@ export default function Projects() {
               letterSpacing: "-0.01em",
             }}
           >
-            Web &amp; coding builds.
+            Things I've built.
           </h2>
           <p
             style={{
               fontSize: "15.5px",
               lineHeight: 1.65,
               color: t.c.textMuted,
-              maxWidth: "560px",
-              margin: "0 0 34px",
+              maxWidth: "580px",
+              margin: 0,
             }}
           >
-            A collection of apps, games, and full-stack projects I built while
-            learning to code — each with its source and, where it's still hosted, a
+            From a desktop study app in progress to team websites, games, and
+            full-stack builds — each with its source and, where it's still hosted, a
             live demo.
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))",
-              gap: "26px",
-            }}
-          >
-            {codingProjects.map((p) => (
-              <CodingCard key={p.title} p={p} />
-            ))}
-          </div>
         </Reveal>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+          {projectsPageProjects.map((p) => (
+            <HCard
+              key={p.title}
+              image={p.thumbnail}
+              imageAlt={`${p.title} screenshot`}
+              kicker={p.kicker}
+              title={p.title}
+              desc={p.desc}
+              tags={p.tags}
+              live={p.live}
+              liveLabel={p.liveLabel}
+              repo={p.repo}
+              privateSource={p.privateSource}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Highlights */}
