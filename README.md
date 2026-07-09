@@ -1,35 +1,33 @@
-# Nate's Portfolio — natemci.com
+# Nate McIlvenny — Portfolio
 
-The personal portfolio of Christian "Nate" McIlvenny — a creative builder, former
-game developer (Unreal Engine + Verse), and Mechanical Engineering student at
-California Baptist University.
+Personal portfolio of **Christian "Nate" McIlvenny** — a creative builder,
+former game developer (Unreal Engine + Verse), and Mechanical Engineering
+student at California Baptist University.
 
-**Live:** https://natemci.com
+🔗 **Live:** [natemci.com](https://natemci.com)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## About
+---
 
-A modern, animation-forward site with an Apple-style "liquid / frosted glass"
-treatment on the nav, cards, and buttons. It ships with a **light + dark theme**
-(defaults to your system preference, remembers your choice), smooth-scrolling
-section nav, cursor parallax in the hero, and scroll-reveal animations.
+## Overview
 
-It's two views:
+A modern, animation-forward site with an Apple-style **liquid / frosted glass**
+treatment on the nav, cards, and buttons. Features a **light + dark theme**
+(defaults to your system, remembers your choice), smooth-scrolling section nav,
+cursor parallax in the hero, and scroll-reveal animations. Built in React and
+reproduced from a design created in Claude.
 
-- **Home** (`/`) — a single scrolling page: Hero, About + timeline, Skills &
-  Tools, a Projects preview, Faith, and Contact.
-- **Projects** (`/projects`) — the three project focus areas in detail, a full
-  grid of individual web/coding builds (each with its source and, where still
-  hosted, a live demo), and a Highlights section.
+**Two views:**
 
-The visual design was created in Claude and reproduced here in React.
+- **Home** (`/`) — Hero · About + timeline · Skills & Tools · Projects preview · Faith · Contact
+- **Projects** (`/projects`) — the three project focus areas in detail, a full grid of individual web/coding builds (each with source + live demo where available), and a Highlights section
 
-## Tech
+## Tech stack
 
 - [React](https://reactjs.org/) + [React Router](https://reactrouter.com/)
 - [Create React App](https://create-react-app.dev/)
-- [GitHub Pages](https://pages.github.com/) (custom domain via `CNAME`)
+- [GitHub Pages](https://pages.github.com/) with a custom domain (`CNAME`)
 - Fonts: Space Grotesk (headings) + Inter (body)
 
 ## Project structure
@@ -44,31 +42,27 @@ src/
   styles/        global.css (keyframes, media queries, hover interactions)
 public/
   Christian-McIlvenny-Resume.pdf
-  CNAME, 404.html (SPA fallback), index.html
+  CNAME · 404.html (SPA fallback) · index.html
+archive/         old pre-redesign README, images, SVGs, resume (see archive/OLD-CONTENT.md)
 ```
 
 ## Run locally
 
-```
+```bash
 npm install
-npm start
+npm start          # http://localhost:3000
 ```
-
-Opens http://localhost:3000.
 
 ## Deploy
 
-The site deploys to GitHub Pages and is served at the custom domain
-`natemci.com` (see `public/CNAME`).
+The site is served at `natemci.com` from GitHub Pages (`public/CNAME`).
 
+```bash
+npm run deploy     # builds and publishes build/ to the gh-pages branch
 ```
-npm run deploy
-```
 
-This builds the app and publishes `build/` to the `gh-pages` branch.
+## Contact
 
-## Questions
-
-_Reach out!_
-
-GitHub: [TDGNate](https://github.com/TDGNate) · Email: itsnzte@gmail.com
+GitHub [TDGNate](https://github.com/TDGNate) · LinkedIn
+[christian-mcilvenny](https://www.linkedin.com/in/christian-mcilvenny) ·
+Email itsnzte@gmail.com
