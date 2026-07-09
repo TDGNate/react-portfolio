@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Christian "Nate" McIlvenny — Portfolio</title>
+		<!-- Single Page Apps for GitHub Pages.
+		     Redirects any deep-link (e.g. /projects) into index.html with the
+		     path encoded in the query string; index.html restores it. Custom
+		     domain served at the root, so keep 0 path segments. -->
+		<script>
+			var pathSegmentsToKeep = 0;
+			var l = window.location;
+			l.replace(
+				l.protocol +
+					"//" +
+					l.hostname +
+					(l.port ? ":" + l.port : "") +
+					l.pathname
+						.split("/")
+						.slice(0, 1 + pathSegmentsToKeep)
+						.join("/") +
+					"/?/" +
+					l.pathname
+						.slice(1)
+						.split("/")
+						.slice(pathSegmentsToKeep)
+						.join("/")
+						.replace(/&/g, "~and~") +
+					(l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+					l.hash
+			);
+		</script>
+	</head>
+	<body></body>
+</html>
