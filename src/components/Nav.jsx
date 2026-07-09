@@ -110,8 +110,8 @@ export default function Nav() {
         color: t.c.text,
       }}
     >
-      Nate McIlvenny
-    </Link>
+      Nate Mc
+</Link>
   ) : (
     <a
       href="#top"
@@ -124,8 +124,8 @@ export default function Nav() {
         color: t.c.text,
       }}
     >
-      Nate McIlvenny
-    </a>
+      Nate Mc
+</a>
   );
 
   return (
