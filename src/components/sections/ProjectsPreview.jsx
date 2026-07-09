@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../../theme/ThemeContext";
 import Reveal from "../Reveal";
 import { GlassButton, CategoryBanner } from "../ui";
-import { featuredProjects } from "../../data/portfolio";
+import { homeFeatured } from "../../data/portfolio";
 
 export default function ProjectsPreview() {
   const { tokens: t } = useTheme();
@@ -86,9 +86,9 @@ export default function ProjectsPreview() {
             gap: "26px",
           }}
         >
-          {featuredProjects.map((p, i) => (
+          {homeFeatured.map((p, i) => (
             <div
-              key={p.id}
+              key={p.key}
               style={{
                 position: "relative",
                 borderRadius: "26px",
@@ -115,7 +115,32 @@ export default function ProjectsPreview() {
                 }}
               />
               <div style={{ position: "relative", zIndex: 1 }}>
-                <CategoryBanner label={p.kicker} angle={angles[i % angles.length]} />
+                {p.thumbnail ? (
+                  <div
+                    style={{
+                      height: "150px",
+                      background: t.c.bgAlt,
+                      overflow: "hidden",
+                    }}
+                  >
+                    <img
+                      src={p.thumbnail}
+                      alt={`${p.title} preview`}
+                      loading="lazy"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <CategoryBanner
+                    label={p.bannerLabel}
+                    angle={angles[i % angles.length]}
+                  />
+                )}
                 <div style={{ padding: "24px" }}>
                   <h3
                     style={{
@@ -136,10 +161,10 @@ export default function ProjectsPreview() {
                       margin: "0 0 16px",
                     }}
                   >
-                    {p.descShort}
+                    {p.desc}
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                    {p.tagsShort.map((tag) => (
+                    {p.tags.map((tag) => (
                       <div
                         key={tag}
                         style={{
