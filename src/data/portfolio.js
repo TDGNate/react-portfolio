@@ -123,7 +123,7 @@ export const makullveny = {
   tagsShort: ["Desktop App", "Local-first", "Study Tools"],
   tags: ["Desktop App", "Local-first", "Notes & Study Tools", "In development"],
   live: "https://tdg-org.github.io/makullveny-site/",
-  liveLabel: "View site ↗",
+  liveLabel: "View site",
   privateSource: true,
 };
 
@@ -235,6 +235,8 @@ export const codingProjects = [
 // ---- Home "Selected Projects" (categories + featured real projects) -----
 const _n8 = codingProjects.find((p) => p.title === "N8 Tech Blog");
 
+const _gameDev = featuredProjects[0]; // Independent Game Development
+
 export const homeFeatured = [
   {
     key: "makullveny",
@@ -243,6 +245,8 @@ export const homeFeatured = [
     bannerLabel: null,
     desc: makullveny.descShort,
     tags: makullveny.tagsShort,
+    live: makullveny.live,
+    liveLabel: makullveny.liveLabel,
   },
   {
     key: "n8",
@@ -251,15 +255,16 @@ export const homeFeatured = [
     bannerLabel: null,
     desc: _n8.desc,
     tags: _n8.tags.slice(0, 3),
+    repo: _n8.repo,
   },
-  ...featuredProjects.map((c) => ({
-    key: c.id,
-    title: c.title,
+  {
+    key: _gameDev.id,
+    title: _gameDev.title,
     thumbnail: null,
-    bannerLabel: c.kicker,
-    desc: c.descShort,
-    tags: c.tagsShort,
-  })),
+    bannerLabel: _gameDev.kicker,
+    desc: _gameDev.descShort,
+    tags: _gameDev.tagsShort,
+  },
 ];
 
 // ---- Projects page: every real project as a card (flagship first) -------

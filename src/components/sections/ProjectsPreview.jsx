@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../../theme/ThemeContext";
 import Reveal from "../Reveal";
-import { GlassButton, CategoryBanner } from "../ui";
+import { GlassButton, CategoryBanner, ProjectButtons } from "../ui";
 import { homeFeatured } from "../../data/portfolio";
 
 export default function ProjectsPreview() {
@@ -180,6 +180,13 @@ export default function ProjectsPreview() {
                       </div>
                     ))}
                   </div>
+                  <ProjectButtons
+                    single
+                    live={p.live}
+                    liveLabel={p.liveLabel}
+                    repo={p.repo}
+                    marginTop="18px"
+                  />
                 </div>
               </div>
             </div>
