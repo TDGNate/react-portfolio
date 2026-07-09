@@ -1,14 +1,14 @@
 import React from "react";
 import { useTheme } from "../theme/ThemeContext";
 import Reveal from "../components/Reveal";
-import { GlassButton, SolidButton, CategoryBanner } from "../components/ui";
-import SiteFooterMark from "../components/SiteFooterMark";
 import {
-  featuredProjects,
-  projectsPageProjects,
-  highlights,
-  contactLinks,
-} from "../data/portfolio";
+  GlassButton,
+  SolidButton,
+  CategoryBanner,
+  ProjectButtons,
+} from "../components/ui";
+import SiteFooterMark from "../components/SiteFooterMark";
+import { projectsPageOrder, highlights, contactLinks } from "../data/portfolio";
 
 const ANGLES = ["135deg", "115deg", "155deg"];
 
@@ -168,45 +168,12 @@ function HCard({
               <TagChip key={tag}>{tag}</TagChip>
             ))}
           </div>
-          {(live || repo || privateSource) && (
-            <div
-              style={{
-                display: "flex",
-                gap: "10px",
-                marginTop: "22px",
-                flexWrap: "wrap",
-                alignItems: "center",
-              }}
-            >
-              {live && (
-                <GlassButton
-                  href={live}
-                  target="_blank"
-                  rel="noopener"
-                  fontSize="13px"
-                  padding="9px 16px"
-                >
-                  {liveLabel || "Live ↗"}
-                </GlassButton>
-              )}
-              {repo && (
-                <GlassButton
-                  href={repo}
-                  target="_blank"
-                  rel="noopener"
-                  fontSize="13px"
-                  padding="9px 16px"
-                >
-                  Code
-                </GlassButton>
-              )}
-              {privateSource && (
-                <span style={{ fontSize: "12.5px", color: t.c.textMuted }}>
-                  Source private
-                </span>
-              )}
-            </div>
-          )}
+          <ProjectButtons
+            live={live}
+            liveLabel={liveLabel}
+            repo={repo}
+            privateSource={privateSource}
+          />
         </div>
       </div>
     </Reveal>
@@ -282,101 +249,27 @@ export default function Projects() {
             }}
           >
             A closer look at what I've made — from a desktop study app in progress to
-            shipped games, team websites, and competition robots.
+            shipped games, team websites, and competition robots. Roughly ordered by
+            how much they mean to me.
           </p>
         </div>
       </div>
 
-      {/* Focus-area category cards */}
+      {/* One importance-ordered stack of horizontal cards */}
       <div
         style={{
           position: "relative",
           maxWidth: "1040px",
           margin: "0 auto",
-          padding: "50px 28px 20px",
+          padding: "50px 28px 30px",
           display: "flex",
           flexDirection: "column",
           gap: "30px",
         }}
       >
-        {featuredProjects.map((p, i) => (
-          <HCard
-            key={p.id}
-            bannerLabel={p.kicker}
-            bannerAngle={ANGLES[i % ANGLES.length]}
-            kicker={p.kicker}
-            title={p.titleLong || p.title}
-            desc={p.descLong}
-            tags={p.tags}
-          />
+        {projectsPageOrder.map((p, i) => (
+          <HCard key={p.key} bannerAngle={ANGLES[i % ANGLES.length]} {...p} />
         ))}
-      </div>
-
-      {/* Every real project as a horizontal card */}
-      <div
-        style={{
-          position: "relative",
-          maxWidth: "1040px",
-          margin: "0 auto",
-          padding: "40px 28px 20px",
-        }}
-      >
-        <Reveal style={{ marginBottom: "34px" }}>
-          <div
-            style={{
-              fontSize: "13px",
-              fontWeight: 600,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              color: t.c.accentDeep,
-              marginBottom: "14px",
-            }}
-          >
-            More Projects
-          </div>
-          <h2
-            style={{
-              fontFamily: "'Space Grotesk', sans-serif",
-              fontWeight: 600,
-              fontSize: "28px",
-              margin: "0 0 8px",
-              letterSpacing: "-0.01em",
-            }}
-          >
-            Things I've built.
-          </h2>
-          <p
-            style={{
-              fontSize: "15.5px",
-              lineHeight: 1.65,
-              color: t.c.textMuted,
-              maxWidth: "580px",
-              margin: 0,
-            }}
-          >
-            From a desktop study app in progress to team websites, games, and
-            full-stack builds — each with its source and, where it's still hosted, a
-            live demo.
-          </p>
-        </Reveal>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          {projectsPageProjects.map((p) => (
-            <HCard
-              key={p.title}
-              image={p.thumbnail}
-              imageAlt={`${p.title} screenshot`}
-              kicker={p.kicker}
-              title={p.title}
-              desc={p.desc}
-              tags={p.tags}
-              live={p.live}
-              liveLabel={p.liveLabel}
-              repo={p.repo}
-              privateSource={p.privateSource}
-            />
-          ))}
-        </div>
       </div>
 
       {/* Highlights */}

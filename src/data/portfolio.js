@@ -267,8 +267,51 @@ export const homeFeatured = [
   },
 ];
 
-// ---- Projects page: every real project as a card (flagship first) -------
-export const projectsPageProjects = [makullveny, ...codingProjects];
+// ---- Projects page: one importance-ordered stack ------------------------
+// Most important first (the main-page projects), down to the simplest builds.
+const _byTitle = (name) => codingProjects.find((p) => p.title === name);
+
+const _catCard = (c) => ({
+  key: c.id,
+  bannerLabel: c.kicker,
+  kicker: c.kicker,
+  title: c.titleLong || c.title,
+  desc: c.descLong,
+  tags: c.tags,
+});
+const _projCard = (p) => ({
+  key: p.title,
+  image: p.thumbnail,
+  imageAlt: `${p.title} screenshot`,
+  kicker: p.kicker,
+  title: p.title,
+  desc: p.desc,
+  tags: p.tags,
+  live: p.live,
+  liveLabel: p.liveLabel,
+  repo: p.repo,
+  privateSource: p.privateSource,
+});
+
+export const projectsPageOrder = [
+  _projCard(makullveny),
+  _projCard(_byTitle("N8 Tech Blog")),
+  _catCard(featuredProjects[0]), // Independent Game Development
+  _catCard(featuredProjects[1]), // Student Web & Coding Projects
+  _catCard(featuredProjects[2]), // Campus Robotics & Team Projects
+  _projCard(_byTitle("POP Umai")),
+  _projCard(_byTitle("Platello")),
+  _projCard(_byTitle("E-Commerce Backend")),
+  _projCard(_byTitle("Weather App")),
+  _projCard(_byTitle("Note Taker")),
+  _projCard(_byTitle("Team Profile Generator")),
+  _projCard(_byTitle("README Generator")),
+  _projCard(_byTitle("Calendar App")),
+  _projCard(_byTitle("Quiz Code")),
+  _projCard(_byTitle("Password Generator")),
+  _projCard(_byTitle("My Todos")),
+  _projCard(_byTitle("Rock Paper Scissors")),
+];
 
 // ---- Contact / footer ---------------------------------------------------
 export const RESUME_URL = `${process.env.PUBLIC_URL}/Christian-McIlvenny-Resume.pdf`;
