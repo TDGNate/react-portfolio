@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.41d53105.css",
-    "main.js": "/static/js/main.f795a093.js",
+    "main.js": "/static/js/main.6d101251.js",
     "static/media/platello.gif": "/static/media/platello.d11e0263cdb05e5acac0.gif",
     "static/media/pop.gif": "/static/media/pop.e1ba6b0b24a9bd4733fe.gif",
     "static/media/quiz.gif": "/static/media/quiz.e669f7dfc85145861f3c.gif",
@@ -17,10 +17,10 @@
     "static/media/my-calender-app.png": "/static/media/my-calender-app.f2d6e136e8198557633d.png",
     "index.html": "/index.html",
     "main.41d53105.css.map": "/static/css/main.41d53105.css.map",
-    "main.f795a093.js.map": "/static/js/main.f795a093.js.map"
+    "main.6d101251.js.map": "/static/js/main.6d101251.js.map"
   },
   "entrypoints": [
     "static/css/main.41d53105.css",
-    "static/js/main.f795a093.js"
+    "static/js/main.6d101251.js"
   ]
 }
